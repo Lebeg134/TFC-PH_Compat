@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tfc-ph_compat",
+  "name": "TFC-PH Compatibility",
+  "description": "This mod aims to make Pam's harvestcraft compatible with the TFC food system. This means adding new crops and balancing existing foods.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Lebeg134"],
+  "credits": "Made by Lebeg134",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

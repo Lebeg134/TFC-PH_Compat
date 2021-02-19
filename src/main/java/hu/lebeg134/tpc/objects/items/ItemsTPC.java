@@ -31,7 +31,7 @@ public final class ItemsTPC {
         /*for (TPCrop crop : TPCrop.values()) {
             simpleItems.add(register(r, "crop/seeds/" + crop.name().toLowerCase(), new ItemSeedsTFC(crop), CT_FOOD));
         }*/
-        simpleItems.add(register(r, "crop/seeds/" + TPCrop.SPICE.name().toLowerCase(), new ItemSeedsTFC(TPCrop.SPICE), CT_FOOD));
+        simpleItems.add(register(r, "crop/seeds/spice"  , new ItemSeedsTFC(TPCrop.SPICE), CT_FOOD));
         allSimpleItems = simpleItems.build();
         OreDictionaryHelper.init();
     }

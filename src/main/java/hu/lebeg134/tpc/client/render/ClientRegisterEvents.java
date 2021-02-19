@@ -21,6 +21,7 @@ public final class ClientRegisterEvents {
         for (Item item : ItemsTPC.getAllSimpleItems())
             ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName().toString()));
 
+
     }
 }
 

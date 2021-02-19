@@ -1,10 +1,12 @@
 package hu.lebeg134.tpc.util.agriculture;
 
+import com.pam.harvestcraft.blocks.CropRegistry;
 import net.dries007.tfc.api.types.ICrop;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropDead;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropSimple;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropSpreading;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropTFC;
+import net.dries007.tfc.objects.items.ItemsTFC;
 import net.dries007.tfc.objects.items.food.ItemFoodTFC;
 import net.dries007.tfc.util.agriculture.Food;
 import net.dries007.tfc.util.calendar.CalendarTFC;
@@ -27,10 +29,11 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Supplier;
 
+import static com.pam.harvestcraft.blocks.CropRegistry.SPICELEAF;
+
 
 public enum TPCrop implements ICrop {
-    SPICE(Food.BARLEY,-5f,0f,30f,40f,50f,100f,400f,450f,4,0.5f, CropType.SIMPLE);
-
+    SPICE(() -> new ItemStack(CropRegistry.getFood(SPICELEAF)),() -> ItemStack.EMPTY,-5f,0f,30f,40f,50f,100f,400f,450f,8,0.5f, CropType.SIMPLE);
 
 
     //CODE from TFC

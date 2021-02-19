@@ -28,10 +28,9 @@ public final class ItemsTPC {
     public static void registerItems(RegistryEvent.Register<Item> event) {
         IForgeRegistry<Item> r = event.getRegistry();
         ImmutableList.Builder<Item> simpleItems = ImmutableList.builder();
-        /*for (TPCrop crop : TPCrop.values()) {
+        for (TPCrop crop : TPCrop.values()) {
             simpleItems.add(register(r, "crop/seeds/" + crop.name().toLowerCase(), new ItemSeedsTFC(crop), CT_FOOD));
-        }*/
-        simpleItems.add(register(r, "crop/seeds/spice"  , new ItemSeedsTFC(TPCrop.SPICE), CT_FOOD));
+        }
         allSimpleItems = simpleItems.build();
         OreDictionaryHelper.init();
     }

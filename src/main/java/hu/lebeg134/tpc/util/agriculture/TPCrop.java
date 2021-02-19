@@ -8,6 +8,7 @@ import net.dries007.tfc.objects.blocks.agriculture.BlockCropSpreading;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropTFC;
 import net.dries007.tfc.objects.items.ItemsTFC;
 import net.dries007.tfc.objects.items.food.ItemFoodTFC;
+import net.dries007.tfc.util.agriculture.Crop;
 import net.dries007.tfc.util.agriculture.Food;
 import net.dries007.tfc.util.calendar.CalendarTFC;
 import net.dries007.tfc.util.calendar.ICalendar;
@@ -54,7 +55,7 @@ public enum TPCrop implements ICrop {
      */
     public static int getSkillFoodBonus(Skill skill, Random random)
     {
-        return random.nextInt(2 + (int) (6 * skill.getTotalLevel()));
+        return Crop.getSkillFoodBonus(skill, random);
     }
 
     /**
@@ -66,10 +67,7 @@ public enum TPCrop implements ICrop {
      */
     public static int getSkillSeedBonus(Skill skill, Random random)
     {
-        if (skill.getTier().isAtLeast(SkillTier.ADEPT) && random.nextInt(10 - 2 * skill.getTier().ordinal()) == 0)
-            return 1;
-        else
-            return 0;
+        return Crop.getSkillSeedBonus(skill, random);
     }
 
     // how this crop generates food items

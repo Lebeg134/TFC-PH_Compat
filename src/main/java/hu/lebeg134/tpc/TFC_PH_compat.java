@@ -1,6 +1,6 @@
-package hu.lebeg134.tfc_ph_compat;
+package hu.lebeg134.tpc;
 
-import hu.lebeg134.tfc_ph_compat.proxy.CommonProxy;
+import hu.lebeg134.tpc.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;

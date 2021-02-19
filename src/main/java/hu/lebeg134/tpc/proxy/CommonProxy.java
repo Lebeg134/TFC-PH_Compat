@@ -1,4 +1,4 @@
-package hu.lebeg134.tfc_ph_compat.proxy;
+package hu.lebeg134.tpc.proxy;
 
 import net.minecraft.item.Item;
 

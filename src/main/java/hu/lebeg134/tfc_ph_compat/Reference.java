@@ -1,4 +1,4 @@
-package hu.lebeg134.TFC_PH_compat;
+package hu.lebeg134.tfc_ph_compat;
 
 public class Reference {
     public static final String MODID = "tfc-ph_compat";

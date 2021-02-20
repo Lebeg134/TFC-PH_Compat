@@ -19,7 +19,6 @@ public enum TPFood {
     private final Item item;
     private final FoodData foodData;
 
-
     private final boolean heatable;
     private final float heatCapacity;
     private final float cookingTemp;
@@ -38,6 +37,7 @@ public enum TPFood {
         this.category = category;
         this.item = item;
         this.foodData = new FoodData(hunger, water, saturation, grain, fruit, veg, meat, dairy, decayModifier);
+
 
         this.heatable = cookingTemp >= 0;
         this.heatCapacity = heatCapacity;

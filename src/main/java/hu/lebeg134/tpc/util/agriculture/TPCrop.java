@@ -34,7 +34,7 @@ import static com.pam.harvestcraft.blocks.CropRegistry.SPICELEAF;
 
 
 public enum TPCrop implements ICrop {
-    SPICE(() -> new ItemStack(CropRegistry.getFood(SPICELEAF)),() -> ItemStack.EMPTY,-5f,0f,30f,40f,50f,100f,400f,450f,8,0.5f, CropType.SIMPLE);
+    SPICE(() -> new ItemStack(CropRegistry.getFood(SPICELEAF)),() -> ItemStack.EMPTY,-5f,0f,30f,40f,50f,100f,400f,450f,6,0.5f, CropType.SIMPLE);
 
 
     //CODE from TFC

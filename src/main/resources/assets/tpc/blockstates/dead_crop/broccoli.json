@@ -3,7 +3,7 @@
   "defaults": {
     "model": "cross",
     "textures": {
-      "cross": "tpc:blocks/crop/spiceleaf_dead"
+      "cross": "tpc:blocks/crop/broccoli_dead"
     }
   },
   "variants": {
@@ -13,7 +13,7 @@
     "mature": {
       "false": {
         "textures": {
-          "cross": "tpc:blocks/crop/spiceleaf_dead_young"
+          "cross": "tpc:blocks/crop/broccoli_dead_young"
         }
       },
       "true": {}

@@ -6,14 +6,12 @@ import net.dries007.tfc.objects.blocks.agriculture.BlockCropDead;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropSimple;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropSpreading;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropTFC;
-import net.dries007.tfc.objects.items.ItemsTFC;
 import net.dries007.tfc.objects.items.food.ItemFoodTFC;
 import net.dries007.tfc.util.agriculture.Crop;
 import net.dries007.tfc.util.agriculture.Food;
 import net.dries007.tfc.util.calendar.CalendarTFC;
 import net.dries007.tfc.util.calendar.ICalendar;
 import net.dries007.tfc.util.skills.Skill;
-import net.dries007.tfc.util.skills.SkillTier;
 import net.dries007.tfc.world.classic.worldgen.WorldGenWildCrops;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
@@ -30,11 +28,13 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Supplier;
 
-import static com.pam.harvestcraft.blocks.CropRegistry.SPICELEAF;
 
 
 public enum TPCrop implements ICrop {
-    SPICE(() -> new ItemStack(CropRegistry.getFood(SPICELEAF)),() -> ItemStack.EMPTY,-5f,0f,30f,40f,50f,100f,400f,450f,6,0.5f, CropType.SIMPLE);
+    SPICELEAF(() -> new ItemStack(CropRegistry.getFood(CropRegistry.SPICELEAF)),() -> ItemStack.EMPTY,-5f,0f,30f,40f,50f,100f,400f,450f,6,0.5f, CropType.SIMPLE),
+    BROCCOLI(() -> new ItemStack(CropRegistry.getFood(CropRegistry.BROCCOLI)), () -> ItemStack.EMPTY, 2, 9, 35, 41, 70, 150, 410, 450, 6, 0.6f, CropType.SIMPLE);
+
+
 
 
     //CODE from TFC

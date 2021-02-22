@@ -1,2 +1,23 @@
-item.tpc.crop.seeds.spiceleaf.name=Spice Seeds
+//Seed items
 item.tpc.crop.seeds.broccoli.name=Broccoli Seeds
+item.tpc.crop.seeds.celery.name=Celery Seeds
+item.tpc.crop.seeds.chili_pepper.name=Chili Seeds
+item.tpc.crop.seeds.coffeebean.name=Coffee Seeds
+item.tpc.crop.seeds.cucumber.name=Cucumber Seeds
+item.tpc.crop.seeds.eggplant.name=Eggplant Seeds
+item.tpc.crop.seeds.ginger.name=Ginger Seeds
+item.tpc.crop.seeds.grape.name=Grape Seeds
+item.tpc.crop.seeds.lettuce.name=Lettuce Seeds
+item.tpc.crop.seeds.mushroom.name=Mushroom Spores
+item.tpc.crop.seeds.mustardseeds.name=Mustard Seeds
+item.tpc.crop.seeds.peanut.name= Peanut Seeds
+item.tpc.crop.seeds.peas.name= Pea Seeds
+item.tpc.crop.seeds.peppercorn.name= Peppercorn Seeds
+item.tpc.crop.seeds.radish.name= Radish Seeds
+item.tpc.crop.seeds.scallion.name= Scallion Seeds
+item.tpc.crop.seeds.sesameseeds.name= Sesame Seeds
+item.tpc.crop.seeds.spiceleaf.name=Spice Seeds
+item.tpc.crop.seeds.spinach.name= Spinach Seeds
+item.tpc.crop.seeds.sweetpotato.name= Sweetpotato Seeds
+item.tpc.crop.seeds.tealeaf.name= Tea Seeds
+item.tpc.crop.seeds.zucchini.name= Zucchini Seeds

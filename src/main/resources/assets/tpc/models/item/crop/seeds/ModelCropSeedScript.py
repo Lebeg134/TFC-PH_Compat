@@ -9,7 +9,7 @@ for currentcrop in croplist:
         "layer0": "tpc:items/crop/seeds/spiceleaf"
     }
     }
-    item["textures"]["layer0"].replace("spiceleaf",currentcrop)
+    item["textures"]["layer0"]=item["textures"]["layer0"].replace("spiceleaf",currentcrop)
      
     with open(currentcrop+'.json', 'w') as outfile:
         json.dump(item, outfile)

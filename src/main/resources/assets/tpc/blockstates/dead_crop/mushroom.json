@@ -1,0 +1,1 @@
+{"forge_marker": 1, "defaults": {"model": "crop", "textures": {"crop": "tpc:blocks/crop/mushroom_dead"}}, "variants": {"normal": [{}], "mature": {"false": {"textures": {"crop": "tpc:blocks/crop/mushroom_dead_young"}}, "true": {}}}}

@@ -1,4 +1,4 @@
-//Seed items
+# Seed items
 item.tpc.crop.seeds.broccoli.name=Broccoli Seeds
 item.tpc.crop.seeds.celery.name=Celery Seeds
 item.tpc.crop.seeds.chili_pepper.name=Chili Seeds
@@ -21,3 +21,27 @@ item.tpc.crop.seeds.spinach.name= Spinach Seeds
 item.tpc.crop.seeds.sweetpotato.name= Sweetpotato Seeds
 item.tpc.crop.seeds.tealeaf.name= Tea Seeds
 item.tpc.crop.seeds.zucchini.name= Zucchini Seeds
+
+# Crop blocks
+tile.tpc.crop.broccoli.name = Broccoli
+tile.tpc.crop.celery.name = Celery
+tile.tpc.crop.chili_pepper.name = Chili Pepper
+tile.tpc.crop.coffeebean.name = Coffee Plant
+tile.tpc.crop.cucumber.name = Cucumber
+tile.tpc.crop.eggplant.name = Eggplant
+tile.tpc.crop.ginger.name = Ginger
+tile.tpc.crop.grape.name = Grape
+tile.tpc.crop.lettuce.name = Lettuce
+tile.tpc.crop.mushroom.name = White Mushrooms
+tile.tpc.crop.mustardseeds.name = Mustard Plant
+tile.tpc.crop.peanut.name = Peanuts
+tile.tpc.crop.peas.name = Peas
+tile.tpc.crop.peppercorn.name = Peppercorn
+tile.tpc.crop.radish.name = Radish
+tile.tpc.crop.scallion.name = Scallion
+tile.tpc.crop.sesameseeds.name = Sesame Plant
+tile.tpc.crop.spiceleaf.name = Spice Plant
+tile.tpc.crop.spinach.name = Spinach
+tile.tpc.crop.sweetpotato.name = Sweerpotato
+tile.tpc.crop.tealeaf.name = Tea Plant
+tile.tpc.crop.zucchini.name = Zucchini

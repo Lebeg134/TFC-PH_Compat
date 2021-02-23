@@ -1,6 +1,7 @@
 package hu.lebeg134.tpc;
 
 import hu.lebeg134.tpc.proxy.CommonProxy;
+import hu.lebeg134.tpc.util.handlers.TPLootTableHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -25,6 +26,6 @@ public class TFC_PH_compat
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-
+        TPLootTableHandler.init();
     }
 }

@@ -14,9 +14,82 @@ import static net.dries007.tfc.util.agriculture.Food.Category.*;
 public enum TPFood {
     //SPICELEAF(OTHER,"Spiceleaf" , 4, 5f, 1f, 1.5f, 0f, 0f, 0f, 0f, 1f);
 
+    //plants
 
 
 
+
+    //juices
+    BLACKBERRYJUICEITEM(FRUIT, ItemRegistry.blackberryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    BLUEBERRYJUICEITEM(FRUIT, ItemRegistry.blueberryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    CHERRYJUICEITEM(FRUIT, ItemRegistry.cherryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    CRANBERRYJUICEITEM(FRUIT, ItemRegistry.cranberryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    APPLEJUICEITEM(FRUIT, ItemRegistry.applejuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    LEMONAIDEITEM(FRUIT, ItemRegistry.lemonaideItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    ORANGEJUICEITEM(FRUIT, ItemRegistry.orangejuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    PEACHJUICEITEM(FRUIT, ItemRegistry.peachjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    PLUMJUICEITEM(FRUIT, ItemRegistry.plumjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    RASPBERRYJUICEITEM(FRUIT, ItemRegistry.raspberryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    STRAWBERRYJUICEITEM(FRUIT, ItemRegistry.strawberryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    GRAPEJUICEITEM(FRUIT, ItemRegistry.grapejuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
+    CARROTJUICEITEM(VEGETABLE, ItemRegistry.carrotjuiceItem, 4, 0.6f, 10f, 0f, 1.5f, 0f, 0f, 0f, 2.1f),
+    //smoothies
+    BANANASMOOTHIEITEM(FRUIT, ItemRegistry.bananasmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    BLACKBERRYSMOOTHIEITEM(FRUIT, ItemRegistry.blackberrysmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    BLUEBERRYSMOOTHIEITEM(FRUIT, ItemRegistry.blueberrysmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    CHERRYSMOOTHIEITEM(FRUIT, ItemRegistry.cherrysmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    CRANBERRYSMOOTHIEITEM(FRUIT, ItemRegistry.cranberrysmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    GOOSEBERRYSMOOTHIEITEM(FRUIT, ItemRegistry.gooseberrysmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    APPLESMOOTHIEITEM(FRUIT, ItemRegistry.applesmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    LEMONSMOOTHIEITEM(FRUIT, ItemRegistry.lemonsmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    ORANGESMOOTHIEITEM(FRUIT, ItemRegistry.orangesmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    PEACHSMOOTHIEITEM(FRUIT, ItemRegistry.peachsmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    PLUMSMOOTHIEITEM(FRUIT, ItemRegistry.plumsmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    RASPBERRYSMOOTHIEITEM(FRUIT, ItemRegistry.raspberrysmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    STRAWBERRYSMOOTHIEITEM(FRUIT, ItemRegistry.strawberrysmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    GRAPESMOOTHIEITEM(FRUIT, ItemRegistry.grapesmoothieItem, 4, 1f, 15f, 0f, 0f, 1.5f, 0f, 0f, 2.33f),
+    //yogurts
+    BANANAYOGURTITEM(FRUIT, ItemRegistry.bananayogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    BLACKBERRYYOGURTITEM(FRUIT, ItemRegistry.blackberryyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    BLUEBERRYYOGURTITEM(FRUIT, ItemRegistry.blueberryyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    CHERRYYOGURTITEM(FRUIT, ItemRegistry.cherryyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    CRANBERRYYOGURTITEM(FRUIT, ItemRegistry.cranberryyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    GOOSEBERRYYOGURTITEM(FRUIT, ItemRegistry.gooseberryyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    APPLEYOGURTITEM(FRUIT, ItemRegistry.appleyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    LEMONYOGURTITEM(FRUIT, ItemRegistry.lemonyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    ORANGEYOGURTITEM(FRUIT, ItemRegistry.orangeyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    PEACHYOGURTITEM(FRUIT, ItemRegistry.peachyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    PLUMYOGURTITEM(FRUIT, ItemRegistry.plumyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    RASPBERRYYOGURTITEM(FRUIT, ItemRegistry.raspberryyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    STRAWBERRYYOGURTITEM(FRUIT, ItemRegistry.strawberryyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    GRAPEYOGURTITEM(FRUIT, ItemRegistry.grapeyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
+    //jellys
+    BLACKBERRYJELLYITEM(FRUIT, ItemRegistry.blackberryjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    BLUEBERRYJELLYITEM(FRUIT, ItemRegistry.blueberryjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    CHERRYJELLYITEM(FRUIT, ItemRegistry.cherryjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    CRANBERRYJELLYITEM(FRUIT, ItemRegistry.cranberryjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    GOOSEBERRYJELLYITEM(FRUIT, ItemRegistry.gooseberryjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    APPLEJELLYITEM(FRUIT, ItemRegistry.applejellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    LEMONJELLYITEM(FRUIT, ItemRegistry.lemonjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    ORANGEJELLYITEM(FRUIT, ItemRegistry.orangejellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    PEACHJELLYITEM(FRUIT, ItemRegistry.peachjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    PLUMJELLYITEM(FRUIT, ItemRegistry.plumjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    RASPBERRYJELLYITEM(FRUIT, ItemRegistry.raspberryjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    STRAWBERRYJELLYITEM(FRUIT, ItemRegistry.strawberryjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    GRAPEJELLYITEM(FRUIT, ItemRegistry.grapejellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),
+    //jelly sandwiches
+    BLACKBERRYJELLYSANDWICHITEM(MEAL, ItemRegistry.blackberryjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    BLUEBERRYJELLYSANDWICHITEM(MEAL, ItemRegistry.blueberryjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    CHERRYJELLYSANDWICHITEM(MEAL, ItemRegistry.cherryjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    CRANBERRYJELLYSANDWICHITEM(MEAL, ItemRegistry.cranberryjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    GOOSEBERRYJELLYSANDWICHITEM(MEAL, ItemRegistry.gooseberryjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    APPLEJELLYSANDWICHITEM(MEAL, ItemRegistry.applejellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    LEMONJELLYSANDWICHITEM(MEAL, ItemRegistry.lemonjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    ORANGEJELLYSANDWICHITEM(MEAL, ItemRegistry.orangejellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    PEACHJELLYSANDWICHITEM(MEAL, ItemRegistry.peachjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    PLUMJELLYSANDWICHITEM(MEAL, ItemRegistry.plumjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    RASPBERRYJELLYSANDWICHITEM(MEAL, ItemRegistry.raspberryjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    STRAWBERRYJELLYSANDWICHITEM(MEAL, ItemRegistry.strawberryjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
 
     //Advanced foods
     BAKEDSWEETPOTATOITEM(VEGETABLE, ItemRegistry.bakedsweetpotatoItem, 4 ,2f,0f,0f,1.5f,0f,0f,0f,0.66f),
@@ -82,7 +155,6 @@ public enum TPFood {
     TACOITEM(MEAL, ItemRegistry.tacoItem, 4 ,4f,0f,0f,1f,0f,2f,3f,1.75f),
     FISHTACOITEM(MEAL, ItemRegistry.fishtacoItem, 4 ,3f,0f,0f,1f,0f,2f,3f,1.91f),
     CREAMEDCORNITEM(MEAL, ItemRegistry.creamedcornItem, 4 ,1.4f,0f,0f,1f,0f,0f,1f,1.05f),
-    STRAWBERRYSMOOTHIEITEM(FRUIT, ItemRegistry.strawberrysmoothieItem, 4 ,1f,15f,0f,0f,1.5f,0f,0f,2.33f),
     STRAWBERRYPIEITEM(MEAL, ItemRegistry.strawberrypieItem, 4 ,1.4f,0f,1f,0f,0.5f,0f,0f,1.54f),
     STRAWBERRYSALADITEM(FRUIT, ItemRegistry.strawberrysaladItem, 4 ,1f,0f,0f,0f,2f,0f,0f,3.94f),
     PEANUTBUTTERITEM(OTHER, ItemRegistry.peanutbutterItem, 4 ,1f,0f,1f,0f,0f,0f,0f,0.93f),
@@ -107,14 +179,11 @@ public enum TPFood {
     HOTWINGSITEM(MEAL, ItemRegistry.hotwingsItem, 4 ,3f,0f,0f,2.5f,0f,2.5f,0f,1.75f),
     CHILIPOPPERSITEM(MEAL, ItemRegistry.chilipoppersItem, 4 ,3f,0f,1f,0.5f,0f,0f,3f,0.95f),
     EXTREMECHILIITEM(MEAL, ItemRegistry.extremechiliItem, 4 ,3f,0f,0f,2f,0f,2.5f,0f,1.75f),
-    LEMONAIDEITEM(FRUIT, ItemRegistry.lemonaideItem, 4 ,0.6f,10f,0f,0f,1.6f,0f,0f,2.1f),
     LEMONBARITEM(MEAL, ItemRegistry.lemonbarItem, 4 ,1f,0f,1f,0f,0.8f,0f,0f,2.33f),
     FISHDINNERITEM(MEAL, ItemRegistry.fishdinnerItem, 4 ,2f,0f,1f,0f,0.8f,1f,0f,1.91f),
-    LEMONSMOOTHIEITEM(MEAL, ItemRegistry.lemonsmoothieItem, 4 ,1f,15f,0f,0f,1.5f,0f,0f,2.33f),
     LEMONMERINGUEITEM(MEAL, ItemRegistry.lemonmeringueItem, 4 ,1.4f,0f,1f,0f,1.5f,0f,0f,1.75f),
     CANDIEDLEMONITEM(MEAL, ItemRegistry.candiedlemonItem, 4 ,0.4f,0f,0f,0f,0.8f,0f,0f,1.17f),
     LEMONCHICKENITEM(MEAL, ItemRegistry.lemonchickenItem, 4 ,3f,0f,0f,0f,0.8f,2.5f,0f,2.17f),
-    BLUEBERRYSMOOTHIEITEM(MEAL, ItemRegistry.blueberrysmoothieItem, 4 ,1f,15f,0f,0f,1.5f,0f,0f,2.33f),
     BLUEBERRYPIEITEM(MEAL, ItemRegistry.blueberrypieItem, 4 ,2f,0f,1f,0f,0.8f,0f,0f,1.75f),
     BLUEBERRYMUFFINITEM(MEAL, ItemRegistry.blueberrymuffinItem, 4 ,1f,0f,1f,0f,0.8f,0f,0f,1.75f),
     PANCAKESITEM(MEAL, ItemRegistry.pancakesItem, 4 ,2f,0f,1f,0f,0f,0f,2f,2.33f),
@@ -194,7 +263,6 @@ public enum TPFood {
     BEEFJERKYITEM(MEAL, ItemRegistry.beefjerkyItem, 4 ,1f,0f,0f,0f,0f,1.5f,0f,0.26f),
     SCALLIONBAKEDPOTATOITEM(MEAL, ItemRegistry.scallionbakedpotatoItem, 4 ,3f,0f,0f,2.5f,0f,0f,1f,1.91f),
     CITRUSSALADITEM(MEAL, ItemRegistry.citrussaladItem, 4 ,1f,0f,0f,1f,0.8f,0f,0f,1.91f),
-    PEACHJELLYITEM(MEAL, ItemRegistry.peachjellyItem, 4 ,1.4f,0f,0f,0f,0.5f,0f,1f,1.75f),
     TOASTSANDWICHITEM(MEAL, ItemRegistry.toastsandwichItem, 4 ,4f,0f,3f,0f,0f,0f,2f,1f),
     POTATOANDCHEESEPIROGIITEM(MEAL, ItemRegistry.potatoandcheesepirogiItem, 4 ,5f,0f,1f,1.5f,0f,0f,3f,1f),
     LAVENDERSHORTBREADITEM(BREAD, ItemRegistry.lavendershortbreadItem, 4 ,1f,0f,1f,0f,0f,0f,0f,1f),
@@ -451,8 +519,7 @@ public enum TPFood {
     SOUTHERNSTYLEBREAKFASTITEM(MEAL, ItemRegistry.southernstylebreakfastItem, 4 ,10f,0f,4f,1.14f,0f,5f,4f,1.75f),
     MEATFEASTPIZZAITEM(MEAL, ItemRegistry.meatfeastpizzaItem, 4 ,15f,0f,1f,3.5f,0f,12.5f,3f,1.75f),
     THANKFULDINNERITEM(MEAL, ItemRegistry.thankfuldinnerItem, 4 ,7.9f,0f,3f,2.5f,1.3f,2.5f,2f,1.75f),
-    KOREANDINNERITEM(MEAL, ItemRegistry.koreandinnerItem, 4 ,13f,10f,1f,12.5f,0f,5f,0f,1.75f)
-    ;
+    KOREANDINNERITEM(MEAL, ItemRegistry.koreandinnerItem, 4 ,13f,10f,1f,12.5f,0f,5f,0f,1.75f);
 
 
 

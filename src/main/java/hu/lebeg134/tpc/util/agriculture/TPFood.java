@@ -2,6 +2,7 @@ package hu.lebeg134.tpc.util.agriculture;
 
 
 import com.pam.harvestcraft.blocks.CropRegistry;
+import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
 import net.dries007.tfc.api.capability.food.FoodData;
 import net.dries007.tfc.util.agriculture.Food;
@@ -12,12 +13,35 @@ import javax.annotation.Nonnull;
 import static net.dries007.tfc.util.agriculture.Food.Category.*;
 
 public enum TPFood {
-    //SPICELEAF(OTHER,"Spiceleaf" , 4, 5f, 1f, 1.5f, 0f, 0f, 0f, 0f, 1f);
-
     //plants
+    SPICELEAF(OTHER, "spiceleaf", 4, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0.44f),
+    PEPPERCORN(OTHER, FruitRegistry.getFood("peppercorn"), 4, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0.44f),
+    MUSTARDSEEDS(OTHER, "mustardseeds", 4, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0.44f),
+    SWEETPOTATO(VEGETABLE, "sweetpotato", 4, 2f, 0f, 0f, 1.5f, 0f, 0f, 0f, 0.66f),
+    LETTUCE(VEGETABLE, "lettuce", 4, 0.4f, 0f, 0f, 1f, 0f, 0f, 0f, 1.17f),
+    CUCUMBER(VEGETABLE, "cucumber", 4, 0.4f, 5f, 0f, 1.5f, 0f, 0f, 0f, 3f),
+    WHITEMUSHROOM(OTHER, "whitemushroom", 4, 0.4f, 0f, 0f, 0f, 0f, 0.5f, 0f, 0.88f),
+    CHILIPEPPER(VEGETABLE, "chilipepper", 4, 0.2f, 0f, 0f, 0.5f, 0f, 0f, 0f, 0.66f),
+    PEAS(VEGETABLE, "peas", 4, 0.4f, 0f, 0f, 1f, 0f, 0f, 0f, 4.2f),
+    BROCCOLI(VEGETABLE, "broccoli", 4, 0.4f, 0f, 0f, 1f, 0f, 0f, 0f, 3f),
+    GINGER(OTHER, "ginger", 4, 0.4f, 0f, 0f, 0f, 0f, 0f, 0f, 0.88f),
+    SPINACH(VEGETABLE, "spinach", 4, 0.4f, 0f, 0f, 1f, 0f, 0f, 0f, 3f),
+    SESAMESEEDS(GRAIN, "sesameseeds", 4, 0.2f, 0f, 1f, 0f, 0f, 0f, 0f, 0.24f),
+    COFFEEBEAN(OTHER, "coffeebean", 4, 0.2f, 0f, 0f, 0f, 0f, 0f, 0f, 0.62f),
+    RADISH(VEGETABLE, "radish", 4, 1f, 0f, 0f, 1f, 0f, 0f, 0f, 3f),
+    ZUCCHINI(VEGETABLE, "zucchini", 4, 1f, 0f, 0f, 1f, 0f, 0f, 0f, 3f),
+    GRAPE(FRUIT, "grape", 4, 0.4f, 0f, 0f, 0f, 1f, 0f, 0f, 1.75f),
+    EGGPLANT(VEGETABLE, "eggplant", 4, 1f, 0f, 0f, 1.5f, 0f, 0f, 0f, 1.4f),
+    TEALEAF(OTHER, "tealeaf", 4, 0.2f, 0f, 0f, 0f, 0f, 0f, 0f, 0.7f),
+    PEANUT(GRAIN, "peanut", 4, 1f, 0f, 1f, 0f, 0f, 0f, 0f, 0.47f),
+    CELERY(VEGETABLE, "celery", 4, 1f, 0f, 0f, 1f, 0f, 0f, 0f, 3f),
+    SCALLION(VEGETABLE, "scallion", 4, 0.4f, 0f, 0f, 1f, 0f, 0f, 0f, 1.75f),
 
-
-
+    //Turkey and Duck meats
+    TURKEYRAWITEM(MEAT, ItemRegistry.turkeyrawItem, 4, 1f, 0f, 0f, 0f, 0f, 1.5f, 0f, 3f),
+    TURKEYCOOCKEDITEM(COOKED_MEAT, ItemRegistry.turkeycookedItem, 4, 1f, 0f, 0f, 0f, 0f, 2.5f, 0f, 1.91f),
+    DUCKRAWITEM(MEAT, ItemRegistry.duckrawItem, 4, 2f, 0f, 0f, 0f, 0f, 1.5f, 0f, 3.5f),
+    DUCKCOOCKEDITEM(COOKED_MEAT, ItemRegistry.duckcookedItem, 4, 2f, 0f, 0f, 0f, 0f, 2.5f, 0f, 2.1f),
 
     //juices
     BLACKBERRYJUICEITEM(FRUIT, ItemRegistry.blackberryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),

@@ -29,8 +29,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.function.Supplier;
 
-
-
 public enum TPCrop implements ICrop {
     BROCCOLI(() -> new ItemStack(CropRegistry.getFood(CropRegistry.BROCCOLI)), () -> ItemStack.EMPTY, 2, 9, 35, 41, 70, 150, 410, 450, 6, 0.6f, CropType.SIMPLE),
     CELERY(() -> new ItemStack(CropRegistry.getFood(CropRegistry.CELERY)), () -> ItemStack.EMPTY, 2, 9, 35, 41, 70, 150, 410, 450, 6, 0.5f, CropType.SIMPLE),

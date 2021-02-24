@@ -5,12 +5,12 @@ import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
 import net.dries007.tfc.objects.items.food.ItemFoodTFC;
 import net.dries007.tfc.util.agriculture.Food;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-public class OreDIctHandler {
+public class OreDictHandler {
     public static void Init(){
-
         // PH plants
         OreDictionary.registerOre("categoryOther", CropRegistry.getFood("spiceleaf"));
         OreDictionary.registerOre("categoryOther", FruitRegistry.getFood("peppercorn"));
@@ -324,6 +324,23 @@ public class OreDIctHandler {
         OreDictionary.registerOre("listAllmeatraw", new ItemStack(ItemFoodTFC.get(Food.CAMELIDAE)));
 
         OreDictionary.registerOre("listAllmeatcooked", new ItemStack(ItemFoodTFC.get(Food.COOKED_CAMELIDAE)));
-    }
 
+        //removing items from oreDictionary
+        //This declutters JEI
+        removeAll(FruitRegistry.getFood(FruitRegistry.BANANA));
+    }
+    public static void remove(String name, Item Item)
+    {
+        OreDictionary.getOres(name, false).removeIf(e -> e.getItem().equals(Item));
+
+        //OreDictionary.getOres(name, false).remove(new ItemStack(Item));
+
+
+    }
+    public static void removeAll(Item Item){
+        for (int ID: OreDictionary.getOreIDs(new ItemStack(Item)))
+        {
+            remove(OreDictionary.getOreName(ID) , Item);
+        }
+    }
 }

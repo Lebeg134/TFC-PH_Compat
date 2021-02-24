@@ -114,6 +114,11 @@ public enum TPFood {
     PLUMJELLYSANDWICHITEM(MEAL, ItemRegistry.plumjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
     RASPBERRYJELLYSANDWICHITEM(MEAL, ItemRegistry.raspberryjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
     STRAWBERRYJELLYSANDWICHITEM(MEAL, ItemRegistry.strawberryjellysandwichItem, 4, 3f, 0f, 2f, 0f, 0.85f, 0f, 0f, 1.02f),
+    //pattys
+    GOURMETMUTTONPATTYITEM(MEAT, ItemRegistry.gourmetmuttonpattyItem, 4, 2f, 0f, 0f, 0f, 0f, 1.5f, 0f, 1.5f),
+    GOURMETBEEFPATTYITEM(MEAT, ItemRegistry.gourmetbeefpattyItem, 4, 2f, 0f, 0f, 0f, 0f, 2f, 0f, 1.5f),
+    GOURMETVENISONPATTYITEM(MEAT, ItemRegistry.gourmetvenisonpattyItem, 4, 1f, 0f, 0f, 0f, 0f, 1f, 0f, 1.5f),
+    GOURMETPORKPATTYITEM(MEAT, ItemRegistry.gourmetporkpattyItem, 4, 2f, 0f, 0f, 0f, 0f, 1.5f, 0f, 1.5f),
 
     //Advanced foods
     BAKEDSWEETPOTATOITEM(VEGETABLE, ItemRegistry.bakedsweetpotatoItem, 4 ,2f,0f,0f,1.5f,0f,0f,0f,0.66f),

@@ -13,7 +13,7 @@ public class TPLootTableHandler {
     public static ResourceLocation ANIMALS_DUCK;
     public static ResourceLocation ANIMALS_TURKEY;
 
-    public static void init()
+    public static void Init()
     {
         ANIMALS_DUCK = register("animals/duck");
         ANIMALS_TURKEY = register("animals/turkey");

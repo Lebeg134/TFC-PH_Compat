@@ -38,10 +38,10 @@ public enum TPFood {
     SCALLION(VEGETABLE, "scallion", 4, 0.4f, 0f, 0f, 1f, 0f, 0f, 0f, 1.75f),
 
     //Turkey and Duck meats
-    TURKEYRAWITEM(MEAT, ItemRegistry.turkeyrawItem, 4, 1f, 0f, 0f, 0f, 0f, 1.5f, 0f, 3f, "categoryMeat"),
-    TURKEYCOOCKEDITEM(COOKED_MEAT, ItemRegistry.turkeycookedItem, 4, 1f, 0f, 0f, 0f, 0f, 2.5f, 0f, 1.91f,"categoryCookedMeat"),
-    DUCKRAWITEM(MEAT, ItemRegistry.duckrawItem, 4, 2f, 0f, 0f, 0f, 0f, 1.5f, 0f, 3.5f, "categoryMeat"),
-    DUCKCOOCKEDITEM(COOKED_MEAT, ItemRegistry.duckcookedItem, 4, 2f, 0f, 0f, 0f, 0f, 2.5f, 0f, 2.1f,"categoryCookedMeat"),
+    TURKEYRAWITEM(MEAT, ItemRegistry.turkeyrawItem, 4, 0f, 0f, 0f, 0f, 0f, 1.5f, 0f, 3f),
+    TURKEYCOOKEDITEM(COOKED_MEAT, ItemRegistry.turkeycookedItem, 4, 1f, 0f, 0f, 0f, 0f, 2.5f, 0f, 1.91f),
+    DUCKRAWITEM(MEAT, ItemRegistry.duckrawItem, 4, 0f, 0f, 0f, 0f, 0f, 1.5f, 0f, 3.5f),
+    DUCKCOOKEDITEM(COOKED_MEAT, ItemRegistry.duckcookedItem, 4, 2f, 0f, 0f, 0f, 0f, 2.5f, 0f, 2.1f),
 
     //juices
     BLACKBERRYJUICEITEM(FRUIT, ItemRegistry.blackberryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),

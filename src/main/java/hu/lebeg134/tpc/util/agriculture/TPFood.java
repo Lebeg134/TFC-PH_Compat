@@ -6,6 +6,7 @@ import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
 import net.dries007.tfc.api.capability.food.FoodData;
 import net.dries007.tfc.util.agriculture.Food;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 import javax.annotation.Nonnull;
@@ -42,6 +43,13 @@ public enum TPFood {
     TURKEYCOOKEDITEM(COOKED_MEAT, ItemRegistry.turkeycookedItem, 4, 1f, 0f, 0f, 0f, 0f, 2.5f, 0f, 1.91f),
     DUCKRAWITEM(MEAT, ItemRegistry.duckrawItem, 4, 0f, 0f, 0f, 0f, 0f, 1.5f, 0f, 3.5f),
     DUCKCOOKEDITEM(COOKED_MEAT, ItemRegistry.duckcookedItem, 4, 2f, 0f, 0f, 0f, 0f, 2.5f, 0f, 2.1f),
+
+    //Vanilla items
+    BAKEDPOTATO(VEGETABLE,Items.BAKED_POTATO, 4, 2f, 0f, 0f, 1.5f, 0f, 0f, 0f, 0.666f),
+
+    //PH simple foods
+    PLAINYOGURT(DAIRY, ItemRegistry.plainyogurtItem, 4 ,2f,5f,0f,0f,0f,0f,1.5f,3f),
+
 
     //juices
     BLACKBERRYJUICEITEM(FRUIT, ItemRegistry.blackberryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),

@@ -1,5 +1,6 @@
 package hu.lebeg134.tpc;
 
+import com.pam.harvestcraft.config.ConfigHandler;
 import hu.lebeg134.tpc.proxy.CommonProxy;
 import hu.lebeg134.tpc.util.handlers.OreDictHandler;
 import hu.lebeg134.tpc.util.handlers.TPLootTableHandler;
@@ -7,7 +8,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)

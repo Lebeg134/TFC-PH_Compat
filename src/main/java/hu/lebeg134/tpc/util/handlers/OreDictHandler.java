@@ -619,6 +619,35 @@ public class OreDictHandler {
         removeAll(Items.COOKED_MUTTON);
         removeAll(Items.BEETROOT);
         removeAll(Items.BEETROOT_SEEDS);
+        //unused juices
+        removeAll(ItemRegistry.melonjuiceItem);
+        removeAll(ItemRegistry.papayajuiceItem);
+        removeAll(ItemRegistry.starfruitjuiceItem);
+        removeAll(ItemRegistry.limejuiceItem);
+        removeAll(ItemRegistry.mangojuiceItem);
+        removeAll(ItemRegistry.pomegranatejuiceItem);
+        removeAll(ItemRegistry.kiwijuiceItem);
+        removeAll(ItemRegistry.cactusfruitjuiceItem);
+        removeAll(ItemRegistry.pearjuiceItem);
+        removeAll(ItemRegistry.apricotjuiceItem);
+        removeAll(ItemRegistry.figjuiceItem);
+        removeAll(ItemRegistry.grapefruitjuiceItem);
+        removeAll(ItemRegistry.persimmonjuiceItem);
+        //unused smoothies
+        removeAll(ItemRegistry.melonsmoothieItem);
+        removeAll(ItemRegistry.papayasmoothieItem);
+        removeAll(ItemRegistry.starfruitsmoothieItem);
+        removeAll(ItemRegistry.limesmoothieItem);
+        removeAll(ItemRegistry.mangosmoothieItem);
+        removeAll(ItemRegistry.pomegranatesmoothieItem);
+        removeAll(ItemRegistry.kiwismoothieItem);
+        removeAll(ItemRegistry.pearsmoothieItem);
+        removeAll(ItemRegistry.apricotsmoothieItem);
+        removeAll(ItemRegistry.figsmoothieItem);
+        removeAll(ItemRegistry.grapefruitsmoothieItem);
+        removeAll(ItemRegistry.persimmonsmoothieItem);
+        removeAll(ItemRegistry.coconutsmoothieItem);
+
 
     }
     public static void remove(String name, Item Item)

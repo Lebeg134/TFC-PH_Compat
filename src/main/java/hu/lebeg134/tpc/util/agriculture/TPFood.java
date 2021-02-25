@@ -45,11 +45,12 @@ public enum TPFood {
     DUCKCOOKEDITEM(COOKED_MEAT, ItemRegistry.duckcookedItem, 4, 2f, 0f, 0f, 0f, 0f, 2.5f, 0f, 2.1f),
 
     //Vanilla items
-    BAKEDPOTATO(VEGETABLE,Items.BAKED_POTATO, 4, 2f, 0f, 0f, 1.5f, 0f, 0f, 0f, 0.666f),
+    BAKED_POTATO(VEGETABLE, Items.BAKED_POTATO, 4 ,2f,0f,0f,1.5f,0f,0f,0f,0.66f),
+    RABBIT_STEW(MEAL, Items.RABBIT_STEW, 4 ,4f,15f,0f,2.5f,0f,2f,0f,3f),
+    BEETROOT_SOUP(MEAL, Items.BEETROOT_SOUP, 4 ,3f,15f,0f,2f,0f,0f,2f,3f),
 
     //PH simple foods
     PLAINYOGURT(DAIRY, ItemRegistry.plainyogurtItem, 4 ,2f,5f,0f,0f,0f,0f,1.5f,3f),
-
 
     //juices
     BLACKBERRYJUICEITEM(FRUIT, ItemRegistry.blackberryjuiceItem, 4, 0.6f, 10f, 0f, 0f, 1.5f, 0f, 0f, 2.1f),
@@ -332,6 +333,7 @@ public enum TPFood {
     COLESLAWITEM(MEAL, ItemRegistry.coleslawItem, 4 ,2f,0f,0f,2f,0f,0f,0f,1.91f),
     ENERGYDRINKITEM(OTHER, ItemRegistry.energydrinkItem, 4 ,0f,20f,0f,0f,0f,0f,0f,0.47f),
     FRIEDONIONSITEM(MEAL, ItemRegistry.friedonionsItem, 4 ,1f,0f,0f,1f,0f,0f,0f,0.98f),
+    MINCEPIEITEM(MEAL, ItemRegistry.mincepieItem, 4 ,4f,0f,1f,0f,0.85f,2.5f,1f,2.65f),
     ONIONHAMBURGERITEM(MEAL, ItemRegistry.onionhamburgerItem, 4 ,5f,0f,2f,1f,0f,2f,1f,1.75f),
     PEPPERONIITEM(MEAL, ItemRegistry.pepperoniItem, 4 ,3f,0f,0f,1f,0f,2.5f,0f,1.63f),
     PICKLEDONIONSITEM(VEGETABLE, ItemRegistry.pickledonionsItem, 4 ,0.4f,0f,0f,1f,0f,0f,0f,0.47f),

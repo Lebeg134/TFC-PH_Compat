@@ -619,6 +619,7 @@ public class OreDictHandler {
         removeAll(Items.COOKED_MUTTON);
         removeAll(Items.BEETROOT);
         removeAll(Items.BEETROOT_SEEDS);
+        removeAll(Items.CHORUS_FRUIT);
         //unused juices
         removeAll(ItemRegistry.melonjuiceItem);
         removeAll(ItemRegistry.papayajuiceItem);

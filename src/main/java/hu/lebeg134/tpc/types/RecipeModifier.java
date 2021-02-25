@@ -21,7 +21,6 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:saltitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:friedeggitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:cornmealitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:groundfishitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofeakitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofaconitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofeegitem");
@@ -31,6 +30,11 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofurkeyitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofenisonitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofuduckitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:fruitbaititem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:grainbaititem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:veggiebaititem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:fishtrapbaititem");
+
         //recipes from Grouped recipes
         dummyOutRecipe(recipeRegistry, "harvestcraft:freshwateritem_listAllwater");
         dummyOutRecipe(recipeRegistry, "harvestcraft:freshwateritem_minecraft_water_bucket");
@@ -62,6 +66,8 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_itemsalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_dustsalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_foodsalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:plainyogurtitem_x4");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:plainyogurtitem_x4 - Copy");
 
         //other banned blocks
         dummyOutRecipe(recipeRegistry, "harvestcraft:market");

@@ -19,11 +19,6 @@ public class RecipeModifier {
         IForgeRegistryModifiable<IRecipe> recipeRegistry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
         //banned items
         dummyOutRecipe(recipeRegistry, "harvestcraft:saltitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:freshwateritem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:freshmilkitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:cheeseitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:friedeggitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:cornmealitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:groundfishitem");
@@ -36,6 +31,38 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofurkeyitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofenisonitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofuduckitem");
+        //recipes from Grouped recipes
+        dummyOutRecipe(recipeRegistry, "harvestcraft:freshwateritem_listAllwater");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:freshwateritem_minecraft_water_bucket");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:freshmilkitem_cropAlmond");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:freshmilkitem_minecraft_milk_bucket");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cheeseitem_itemsalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cheeseitem_dustsalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cheeseitem_foodsalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropAlmond");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropAmaranth");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropBanana");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropBarley");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropBean");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropCassava");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropChestnut");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropChickpea");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropCoconut");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropMillet");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropOats");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropPeas");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropPotato");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropQuinoa");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropRice");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropRye");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropSoybean");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropTaro");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_cropWheat");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:flouritem_listAllwheat");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_itemsalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_dustsalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_foodsalt");
+
         //other banned blocks
         dummyOutRecipe(recipeRegistry, "harvestcraft:market");
         dummyOutRecipe(recipeRegistry, "harvestcraft:shippingbin");
@@ -174,7 +201,6 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:tamarind_sapling");
         dummyOutRecipe(recipeRegistry, "harvestcraft:cinnamon_sapling");
 
-
     }
 
     //Code from Pam's harvestcraft
@@ -187,7 +213,7 @@ public class RecipeModifier {
         ResourceLocation location = new ResourceLocation(resourceLocationPath);
         IRecipe recipe = registry.getValue(location);
         if(recipe != null) {
-            registry.remove(location); //modified from remove to clear
+            registry.remove(location);
             registry.register(DummyRecipe.from(recipe));
         } else {
             FMLLog.warning("Unable to find recipe for "+resourceLocationPath);

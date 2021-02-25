@@ -6,11 +6,12 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistryModifiable;
 
 @Mod.EventBusSubscriber
-public class DefaultRecipes {
+public class RecipeModifier {
 
     @SubscribeEvent
     public static void registerRecipes(RegistryEvent.Register<IRecipe> event)
@@ -126,8 +127,52 @@ public class DefaultRecipes {
         dummyOutRecipe(recipeRegistry, "harvestcraft:taroseeditem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:tomatilloseeditem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:juniperberryseeditem");
-
-
+        // sapling recipes
+        dummyOutRecipe(recipeRegistry, "harvestcraft:date_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:papaya_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cherry_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:fig_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:soursop_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:dragonfruit_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:rambutan_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:jackfruit_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:passionfruit_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:apple_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:lemon_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pear_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:olive_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:spiderweb_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:grapefruit_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pomegranate_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cashew_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:vanillabean_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:starfruit_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:banana_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:plum_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:avocado_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pecan_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pistachio_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:hazelnut_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:lime_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:peppercorn_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:almond_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:gooseberry_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:peach_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:chestnut_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pawpaw_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:coconut_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:mango_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:apricot_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:orange_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:walnut_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:lychee_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:persimmon_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:guava_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:breadfruit_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:nutmeg_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:durian_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tamarind_sapling");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cinnamon_sapling");
 
 
     }
@@ -142,7 +187,7 @@ public class DefaultRecipes {
         ResourceLocation location = new ResourceLocation(resourceLocationPath);
         IRecipe recipe = registry.getValue(location);
         if(recipe != null) {
-            registry.remove(location);
+            registry.remove(location); //modified from remove to clear
             registry.register(DummyRecipe.from(recipe));
         } else {
             FMLLog.warning("Unable to find recipe for "+resourceLocationPath);

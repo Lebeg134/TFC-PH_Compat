@@ -4,6 +4,7 @@ import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
 import hu.lebeg134.tpc.util.agriculture.TPCrop;
+import net.dries007.tfc.api.registries.TFCRegistries;
 import net.dries007.tfc.api.types.Metal;
 import net.dries007.tfc.api.types.Rock;
 import net.dries007.tfc.objects.items.ItemSeedsTFC;
@@ -354,8 +355,14 @@ public class OreDictHandler {
 
         //tfc tools
         OreDictionary.registerOre("toolPot", new ItemStack(ItemsTFC.FIRED_POT));
+        //knifes as cuttingboards
+        for (Metal M : TFCRegistries.METALS.getValuesCollection())
+        {
+            Item Tool = ItemMetalTool.REGISTRY.getObject(new ResourceLocation("tfc:metal/knife/"+M.getRegistryName().getPath()));
+            if (Tool != null)
+                OreDictionary.registerOre("toolCuttingboard", new ItemStack(Tool,1,OreDictionary.WILDCARD_VALUE));
+        }
 
-        OreDictionary.registerOre("toolCuttingboard", new ItemStack(ItemMetalTool.REGISTRY.getObject(new ResourceLocation("tfc:metal/knife/bismuth_bronze"))));
 
 
 
@@ -635,15 +642,12 @@ public class OreDictHandler {
         removeAll(ItemRegistry.coconutsmoothieItem);
         // pot
         removeAll(ItemRegistry.potItem);
+        removeAll(ItemRegistry.cuttingboardItem);
 
     }
     public static void remove(String name, Item Item)
     {
         OreDictionary.getOres(name, false).removeIf(e -> e.getItem().equals(Item));
-
-        //OreDictionary.getOres(name, false).remove(new ItemStack(Item));
-
-
     }
     public static void removeAll(Item Item){
         for (int ID: OreDictionary.getOreIDs(new ItemStack(Item)))

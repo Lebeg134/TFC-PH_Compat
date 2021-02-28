@@ -197,7 +197,7 @@ public enum TPFood {
     HASHITEM(MEAL, ItemRegistry.hashItem, 4 ,5f,5f,0f,4f,0f,2.5f,0f,2.33f),
     BRAISEDONIONSITEM(MEAL, ItemRegistry.braisedonionsItem, 4 ,4f,0f,0f,2f,0f,2.5f,0f,1.75f),
     CORNONTHECOBITEM(MEAL, ItemRegistry.cornonthecobItem, 4 ,1f,0f,1f,0f,0f,0f,0f,1.91f),
-    TORTILLAITEM(BREAD, ItemRegistry.tortillaItem, 4 ,1f,0f,0f,0f,0f,0f,0f,1f),
+    TORTILLAITEM(BREAD, ItemRegistry.tortillaItem, 4 ,1f,0f,1f,0f,0f,0f,0f,1f),
     NACHOESITEM(MEAL, ItemRegistry.nachoesItem, 4 ,3f,0f,1f,0f,0f,0f,3f,0.53f),
     TACOITEM(MEAL, ItemRegistry.tacoItem, 4 ,4f,0f,0f,1f,0f,2f,3f,1.75f),
     FISHTACOITEM(MEAL, ItemRegistry.fishtacoItem, 4 ,3f,0f,0f,1f,0f,2f,3f,1.91f),

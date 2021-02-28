@@ -14,13 +14,16 @@ import net.dries007.tfc.api.registries.TFCRegistries;
 import net.dries007.tfc.api.types.Metal;
 import net.dries007.tfc.objects.inventory.ingredient.IIngredient;
 import net.dries007.tfc.objects.inventory.ingredient.IngredientItemFood;
+import net.dries007.tfc.objects.items.ItemsTFC;
 import net.dries007.tfc.objects.items.food.ItemFoodTFC;
 import net.dries007.tfc.objects.items.metal.ItemMetal;
+import net.dries007.tfc.objects.items.metal.ItemMetalTool;
 import net.dries007.tfc.types.DefaultMetals;
 import net.dries007.tfc.util.agriculture.Food;
 import net.dries007.tfc.util.calendar.ICalendar;
 import net.dries007.tfc.util.forge.ForgeRule;
 import net.dries007.tfc.util.skills.SmithingSkill;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.ResourceLocation;
@@ -43,6 +46,15 @@ public class RecipeModifier {
     public static void registerRecipes(RegistryEvent.Register<IRecipe> event)
     {
         IForgeRegistryModifiable<IRecipe> recipeRegistry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
+        //setting containeritems
+        ItemsTFC.FIRED_POT.setContainerItem(ItemsTFC.FIRED_POT);
+        /*
+        for (Metal M : TFCRegistries.METALS.getValuesCollection())
+        {
+            Item Tool = ItemMetalTool.REGISTRY.getObject(new ResourceLocation("tfc:metal/knife/"+M.getRegistryName().getPath()));
+            if (Tool!=null)
+                Tool.setContainerItem(Tool);
+        }*/
         //banned items
         dummyOutRecipe(recipeRegistry, "harvestcraft:saltitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:friedeggitem");
@@ -264,6 +276,7 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:tool_bakewareitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:tool_mortarandpestleitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:tool_juiceritem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tool_cuttingboarditem");
 
 
         dummyOutRecipe(recipeRegistry, "harvestcraft:beefjerkyitem_dustSalt");
@@ -279,6 +292,9 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:pickledonionsitem_dustSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:pickledonionsitem_foodSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:pickledonionsitem_itemSalt");
+
+        //Cuttingboard recipes
+        dummyOutRecipe(recipeRegistry, "harvestcraft:vegetarianlettucewrapitem");
 
 
 

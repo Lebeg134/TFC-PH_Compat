@@ -73,10 +73,10 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofurkeyitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofenisonitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:rawtofuduckitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:fruitbaititem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:grainbaititem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:veggiebaititem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:fishtrapbaititem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:fruitbaititem_x4");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:grainbaititem_x4");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:veggiebaititem_x4");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:fishtrapbaititem_x4");
 
         //recipes from Grouped recipes
         dummyOutRecipe(recipeRegistry, "harvestcraft:freshwateritem_listAllwater");
@@ -274,6 +274,7 @@ public class RecipeModifier {
         //removed recipes in order to implement new ones
         dummyOutRecipe(recipeRegistry, "harvestcraft:grinder");
         dummyOutRecipe(recipeRegistry, "harvestcraft:presser");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:potitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:tool_skilletitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:tool_saucepanitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:tool_bakewareitem");
@@ -293,13 +294,9 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:soysauceitem_dustSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:soysauceitem_foodSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:soysauceitem_itemSalt");
-
-
-
         dummyOutRecipe(recipeRegistry, "harvestcraft:beefjerkyitem_dustSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:beefjerkyitem_foodSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:beefjerkyitem_itemSalt");
-
         dummyOutRecipe(recipeRegistry, "harvestcraft:picklesitem_dustSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:picklesitem_foodSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:picklesitem_itemSalt");

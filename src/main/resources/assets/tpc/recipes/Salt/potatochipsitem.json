@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:potatochipsitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolPot"}, {"type": "forge:ore_dict", "ore": "cropPotato"}, {"type": "forge:ore_dict", "ore": "dustSalt"}, {"type": "forge:ore_dict", "ore": "foodOliveoil"}], "type": "forge:ore_shapeless"}

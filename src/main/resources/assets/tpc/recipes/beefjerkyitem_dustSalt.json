@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "harvestcraft:beefjerkyitem"
+  },
+  "group":"harvestcraft_beefjerkyitem",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllbeefraw"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "dustSalt"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "dustSalt"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

@@ -4,13 +4,18 @@ import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
 import hu.lebeg134.tpc.util.agriculture.TPCrop;
+import net.dries007.tfc.api.types.Metal;
+import net.dries007.tfc.api.types.Rock;
 import net.dries007.tfc.objects.items.ItemSeedsTFC;
+import net.dries007.tfc.objects.items.ItemsTFC;
 import net.dries007.tfc.objects.items.food.ItemFoodTFC;
+import net.dries007.tfc.objects.items.metal.ItemMetalTool;
 import net.dries007.tfc.util.agriculture.Crop;
 import net.dries007.tfc.util.agriculture.Food;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class OreDictHandler {
@@ -47,47 +52,18 @@ public class OreDictHandler {
         OreDictionary.registerOre("categoryCookedMeat", ItemRegistry.duckcookedItem);
 
         //tfc seeds
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.BARLEY));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.MAIZE));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.OAT));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.RICE));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.RYE));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.WHEAT));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.BEET));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.CABBAGE));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.CARROT));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.GARLIC));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.GREEN_BEAN));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.ONION));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.POTATO));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.RED_BELL_PEPPER));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.SOYBEAN));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.SQUASH));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.TOMATO));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop.YELLOW_BELL_PEPPER));
+        for (Crop Crop: Crop.values())
+        {
+            OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop));
+        }
         //tpc seeds
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.SPICELEAF));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.PEPPERCORN));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.PEPPERCORN));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.MUSTARDSEEDS));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.SWEETPOTATO));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.LETTUCE));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.CUCUMBER));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.CHILI_PEPPER));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.PEAS));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.BROCCOLI));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.GINGER));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.SPINACH));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.SESAMESEEDS));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.COFFEEBEAN));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.RADISH));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.ZUCCHINI));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.GRAPE));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.EGGPLANT));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.TEALEAF));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.PEANUT));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.CELERY));
-        OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(TPCrop.SCALLION));
+        for (TPCrop Crop: TPCrop.values())
+        {
+            if (!Crop.name().equals("MUSHROOM"))
+                OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop));
+        }
+
+
 
         //tfc food items
         OreDictionary.registerOre("listAllfruit", new ItemStack(ItemFoodTFC.get(Food.BANANA)));
@@ -373,6 +349,16 @@ public class OreDictHandler {
 
         OreDictionary.registerOre("listAllmeatcooked", new ItemStack(ItemFoodTFC.get(Food.COOKED_CAMELIDAE)));
 
+        //OreDictionary.registerOre("foodSalt", new ItemStack(ItemsTFC.SALT));
+        //OreDictionary.registerOre("itemSalt", new ItemStack(ItemsTFC.SALT));
+
+        //tfc tools
+        OreDictionary.registerOre("toolPot", new ItemStack(ItemsTFC.FIRED_POT));
+
+        OreDictionary.registerOre("toolCuttingboard", new ItemStack(ItemMetalTool.REGISTRY.getObject(new ResourceLocation("tfc:metal/knife/bismuth_bronze"))));
+
+
+
         //removing items from oreDictionary
         //This declutters JEI
         //crops
@@ -570,7 +556,6 @@ public class OreDictHandler {
         //Banned PH items
         removeAll(ItemRegistry.saltItem);
         removeAll(ItemRegistry.freshwaterItem);
-        removeAll(ItemRegistry.freshmilkItem);
         removeAll(ItemRegistry.cheeseItem);
         removeAll(ItemRegistry.flourItem);
         removeAll(ItemRegistry.doughItem);
@@ -648,7 +633,8 @@ public class OreDictHandler {
         removeAll(ItemRegistry.grapefruitsmoothieItem);
         removeAll(ItemRegistry.persimmonsmoothieItem);
         removeAll(ItemRegistry.coconutsmoothieItem);
-
+        // pot
+        removeAll(ItemRegistry.potItem);
 
     }
     public static void remove(String name, Item Item)

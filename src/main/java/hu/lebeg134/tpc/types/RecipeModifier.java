@@ -1,14 +1,40 @@
 package hu.lebeg134.tpc.types;
 
+import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.item.DummyRecipe;
+import com.pam.harvestcraft.item.ItemRegistry;
+import net.dries007.tfc.api.recipes.anvil.AnvilRecipe;
+import net.dries007.tfc.api.recipes.barrel.BarrelRecipe;
+import net.dries007.tfc.api.recipes.barrel.BarrelRecipeFoodPreservation;
+import net.dries007.tfc.api.recipes.barrel.BarrelRecipeFoodTraits;
+import net.dries007.tfc.api.recipes.knapping.KnappingRecipe;
+import net.dries007.tfc.api.recipes.knapping.KnappingRecipeStone;
+import net.dries007.tfc.api.recipes.knapping.KnappingType;
+import net.dries007.tfc.api.registries.TFCRegistries;
+import net.dries007.tfc.api.types.Metal;
+import net.dries007.tfc.objects.inventory.ingredient.IIngredient;
+import net.dries007.tfc.objects.inventory.ingredient.IngredientItemFood;
+import net.dries007.tfc.objects.items.food.ItemFoodTFC;
+import net.dries007.tfc.objects.items.metal.ItemMetal;
+import net.dries007.tfc.types.DefaultMetals;
+import net.dries007.tfc.util.agriculture.Food;
+import net.dries007.tfc.util.calendar.ICalendar;
+import net.dries007.tfc.util.forge.ForgeRule;
+import net.dries007.tfc.util.skills.SmithingSkill;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryModifiable;
+
+import javax.annotation.Nullable;
+
+import static hu.lebeg134.tpc.Reference.MODID;
+import static net.dries007.tfc.objects.fluids.FluidsTFC.BRINE;
 
 @Mod.EventBusSubscriber
 public class RecipeModifier {
@@ -68,6 +94,29 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_foodsalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:plainyogurtitem_x4");
         dummyOutRecipe(recipeRegistry, "harvestcraft:plainyogurtitem_x4 - Copy");
+        //other banned foods
+        dummyOutRecipe(recipeRegistry, "harvestcraft:carrotcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cheesecakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cherrycheesecakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:chocolatesprinklecakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:holidaycakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:lamingtonitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pavlovaitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pineappleupsidedowncakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pumpkincheesecakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:redvelvetcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:rainbowcurryitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:spidereyesoupitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:zombiejerkyitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:epicbaconitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:monsterfrieddumplingsitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:spidereyepieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cobblestonecobbleritem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:patreonpieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:mobsoupitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:epicbltitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:netherstartoastitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:minerstewitem");
 
         //other banned blocks
         dummyOutRecipe(recipeRegistry, "harvestcraft:market");
@@ -207,8 +256,83 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:tamarind_sapling");
         dummyOutRecipe(recipeRegistry, "harvestcraft:cinnamon_sapling");
 
-    }
+        //removed recipes in order to implement new ones
+        dummyOutRecipe(recipeRegistry, "harvestcraft:grinder");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:presser");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tool_skilletitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tool_saucepanitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tool_bakewareitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tool_mortarandpestleitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tool_juiceritem");
 
+
+        dummyOutRecipe(recipeRegistry, "harvestcraft:beefjerkyitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:beefjerkyitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:beefjerkyitem_itemSalt");
+
+        dummyOutRecipe(recipeRegistry, "harvestcraft:picklesitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:picklesitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:picklesitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pickledbeetsitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pickledbeetsitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pickledbeetsitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pickledonionsitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pickledonionsitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pickledonionsitem_itemSalt");
+
+
+
+
+
+    }
+    @SubscribeEvent
+    public static void onRegisterBarrelRecipeEvent(RegistryEvent.Register<BarrelRecipe> event)
+    {
+        event.getRegistry().registerAll(
+            new BarrelRecipe(IIngredient.of(BRINE.get(),125),IIngredient.of(CropRegistry.CUCUMBER,1),null, new ItemStack(ItemRegistry.picklesItem,1),8 * ICalendar.TICKS_IN_HOUR).setRegistryName("pickles"),
+            BarrelRecipeFoodTraits.pickling(new IngredientItemFood(IIngredient.of("foodPickles"))).setRegistryName("pickling_pickles"),
+            BarrelRecipeFoodTraits.brining(new IngredientItemFood(IIngredient.of("foodPickles"))).setRegistryName("brining_pickles"),
+            BarrelRecipeFoodPreservation.vinegar(new IngredientItemFood(IIngredient.of("foodPickles"))).setRegistryName("vinegar_pickles"),
+            new BarrelRecipe(IIngredient.of(BRINE.get(),125),IIngredient.of(ItemFoodTFC.get(Food.BEET),1),null, new ItemStack(ItemRegistry.pickledbeetsItem,1),8 * ICalendar.TICKS_IN_HOUR).setRegistryName("pickledbeets"),
+            BarrelRecipeFoodTraits.pickling(new IngredientItemFood(IIngredient.of("foodPickledbeets"))).setRegistryName("pickling_pickledbeets"),
+            BarrelRecipeFoodTraits.brining(new IngredientItemFood(IIngredient.of("foodPickledbeets"))).setRegistryName("brining_pickledbeets"),
+            BarrelRecipeFoodPreservation.vinegar(new IngredientItemFood(IIngredient.of("foodPickledbeets"))).setRegistryName("vinegar_pickledbeets"),
+            new BarrelRecipe(IIngredient.of(BRINE.get(),125),IIngredient.of(ItemFoodTFC.get(Food.ONION),1),null, new ItemStack(ItemRegistry.pickledonionsItem,1),8 * ICalendar.TICKS_IN_HOUR).setRegistryName("pickledonions"),
+            BarrelRecipeFoodTraits.pickling(new IngredientItemFood(IIngredient.of("foodPickledonions"))).setRegistryName("pickling_pickledonions"),
+            BarrelRecipeFoodTraits.brining(new IngredientItemFood(IIngredient.of("foodPickledonions"))).setRegistryName("brining_pickledonions"),
+            BarrelRecipeFoodPreservation.vinegar(new IngredientItemFood(IIngredient.of("foodPickledonions"))).setRegistryName("vinegar_pickledonions")
+        );
+    }
+    @SubscribeEvent
+    public static void onRegisterKnappingRecipeEvent(RegistryEvent.Register<KnappingRecipe> event)
+    {
+        event.getRegistry().registerAll(
+            new KnappingRecipeStone(KnappingType.STONE,a ->new ItemStack(ItemRegistry.bakewareItem,1),"X   X","XXXXX").setRegistryName("bakeware"),
+            new KnappingRecipeStone(KnappingType.STONE,a ->new ItemStack(ItemRegistry.bakewareItem,2),"X   X","XXXXX","     ","X   X","XXXXX").setRegistryName("bakeware_two"),
+            new KnappingRecipeStone(KnappingType.STONE,a ->new ItemStack(ItemRegistry.mortarandpestleItem,1),"X X X","X X X","X X X","X   X","XXXXX").setRegistryName("mortarandpestle"),
+            new KnappingRecipeStone(KnappingType.STONE,a ->new ItemStack(ItemRegistry.juicerItem,1),"X X X","XXXXX").setRegistryName("juicer"),
+            new KnappingRecipeStone(KnappingType.STONE,a ->new ItemStack(ItemRegistry.juicerItem,2),"X X X","XXXXX","     ","X X X","XXXXX").setRegistryName("juicer_two")
+
+        );
+    }
+    @SubscribeEvent
+    public static void onRegisterAnvilRecipeEvent(RegistryEvent.Register<AnvilRecipe> event)
+    {
+        IForgeRegistry<AnvilRecipe> r = event.getRegistry();
+        addAnvil(r,"pot_copper", Metal.ItemType.INGOT,DefaultMetals.COPPER,new ItemStack(ItemRegistry.skilletItem), Metal.Tier.TIER_I, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.DRAW_ANY,ForgeRule.BEND_ANY);
+        addAnvil(r,"pot_bronze", Metal.ItemType.INGOT,DefaultMetals.BRONZE,new ItemStack(ItemRegistry.skilletItem), Metal.Tier.TIER_II, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.DRAW_ANY,ForgeRule.BEND_ANY);
+        addAnvil(r,"pot_bismuth_bronze", Metal.ItemType.INGOT,DefaultMetals.BISMUTH_BRONZE,new ItemStack(ItemRegistry.skilletItem), Metal.Tier.TIER_II, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.DRAW_ANY,ForgeRule.BEND_ANY);
+        addAnvil(r,"pot_black_bronze", Metal.ItemType.INGOT,DefaultMetals.BLACK_BRONZE,new ItemStack(ItemRegistry.skilletItem), Metal.Tier.TIER_II, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.DRAW_ANY,ForgeRule.BEND_ANY);
+        addAnvil(r,"pot_wrought_iron", Metal.ItemType.INGOT,DefaultMetals.WROUGHT_IRON,new ItemStack(ItemRegistry.skilletItem), Metal.Tier.TIER_III, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.DRAW_ANY,ForgeRule.BEND_ANY);
+        addAnvil(r,"pot_steel", Metal.ItemType.INGOT,DefaultMetals.STEEL,new ItemStack(ItemRegistry.skilletItem), Metal.Tier.TIER_IV, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.DRAW_ANY,ForgeRule.BEND_ANY);
+
+        addAnvil(r,"saucepan_copper", Metal.ItemType.INGOT,DefaultMetals.COPPER,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_I, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
+        addAnvil(r,"saucepan_bronze", Metal.ItemType.INGOT,DefaultMetals.BRONZE,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_II, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
+        addAnvil(r,"saucepan_bismuth_bronze", Metal.ItemType.INGOT,DefaultMetals.BISMUTH_BRONZE,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_II, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
+        addAnvil(r,"saucepan_black_bronze", Metal.ItemType.INGOT,DefaultMetals.BLACK_BRONZE,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_II, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
+        addAnvil(r,"saucepan_wrought_iron", Metal.ItemType.INGOT,DefaultMetals.WROUGHT_IRON,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_III, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
+        addAnvil(r,"saucepan_steel", Metal.ItemType.INGOT,DefaultMetals.STEEL,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_IV, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
+    }
     //Code from Pam's harvestcraft
     /**
      * Prevents issues with vanilla advancements spamming the console
@@ -223,6 +347,20 @@ public class RecipeModifier {
             registry.register(DummyRecipe.from(recipe));
         } else {
             FMLLog.warning("Unable to find recipe for "+resourceLocationPath);
+        }
+    }
+    //Code from TFC
+    private static void addAnvil(IForgeRegistry<AnvilRecipe> registry, String recipeName, Metal.ItemType inputType, ResourceLocation inputMetalRes, ItemStack output, Metal.Tier tier, @Nullable SmithingSkill.Type skillType, ForgeRule... rules)
+    {
+        // Helper method for adding METAL -> STACK
+        Metal inputMetal = TFCRegistries.METALS.getValue(inputMetalRes);
+        if (inputMetal != null && !output.isEmpty())
+        {
+            ItemStack input = new ItemStack(ItemMetal.get(inputMetal, inputType));
+            if (!input.isEmpty() && !output.isEmpty())
+            {
+                registry.register(new AnvilRecipe(new ResourceLocation(MODID, recipeName), IIngredient.of(input), output, tier, skillType, rules));
+            }
         }
     }
 }

@@ -1,0 +1,14 @@
+{
+  "result": {
+    "item": "harvestcraft:freshmilkitem",
+    "count": 1
+  },
+  "group":"harvestcraft_freshmilkitem",
+  "ingredients": [
+    {
+      "type": "tfc:fluid",
+      "fluid": "milk"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

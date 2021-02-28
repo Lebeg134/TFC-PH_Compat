@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:soysauceitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolJuicer"}, {"type": "forge:ore_dict", "ore": "cropSoybean"}, {"type": "tfc:fluid", "fluid": "fresh_water"}, {"type": "forge:ore_dict", "ore": "itemSalt"}], "type": "forge:ore_shapeless"}

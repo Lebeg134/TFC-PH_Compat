@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:doughitem"}, "group": "harvestcraft_doughitem", "ingredients": [{"type": "forge:ore_dict", "ore": "toolMixingbowl"}, {"type": "tfc:fluid", "fluid": "fresh_water"}, {"type": "forge:ore_dict", "ore": "foodFlour"}, {"type": "forge:ore_dict", "ore": "foodSalt"}], "type": "forge:ore_shapeless"}

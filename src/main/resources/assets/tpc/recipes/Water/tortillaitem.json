@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:tortillaitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolSkillet"}, {"type": "forge:ore_dict", "ore": "foodCornmeal"}, {"type": "tfc:fluid", "fluid": "fresh_water"}], "type": "forge:ore_shapeless"}

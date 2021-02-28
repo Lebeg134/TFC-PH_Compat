@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:bubbleteaitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolPot"}, {"type": "forge:ore_dict", "ore": "foodFlour"}, {"type": "forge:ore_dict", "ore": "listAllsugar"}, {"type": "tfc:fluid", "fluid": "fresh_water"}, {"type": "forge:ore_dict", "ore": "cropTea"}], "type": "forge:ore_shapeless"}

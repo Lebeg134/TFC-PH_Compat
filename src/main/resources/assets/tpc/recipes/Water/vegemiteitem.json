@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:vegemiteitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolPot"}, {"type": "forge:ore_dict", "ore": "listAllsugar"}, {"type": "forge:ore_dict", "ore": "cropBarley"}, {"type": "tfc:fluid", "fluid": "fresh_water"}, {"type": "forge:ore_dict", "ore": "cropSpiceleaf"}], "type": "forge:ore_shapeless"}

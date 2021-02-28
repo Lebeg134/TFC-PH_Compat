@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:dandelionteaitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolPot"}, {"type": "forge:ore_dict", "ore": "cropTea"}, {"type": "tfc:fluid", "fluid": "fresh_water"}, {"item": "minecraft:dye", "data": 11}], "type": "forge:ore_shapeless"}

@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:mochiitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolMortarandpestle"}, {"type": "forge:ore_dict", "ore": "cropRice"}, {"type": "forge:ore_dict", "ore": "listAllsugar"}, {"type": "tfc:fluid", "fluid": "fresh_water"}], "type": "forge:ore_shapeless"}

@@ -480,6 +480,51 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:watermelonjellysandwichitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:weekendpicnicitem");
 
+        //Water recipes
+        dummyOutRecipe(recipeRegistry, "harvestcraft:briochebunitem_x3");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:bubbleteaitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cottoncandyitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:crackeritem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:dandelionteaitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:eggtartitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:freshwateritem_listAllwater");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:gritsitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:gumboitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:hoisinsauceitem_x9");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:hotsauceitem_x6_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:hotsauceitem_x6_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:hotsauceitem_x6_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:jelliedeelitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:lycheeteaitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:marshmellowsitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:misosoupitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:mochiitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:mushroomketchupitem_x5");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:oystersauceitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:oystersauceitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:oystersauceitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:saltitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:sauerbratenitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:softpretzelitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:softpretzelitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:softpretzelitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:soysauceitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:soysauceitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:soysauceitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:steamedpeasitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:steamedpeasitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:steamedpeasitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:steamedspinachitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:taffyitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:taffyitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:taffyitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tortillaitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:turkishdelightitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:vegemiteitem");
+
 
 
     }

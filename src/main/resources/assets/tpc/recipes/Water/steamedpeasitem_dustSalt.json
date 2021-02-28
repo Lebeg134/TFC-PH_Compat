@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:steamedpeasitem"}, "group": "harvestcraft_steamedpeasitem", "ingredients": [{"type": "forge:ore_dict", "ore": "toolPot"}, {"type": "forge:ore_dict", "ore": "cropPeas"}, {"type": "tfc:fluid", "fluid": "fresh_water"}, {"type": "forge:ore_dict", "ore": "dustSalt"}], "type": "forge:ore_shapeless"}

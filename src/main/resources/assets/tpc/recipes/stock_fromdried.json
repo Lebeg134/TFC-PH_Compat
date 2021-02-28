@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "harvestcraft:stockitem"
+  },
+
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "toolPot"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "foodDriedsoup"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "foodDriedsoup"
+    },
+    {
+      "type": "tfc:fluid",
+      "fluid": "fresh_water"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

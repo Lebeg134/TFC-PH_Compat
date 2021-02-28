@@ -1,0 +1,22 @@
+{
+  "type": "forge:ore_shaped",
+  "result": {
+    "item": "harvestcraft:energydrinkitem"
+  },
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key":{
+    "a": {
+      "type": "forge:ore_dict",
+      "ore": "listAllsugar"
+    },
+    "b": {
+      "type": "forge:ore_dict",
+      "ore": "foodBubblywater"
+  }
+}
+
+}

@@ -1,15 +1,19 @@
 package hu.lebeg134.tpc.types;
 
 import com.pam.harvestcraft.blocks.CropRegistry;
+import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.DummyRecipe;
 import com.pam.harvestcraft.item.ItemRegistry;
 import net.dries007.tfc.api.recipes.anvil.AnvilRecipe;
 import net.dries007.tfc.api.recipes.barrel.BarrelRecipe;
 import net.dries007.tfc.api.recipes.barrel.BarrelRecipeFoodPreservation;
 import net.dries007.tfc.api.recipes.barrel.BarrelRecipeFoodTraits;
+import net.dries007.tfc.api.recipes.heat.HeatRecipe;
+import net.dries007.tfc.api.recipes.heat.HeatRecipeSimple;
 import net.dries007.tfc.api.recipes.knapping.KnappingRecipe;
 import net.dries007.tfc.api.recipes.knapping.KnappingRecipeStone;
 import net.dries007.tfc.api.recipes.knapping.KnappingType;
+import net.dries007.tfc.api.recipes.quern.QuernRecipe;
 import net.dries007.tfc.api.registries.TFCRegistries;
 import net.dries007.tfc.api.types.Metal;
 import net.dries007.tfc.objects.inventory.ingredient.IIngredient;
@@ -23,6 +27,7 @@ import net.dries007.tfc.util.agriculture.Food;
 import net.dries007.tfc.util.calendar.ICalendar;
 import net.dries007.tfc.util.forge.ForgeRule;
 import net.dries007.tfc.util.skills.SmithingSkill;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
@@ -38,6 +43,7 @@ import javax.annotation.Nullable;
 
 import static hu.lebeg134.tpc.Reference.MODID;
 import static net.dries007.tfc.objects.fluids.FluidsTFC.BRINE;
+import static net.dries007.tfc.objects.fluids.FluidsTFC.MILK;
 
 @Mod.EventBusSubscriber
 public class RecipeModifier {
@@ -104,8 +110,6 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_itemsalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_dustsalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_foodsalt");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:plainyogurtitem_x4");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:plainyogurtitem_x4 - Copy");
         //other banned foods
         dummyOutRecipe(recipeRegistry, "harvestcraft:carrotcakeitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:cheesecakeitem");
@@ -277,6 +281,16 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:tool_mortarandpestleitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:tool_juiceritem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:tool_cuttingboarditem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:plainyogurtitem_x4");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:plainyogurtitem_x4 - Copy");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:bakedsweetpotatoitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:grilledeggplantitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:popcornitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:stockitem_x3_listAllmeatraw");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:stockitem_x3_listAllveggie");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:stockitem_x3_minecraft_bone");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:bubblywateritem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:energydrinkitem");
 
 
         dummyOutRecipe(recipeRegistry, "harvestcraft:beefjerkyitem_dustSalt");
@@ -465,14 +479,15 @@ public class RecipeModifier {
 
 
 
-
-
-
     }
     @SubscribeEvent
     public static void onRegisterBarrelRecipeEvent(RegistryEvent.Register<BarrelRecipe> event)
     {
         event.getRegistry().registerAll(
+            new BarrelRecipe(IIngredient.of(MILK.get(),125), IIngredient.of("listAllmushroom"),null, new ItemStack(ItemRegistry.plainyogurtItem,1),8 * ICalendar.TICKS_IN_HOUR ).setRegistryName("plainyogurt"),
+            new BarrelRecipe(IIngredient.of(MILK.get(),125), IIngredient.of("foodPlainyogurt"),null, new ItemStack(ItemRegistry.plainyogurtItem,2),8 * ICalendar.TICKS_IN_HOUR ).setRegistryName("plainyogurt_x2"),
+
+
             new BarrelRecipe(IIngredient.of(BRINE.get(),125),IIngredient.of(CropRegistry.CUCUMBER,1),null, new ItemStack(ItemRegistry.picklesItem,1),8 * ICalendar.TICKS_IN_HOUR).setRegistryName("pickles"),
             BarrelRecipeFoodTraits.pickling(new IngredientItemFood(IIngredient.of("foodPickles"))).setRegistryName("pickling_pickles"),
             BarrelRecipeFoodTraits.brining(new IngredientItemFood(IIngredient.of("foodPickles"))).setRegistryName("brining_pickles"),
@@ -496,13 +511,27 @@ public class RecipeModifier {
             new KnappingRecipeStone(KnappingType.STONE,a ->new ItemStack(ItemRegistry.mortarandpestleItem,1),"X X X","X X X","X X X","X   X","XXXXX").setRegistryName("mortarandpestle"),
             new KnappingRecipeStone(KnappingType.STONE,a ->new ItemStack(ItemRegistry.juicerItem,1),"X X X","XXXXX").setRegistryName("juicer"),
             new KnappingRecipeStone(KnappingType.STONE,a ->new ItemStack(ItemRegistry.juicerItem,2),"X X X","XXXXX","     ","X X X","XXXXX").setRegistryName("juicer_two")
+        );
+    }
+    @SubscribeEvent
+    public static void onRegisterHeatRecipeEvent(RegistryEvent.Register<HeatRecipe> event) {
+        IForgeRegistry<HeatRecipe> r = event.getRegistry();
+        r.registerAll(
+            new HeatRecipeSimple(IIngredient.of("cropPotato"),new ItemStack(Items.BAKED_POTATO),200,480).setRegistryName("cooked_potato"),
+            new HeatRecipeSimple(IIngredient.of("cropSweetpotato"),new ItemStack(ItemRegistry.bakedsweetpotatoItem),200,480).setRegistryName("cooked_sweetpotato"),
+            new HeatRecipeSimple(IIngredient.of("cropEggplant"),new ItemStack(ItemRegistry.grilledeggplantItem),200,480).setRegistryName("cooked_eggplant"),
+            new HeatRecipeSimple(IIngredient.of("cropCorn"),new ItemStack(ItemRegistry.popcornItem,4),200,480).setRegistryName("popcorn"),
 
+            HeatRecipe.destroy(IIngredient.of(Items.BAKED_POTATO), 480).setRegistryName("burned_potato"),
+            HeatRecipe.destroy(IIngredient.of(ItemRegistry.bakedsweetpotatoItem), 480).setRegistryName("burned_sweetpotato"),
+            HeatRecipe.destroy(IIngredient.of(ItemRegistry.grilledeggplantItem), 480).setRegistryName("burned_eggplant")
         );
     }
     @SubscribeEvent
     public static void onRegisterAnvilRecipeEvent(RegistryEvent.Register<AnvilRecipe> event)
     {
         IForgeRegistry<AnvilRecipe> r = event.getRegistry();
+
         addAnvil(r,"pot_copper", Metal.ItemType.INGOT,DefaultMetals.COPPER,new ItemStack(ItemRegistry.skilletItem), Metal.Tier.TIER_I, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.DRAW_ANY,ForgeRule.BEND_ANY);
         addAnvil(r,"pot_bronze", Metal.ItemType.INGOT,DefaultMetals.BRONZE,new ItemStack(ItemRegistry.skilletItem), Metal.Tier.TIER_II, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.DRAW_ANY,ForgeRule.BEND_ANY);
         addAnvil(r,"pot_bismuth_bronze", Metal.ItemType.INGOT,DefaultMetals.BISMUTH_BRONZE,new ItemStack(ItemRegistry.skilletItem), Metal.Tier.TIER_II, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.DRAW_ANY,ForgeRule.BEND_ANY);
@@ -516,6 +545,15 @@ public class RecipeModifier {
         addAnvil(r,"saucepan_black_bronze", Metal.ItemType.INGOT,DefaultMetals.BLACK_BRONZE,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_II, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
         addAnvil(r,"saucepan_wrought_iron", Metal.ItemType.INGOT,DefaultMetals.WROUGHT_IRON,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_III, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
         addAnvil(r,"saucepan_steel", Metal.ItemType.INGOT,DefaultMetals.STEEL,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_IV, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
+    }
+    @SubscribeEvent
+    public static void onRegisterQuernRecipeEvent(RegistryEvent.Register<QuernRecipe> event){
+        IForgeRegistry<QuernRecipe> r = event.getRegistry();
+        r.registerAll(
+            new QuernRecipe(IIngredient.of("cropPeppercorn"),new ItemStack(ItemRegistry.blackpepperItem, 4)).setRegistryName("blackpepperItem")
+        );
+
+
     }
     //Code from Pam's harvestcraft
     /**

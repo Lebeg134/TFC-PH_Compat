@@ -3,6 +3,8 @@ package hu.lebeg134.tpc;
 import hu.lebeg134.tpc.proxy.CommonProxy;
 import hu.lebeg134.tpc.util.handlers.OreDictHandler;
 import hu.lebeg134.tpc.util.handlers.TPLootTableHandler;
+import net.dries007.tfc.objects.items.food.ItemFoodTFC;
+import net.dries007.tfc.util.agriculture.Food;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;

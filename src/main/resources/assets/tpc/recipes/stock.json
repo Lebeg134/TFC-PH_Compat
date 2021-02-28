@@ -1,0 +1,24 @@
+{
+  "type": "forge:ore_shapeless",
+  "result": {
+    "item": "harvestcraft:stockitem",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "toolPot"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllmeatraw"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllveggie"
+    },
+    {
+      "item": "minecraft:bone"
+    }
+  ]
+}

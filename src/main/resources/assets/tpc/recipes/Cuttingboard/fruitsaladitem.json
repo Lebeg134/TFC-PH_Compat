@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:fruitsaladitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "listAllfruit"}, {"type": "forge:ore_dict", "ore": "listAllfruit"}], "type": "tfc:damage_item_shapeless"}

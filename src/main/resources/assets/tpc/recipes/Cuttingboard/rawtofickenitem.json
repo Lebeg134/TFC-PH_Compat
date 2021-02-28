@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:rawtofickenitem", "count": 4}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodFirmtofu"}, {"type": "forge:ore_dict", "ore": "foodFlour"}, {"type": "forge:ore_dict", "ore": "foodOliveoil"}, {"type": "forge:ore_dict", "ore": "cropSpiceleaf"}], "type": "tfc:damage_item_shapeless"}

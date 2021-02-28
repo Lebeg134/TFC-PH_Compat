@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:potatosaladitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"item": "minecraft:baked_potato"}, {"type": "forge:ore_dict", "ore": "foodMayo"}], "type": "tfc:damage_item_shapeless"}

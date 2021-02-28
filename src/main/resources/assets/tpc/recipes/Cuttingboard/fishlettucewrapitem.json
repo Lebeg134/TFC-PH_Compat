@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:fishlettucewrapitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "cropLettuce"}, {"type": "forge:ore_dict", "ore": "listAllfishcooked"}], "type": "tfc:damage_item_shapeless"}

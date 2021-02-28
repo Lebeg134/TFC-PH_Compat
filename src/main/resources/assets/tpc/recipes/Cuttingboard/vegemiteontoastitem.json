@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:vegemiteontoastitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodVegemite"}, {"type": "forge:ore_dict", "ore": "foodToast"}], "type": "tfc:damage_item_shapeless"}

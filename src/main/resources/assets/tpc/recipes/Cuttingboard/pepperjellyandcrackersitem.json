@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:pepperjellyandcrackersitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodPepperjelly"}, {"type": "forge:ore_dict", "ore": "foodCrackers"}], "type": "tfc:damage_item_shapeless"}

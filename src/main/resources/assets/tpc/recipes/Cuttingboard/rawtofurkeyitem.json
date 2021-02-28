@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:rawtofurkeyitem", "count": 5}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodFirmtofu"}, {"type": "forge:ore_dict", "ore": "foodOliveoil"}, {"type": "forge:ore_dict", "ore": "bread"}], "type": "tfc:damage_item_shapeless"}

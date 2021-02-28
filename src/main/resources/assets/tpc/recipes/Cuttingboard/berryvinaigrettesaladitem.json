@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:berryvinaigrettesaladitem", "count": 3}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "listAllgreenveggie"}, {"type": "forge:ore_dict", "ore": "listAllberry"}, {"type": "forge:ore_dict", "ore": "foodSaladdressing"}], "type": "tfc:damage_item_shapeless"}

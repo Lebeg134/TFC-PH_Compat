@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:hamandcheesesandwichitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodBread"}, {"type": "forge:ore_dict", "ore": "listAllporkcooked"}, {"type": "forge:ore_dict", "ore": "foodCheese"}], "type": "tfc:damage_item_shapeless"}

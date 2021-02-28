@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:raspberryjellysandwichitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "listAllnutbutter"}, {"type": "forge:ore_dict", "ore": "foodRaspberryjelly"}, {"type": "forge:ore_dict", "ore": "bread"}], "type": "tfc:damage_item_shapeless"}

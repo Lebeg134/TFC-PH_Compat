@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:bbqpulledporkitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "listAllporkcooked"}, {"type": "forge:ore_dict", "ore": "foodToast"}, {"type": "forge:ore_dict", "ore": "cropTomato"}, {"type": "forge:ore_dict", "ore": "cropSpiceleaf"}], "type": "tfc:damage_item_shapeless"}

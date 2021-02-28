@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:rawtofuduckitem", "count": 6}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodFirmtofu"}, {"type": "forge:ore_dict", "ore": "cropSeaweed"}, {"type": "forge:ore_dict", "ore": "bread"}, {"type": "forge:ore_dict", "ore": "cropSpiceleaf"}], "type": "tfc:damage_item_shapeless"}

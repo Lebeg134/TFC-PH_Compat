@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:tunaonigiriitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodTunaraw"}, {"type": "forge:ore_dict", "ore": "foodOnigiri"}], "type": "tfc:damage_item_shapeless"}

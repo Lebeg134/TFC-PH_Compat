@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:saltedcaramelitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodCaramel"}, {"type": "forge:ore_dict", "ore": "itemSalt"}], "type": "tfc:damage_item_shapeless"}

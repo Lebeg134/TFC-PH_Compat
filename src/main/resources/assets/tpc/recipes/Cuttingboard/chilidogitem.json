@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:chilidogitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodHotdog"}, {"type": "forge:ore_dict", "ore": "foodChili"}], "type": "tfc:damage_item_shapeless"}

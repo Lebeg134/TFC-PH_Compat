@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:hamsweetpicklesandwichitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodSweetpickle"}, {"type": "forge:ore_dict", "ore": "bread"}, {"type": "forge:ore_dict", "ore": "listAllporkcooked"}, {"type": "forge:ore_dict", "ore": "foodMayo"}], "type": "tfc:damage_item_shapeless"}

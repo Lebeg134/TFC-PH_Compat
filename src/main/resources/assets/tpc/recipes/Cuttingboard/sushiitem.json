@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:sushiitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "listAllfishraw"}, {"type": "forge:ore_dict", "ore": "cropSeaweed"}, {"type": "forge:ore_dict", "ore": "cropRice"}], "type": "tfc:damage_item_shapeless"}

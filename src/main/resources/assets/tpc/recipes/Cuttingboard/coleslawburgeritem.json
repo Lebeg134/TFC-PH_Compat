@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:coleslawburgeritem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodHamburger"}, {"type": "forge:ore_dict", "ore": "foodColeslaw"}], "type": "tfc:damage_item_shapeless"}

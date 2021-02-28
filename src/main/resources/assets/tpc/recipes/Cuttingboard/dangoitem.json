@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:dangoitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodMochi"}, {"type": "forge:ore_dict", "ore": "foodMochi"}, {"type": "forge:ore_dict", "ore": "foodMochi"}, {"type": "forge:ore_dict", "ore": "stickWood"}], "type": "tfc:damage_item_shapeless"}

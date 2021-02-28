@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:sausagerollitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodSausage"}, {"type": "forge:ore_dict", "ore": "foodDough"}, {"type": "forge:ore_dict", "ore": "listAllegg"}], "type": "tfc:damage_item_shapeless"}

@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:deluxechickencurryitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodChickencurry"}, {"type": "forge:ore_dict", "ore": "cropRice"}, {"type": "forge:ore_dict", "ore": "foodNaan"}, {"type": "forge:ore_dict", "ore": "foodMangochutney"}], "type": "tfc:damage_item_shapeless"}

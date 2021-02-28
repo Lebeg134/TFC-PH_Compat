@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:tunapotatoitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodButteredpotato"}, {"type": "forge:ore_dict", "ore": "cropCorn"}, {"type": "forge:ore_dict", "ore": "listAllfishcooked"}], "type": "tfc:damage_item_shapeless"}

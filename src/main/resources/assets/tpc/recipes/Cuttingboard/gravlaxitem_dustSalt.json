@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:gravlaxitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodSalmonraw"}, {"type": "forge:ore_dict", "ore": "listAllsugar"}, {"type": "forge:ore_dict", "ore": "dustSalt"}], "type": "tfc:damage_item_shapeless"}

@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:eggsaladitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodBoiledegg"}, {"type": "forge:ore_dict", "ore": "foodMayo"}], "type": "tfc:damage_item_shapeless"}

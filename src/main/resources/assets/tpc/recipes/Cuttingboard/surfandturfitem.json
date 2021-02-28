@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:surfandturfitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "listAllfishcooked"}, {"type": "forge:ore_dict", "ore": "listAllmeatcooked"}, {"type": "forge:ore_dict", "ore": "listAllveggie"}], "type": "tfc:damage_item_shapeless"}

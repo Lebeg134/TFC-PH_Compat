@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:rawtofeegitem", "count": 2}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodFirmtofu"}, {"item": "minecraft:dye", "data": 11}], "type": "tfc:damage_item_shapeless"}

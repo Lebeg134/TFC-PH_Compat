@@ -1,0 +1,17 @@
+{
+  "type": "forge:ore_shapeless",
+  "result": {
+    "item": "harvestcraft:bratwurstitem",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "foodPorksausage"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "foodBread"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "forge:ore_shapeless",
+  "result": {
+    "item": "tpc:crop/seeds/mushroom",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "mushroombrown"
+    }
+  ]
+}

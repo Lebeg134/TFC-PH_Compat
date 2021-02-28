@@ -1,0 +1,29 @@
+{
+  "type": "forge:ore_shapeless",
+  "result": {
+    "item": "harvestcraft:schnitzelitem",
+    "count": 1
+  },
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "toolSkillet"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "listAllmeatraw"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "foodBatter"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropLemon"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "dustSalt"
+    }
+  ]
+}

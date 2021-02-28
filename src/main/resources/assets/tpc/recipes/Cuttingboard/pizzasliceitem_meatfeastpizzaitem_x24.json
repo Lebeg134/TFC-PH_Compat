@@ -1,1 +1,0 @@
-{"result": {"item": "harvestcraft:pizzasliceitem", "count": 24}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "forge:ore_dict", "ore": "foodMeatfeastpizza"}], "type": "tfc:damage_item_shapeless"}

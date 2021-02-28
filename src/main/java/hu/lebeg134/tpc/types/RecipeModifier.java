@@ -42,8 +42,7 @@ import net.minecraftforge.registries.IForgeRegistryModifiable;
 import javax.annotation.Nullable;
 
 import static hu.lebeg134.tpc.Reference.MODID;
-import static net.dries007.tfc.objects.fluids.FluidsTFC.BRINE;
-import static net.dries007.tfc.objects.fluids.FluidsTFC.MILK;
+import static net.dries007.tfc.objects.fluids.FluidsTFC.*;
 
 @Mod.EventBusSubscriber
 public class RecipeModifier {
@@ -291,6 +290,10 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:stockitem_x3_minecraft_bone");
         dummyOutRecipe(recipeRegistry, "harvestcraft:bubblywateritem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:energydrinkitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:soysauceitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:soysauceitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:soysauceitem_itemSalt");
+
 
 
         dummyOutRecipe(recipeRegistry, "harvestcraft:beefjerkyitem_dustSalt");
@@ -486,7 +489,7 @@ public class RecipeModifier {
         event.getRegistry().registerAll(
             new BarrelRecipe(IIngredient.of(MILK.get(),125), IIngredient.of("listAllmushroom"),null, new ItemStack(ItemRegistry.plainyogurtItem,1),8 * ICalendar.TICKS_IN_HOUR ).setRegistryName("plainyogurt"),
             new BarrelRecipe(IIngredient.of(MILK.get(),125), IIngredient.of("foodPlainyogurt"),null, new ItemStack(ItemRegistry.plainyogurtItem,2),8 * ICalendar.TICKS_IN_HOUR ).setRegistryName("plainyogurt_x2"),
-
+            new BarrelRecipe(IIngredient.of(SALT_WATER.get(),250), IIngredient.of("cropSoybean"),null, new ItemStack(ItemRegistry.soysauceItem,1),4 * ICalendar.TICKS_IN_HOUR ).setRegistryName("soysauceitem"),
 
             new BarrelRecipe(IIngredient.of(BRINE.get(),125),IIngredient.of(CropRegistry.CUCUMBER,1),null, new ItemStack(ItemRegistry.picklesItem,1),8 * ICalendar.TICKS_IN_HOUR).setRegistryName("pickles"),
             BarrelRecipeFoodTraits.pickling(new IngredientItemFood(IIngredient.of("foodPickles"))).setRegistryName("pickling_pickles"),
@@ -521,10 +524,14 @@ public class RecipeModifier {
             new HeatRecipeSimple(IIngredient.of("cropSweetpotato"),new ItemStack(ItemRegistry.bakedsweetpotatoItem),200,480).setRegistryName("cooked_sweetpotato"),
             new HeatRecipeSimple(IIngredient.of("cropEggplant"),new ItemStack(ItemRegistry.grilledeggplantItem),200,480).setRegistryName("cooked_eggplant"),
             new HeatRecipeSimple(IIngredient.of("cropCorn"),new ItemStack(ItemRegistry.popcornItem,4),200,480).setRegistryName("popcorn"),
+            new HeatRecipeSimple(IIngredient.of("foodTurkeyraw"),new ItemStack(ItemRegistry.turkeycookedItem,1),200,480).setRegistryName("cooked_turkey"),
+            new HeatRecipeSimple(IIngredient.of("foodDuckraw"),new ItemStack(ItemRegistry.duckcookedItem,1),200,480).setRegistryName("cooked_duck"),
 
             HeatRecipe.destroy(IIngredient.of(Items.BAKED_POTATO), 480).setRegistryName("burned_potato"),
             HeatRecipe.destroy(IIngredient.of(ItemRegistry.bakedsweetpotatoItem), 480).setRegistryName("burned_sweetpotato"),
-            HeatRecipe.destroy(IIngredient.of(ItemRegistry.grilledeggplantItem), 480).setRegistryName("burned_eggplant")
+            HeatRecipe.destroy(IIngredient.of(ItemRegistry.grilledeggplantItem), 480).setRegistryName("burned_eggplant"),
+            HeatRecipe.destroy(IIngredient.of(ItemRegistry.turkeycookedItem), 480).setRegistryName("burned_turkey"),
+            HeatRecipe.destroy(IIngredient.of(ItemRegistry.duckcookedItem), 480).setRegistryName("burned_duck")
         );
     }
     @SubscribeEvent

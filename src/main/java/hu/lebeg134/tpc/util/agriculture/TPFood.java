@@ -403,6 +403,7 @@ public enum TPFood {
     CHEEZEPUFFSITEM(MEAL, ItemRegistry.cheezepuffsItem, 4 ,3f,0f,0f,0f,0f,0f,3f,0.24f),
     SURFANDTURFITEM(MEAL, ItemRegistry.surfandturfItem, 4 ,3f,0.36f,0f,1f,0f,4f,0f,1.56f),
     LIVERANDONIONSITEM(MEAL, ItemRegistry.liverandonionsItem, 4 ,3f,0.36f,0f,2f,0f,2f,0f,1.62f),
+    FORTUNECOOKIEITEM(MEAL, ItemRegistry.fortunecookieItem, 4 ,1f,0f,1f,0f,0f,0f,0f,1.17f),
     DEVILEDEGGITEM(MEAL, ItemRegistry.deviledeggItem, 4 ,1f,0f,0f,0f,0f,0.8f,0.3f,1.17f),
     MOZZERELLASTICKSITEM(MEAL, ItemRegistry.mozzerellasticksItem, 4 ,4f,0f,1f,0f,0f,0f,3f,1.17f),
     SUCCOTASHITEM(MEAL, ItemRegistry.succotashItem, 4 ,3f,0f,1f,3.5f,0f,0f,1f,1.68f),

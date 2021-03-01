@@ -132,6 +132,8 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:epicbltitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:netherstartoastitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:minerstewitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:creeperwingsitem");
+
 
         //other banned blocks
         dummyOutRecipe(recipeRegistry, "harvestcraft:market");

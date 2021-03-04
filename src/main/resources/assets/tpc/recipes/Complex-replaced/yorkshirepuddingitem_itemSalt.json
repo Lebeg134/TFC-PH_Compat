@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:yorkshirepuddingitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolBakeware"}, {"type": "forge:ore_dict", "ore": "foodBatter"}, {"type": "forge:ore_dict", "ore": "itemSalt"}, {"type": "forge:ore_dict", "ore": "foodStock"}, {"type": "tfc:fluid", "fluid": "milk"}], "type": "forge:ore_shapeless"}

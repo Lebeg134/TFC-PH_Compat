@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:raspberrymilkshakeitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolMixingbowl"}, {"type": "forge:ore_dict", "ore": "cropRaspberry"}, {"type": "tfc:fluid", "fluid": "milk"}, {"type": "forge:ore_dict", "ore": "foodIcecream"}], "type": "forge:ore_shapeless"}

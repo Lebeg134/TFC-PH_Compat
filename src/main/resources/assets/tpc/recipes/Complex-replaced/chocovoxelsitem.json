@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:chocovoxelsitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolMixingbowl"}, {"type": "tfc:fluid", "fluid": "milk"}, {"item": "minecraft:cookie"}], "type": "forge:ore_shapeless"}

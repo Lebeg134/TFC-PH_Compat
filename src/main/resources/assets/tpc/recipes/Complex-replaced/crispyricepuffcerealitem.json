@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:crispyricepuffcerealitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolMixingbowl"}, {"type": "forge:ore_dict", "ore": "cropRice"}, {"type": "tfc:fluid", "fluid": "milk"}], "type": "forge:ore_shapeless"}

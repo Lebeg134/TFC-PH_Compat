@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:chocolatemilkitem"}, "ingredients": [{"type": "tfc:fluid", "fluid": "milk"}, {"type": "forge:ore_dict", "ore": "foodCocoapowder"}], "type": "forge:ore_shapeless"}

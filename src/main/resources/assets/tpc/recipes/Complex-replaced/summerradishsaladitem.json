@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:summerradishsaladitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolMixingbowl"}, {"type": "forge:ore_dict", "ore": "cropRadish"}, {"type": "forge:ore_dict", "ore": "cropOnion"}, {"type": "forge:ore_dict", "ore": "cropCucumber"}, {"type": "tfc:fluid", "fluid": "vinegar"}], "type": "forge:ore_shapeless"}

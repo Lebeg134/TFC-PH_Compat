@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:paneeritem", "count": 5}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolPot"}, {"type": "tfc:fluid", "fluid": "milk"}, {"type": "tfc:fluid", "fluid": "vinegar"}, {"type": "forge:ore_dict", "ore": "foodLemonaide"}], "type": "forge:ore_shapeless"}

@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:pancakesitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolSkillet"}, {"type": "forge:ore_dict", "ore": "foodBatter"}, {"type": "tfc:fluid", "fluid": "milk"}], "type": "forge:ore_shapeless"}

@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:mushroomketchupitem", "count": 5}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolPot"}, {"type": "forge:ore_dict", "ore": "listAllmushroom"}, {"type": "tfc:fluid", "fluid": "vinegar"}, {"type": "forge:ore_dict", "ore": "cropSpiceleaf"}, {"type": "tfc:fluid", "fluid": "fresh_water"}], "type": "forge:ore_shapeless"}

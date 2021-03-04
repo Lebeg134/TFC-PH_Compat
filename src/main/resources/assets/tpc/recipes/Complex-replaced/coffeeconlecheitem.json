@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:coffeeconlecheitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "foodEspresso"}, {"type": "tfc:fluid", "fluid": "milk"}, {"type": "forge:ore_dict", "ore": "foodGroundcinnamon"}], "type": "forge:ore_shapeless"}

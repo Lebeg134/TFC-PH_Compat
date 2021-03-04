@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:cornflakesitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolMixingbowl"}, {"type": "tfc:fluid", "fluid": "milk"}, {"type": "forge:ore_dict", "ore": "cropCorn"}], "type": "forge:ore_shapeless"}

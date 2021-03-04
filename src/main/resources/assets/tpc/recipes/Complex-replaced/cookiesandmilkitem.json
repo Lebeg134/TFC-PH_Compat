@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:cookiesandmilkitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolCuttingboard"}, {"type": "tfc:fluid", "fluid": "milk"}, {"type": "forge:ore_dict", "ore": "listAllcookie"}], "type": "tfc:damage_item_shapeless"}

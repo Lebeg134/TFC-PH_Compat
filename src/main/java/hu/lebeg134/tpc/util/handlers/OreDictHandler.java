@@ -11,12 +11,14 @@ import net.dries007.tfc.objects.items.ItemSeedsTFC;
 import net.dries007.tfc.objects.items.ItemsTFC;
 import net.dries007.tfc.objects.items.food.ItemFoodTFC;
 import net.dries007.tfc.objects.items.metal.ItemMetalTool;
+import net.dries007.tfc.types.DefaultPlants;
 import net.dries007.tfc.util.agriculture.Crop;
 import net.dries007.tfc.util.agriculture.Food;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class OreDictHandler {
@@ -45,6 +47,8 @@ public class OreDictHandler {
         OreDictionary.registerOre("categoryGrain", CropRegistry.getFood("peanut"));
         OreDictionary.registerOre("categoryVegetable", CropRegistry.getFood("celery"));
         OreDictionary.registerOre("categoryVegetable", CropRegistry.getFood("scallion"));
+
+
 
         //harvestcraft meats
         OreDictionary.registerOre("categoryMeat", ItemRegistry.turkeyrawItem);
@@ -350,12 +354,14 @@ public class OreDictHandler {
 
         OreDictionary.registerOre("listAllmeatcooked", new ItemStack(ItemFoodTFC.get(Food.COOKED_CAMELIDAE)));
 
+        OreDictionary.registerOre("listAllmushroom", new ItemStack(ForgeRegistries.ITEMS.getValue(DefaultPlants.PORCINI)));
+
         //OreDictionary.registerOre("foodSalt", new ItemStack(ItemsTFC.SALT));
         //OreDictionary.registerOre("itemSalt", new ItemStack(ItemsTFC.SALT));
 
         //tfc tools
         OreDictionary.registerOre("toolPot", new ItemStack(ItemsTFC.FIRED_POT));
-        //knifes as cuttingboards
+        //knives as cuttingboards
         for (Metal M : TFCRegistries.METALS.getValuesCollection())
         {
             Item Tool = ItemMetalTool.REGISTRY.getObject(new ResourceLocation("tfc:metal/knife/"+M.getRegistryName().getPath()));

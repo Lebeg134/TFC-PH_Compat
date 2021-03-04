@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:marinatedcucumbersitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolPot"}, {"type": "forge:ore_dict", "ore": "cropCucumber"}, {"type": "forge:ore_dict", "ore": "cropOnion"}, {"type": "forge:ore_dict", "ore": "listAllsugar"}, {"type": "tfc:fluid", "fluid": "vinegar"}], "type": "forge:ore_shapeless"}

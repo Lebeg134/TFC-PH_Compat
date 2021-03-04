@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:hotchocolateitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolJuicer"}, {"type": "forge:ore_dict", "ore": "foodCocoapowder"}, {"type": "tfc:fluid", "fluid": "milk"}], "type": "forge:ore_shapeless"}

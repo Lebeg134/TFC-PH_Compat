@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:durianmilkshakeitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolJuicer"}, {"type": "tfc:fluid", "fluid": "milk"}, {"type": "forge:ore_dict", "ore": "cropDurian"}, {"item": "minecraft:snowball"}], "type": "forge:ore_shapeless"}

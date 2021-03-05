@@ -19,51 +19,54 @@ public class CapabilityHandler {
         Item Item = event.getObject().getItem();
         if (Item.getRegistryName() != null)
         {
-            FoodData Fd;
+            FoodData Fd = new FoodData();
             //not the best sollution but it works
+            boolean addCapability = false;
             switch (Item.getRegistryName().toString())
             {
                 case "tfc:food/potato":
                     Fd = Food.POTATO.getData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
                 case "harvestcraft:sweetpotatoitem":
                     Fd = TPFood.SWEETPOTATO.getFoodData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
                 case "tfc:food/maize":
                     Fd = Food.MAIZE.getData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
                 case "tfc:food/maize_grain":
                     Fd = Food.MAIZE_GRAIN.getData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
                 case "harvestcraft:turkeyrawitem":
                     Fd = TPFood.TURKEYRAWITEM.getFoodData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
                 case "harvestcraft:duckrawitem":
                     Fd = TPFood.DUCKRAWITEM.getFoodData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
                 case "minecraft:baked_potato":
                     Fd = TPFood.BAKED_POTATO.getFoodData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
                 case "harvestcraft:bakedsweetpotatoitem":
                     Fd = TPFood.BAKEDSWEETPOTATOITEM.getFoodData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
                 case "harvestcraft:turkeycookeditem":
                     Fd = TPFood.TURKEYCOOKEDITEM.getFoodData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
                 case "harvestcraft:duckcookeditem":
                     Fd = TPFood.DUCKCOOKEDITEM.getFoodData();
-                    event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
+                    addCapability = true;
                     break;
             }
+            if (addCapability)
+                event.addCapability(CapabilityItemHeat.KEY,new FoodHeatHandler(null,Fd,1f,480f));
 
         }
 

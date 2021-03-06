@@ -16,9 +16,10 @@ public class ConfigHandler {
     public boolean detectOtherModCompat;
     public boolean manualCaffeineCompat;
     public boolean disablePHcrops;
+    public boolean removeUnusedRecipes;
+    public boolean enableCakes;
 
-    public final HashMap<String,Boolean> oreDictRemoval = new HashMap<String, Boolean>();
-
+    //public final HashMap<String,Boolean> oreDictRemoval = new HashMap<String, Boolean>();
 
 
     public ConfigHandler(Configuration config){
@@ -43,6 +44,8 @@ public class ConfigHandler {
         detectOtherModCompat = config.getBoolean("detectOtherModCompat", Category_general, true, "Automaticly detects compatible mods and adjusts Oredict and recipes");
         manualCaffeineCompat = config.getBoolean("manualCaffeineCompat", Category_general, false, "if detectOtherModCompat is disabled you can manualy turn on compatibility for some mods WARNING this may cause crashes!");
         disablePHcrops = config.getBoolean("disablePHcrops", Category_general, false, "Disables the new 22crops from spawning in the wild");
+        removeUnusedRecipes = config.getBoolean("removeUnusedRecipes", Category_general, false, "Removes unreachable recipes");
+        enableCakes = config.getBoolean("enableCakes", Category_general, false, "Enables cake crafting recipes");
 
     }
     public void overwritePHConfig(){

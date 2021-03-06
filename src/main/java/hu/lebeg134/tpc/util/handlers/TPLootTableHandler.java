@@ -1,5 +1,6 @@
 package hu.lebeg134.tpc.util.handlers;
 
+import hu.lebeg134.tpc.TFC_PH_compat;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraftforge.event.LootTableLoadEvent;
@@ -21,12 +22,13 @@ public class TPLootTableHandler {
     @SubscribeEvent
     public static void onLootTablesLoaded(LootTableLoadEvent event)
     {
-        if (event.getName().toString().equals("tfc:animals/duck")) {
-            event.setTable(event.getLootTableManager().getLootTableFromLocation(ANIMALS_DUCK));
-        }
-        if (event.getName().toString().equals("tfc:animals/turkey"))
-        {
-            event.setTable(event.getLootTableManager().getLootTableFromLocation(ANIMALS_TURKEY));
+        if(TFC_PH_compat.config.enablePHMeats) {
+            if (event.getName().toString().equals("tfc:animals/duck")) {
+                event.setTable(event.getLootTableManager().getLootTableFromLocation(ANIMALS_DUCK));
+            }
+            if (event.getName().toString().equals("tfc:animals/turkey")) {
+                event.setTable(event.getLootTableManager().getLootTableFromLocation(ANIMALS_TURKEY));
+            }
         }
     }
     private static ResourceLocation register(String id)

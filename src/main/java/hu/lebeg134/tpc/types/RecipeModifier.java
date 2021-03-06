@@ -4,6 +4,7 @@ import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.DummyRecipe;
 import com.pam.harvestcraft.item.ItemRegistry;
+import hu.lebeg134.tpc.TFC_PH_compat;
 import net.dries007.tfc.api.recipes.anvil.AnvilRecipe;
 import net.dries007.tfc.api.recipes.barrel.BarrelRecipe;
 import net.dries007.tfc.api.recipes.barrel.BarrelRecipeFoodPreservation;
@@ -53,13 +54,7 @@ public class RecipeModifier {
         IForgeRegistryModifiable<IRecipe> recipeRegistry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
         //setting containeritems
         ItemsTFC.FIRED_POT.setContainerItem(ItemsTFC.FIRED_POT);
-        /*
-        for (Metal M : TFCRegistries.METALS.getValuesCollection())
-        {
-            Item Tool = ItemMetalTool.REGISTRY.getObject(new ResourceLocation("tfc:metal/knife/"+M.getRegistryName().getPath()));
-            if (Tool!=null)
-                Tool.setContainerItem(Tool);
-        }*/
+
         //banned items
         dummyOutRecipe(recipeRegistry, "harvestcraft:saltitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:friedeggitem");
@@ -112,16 +107,18 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_dustsalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:doughitem_foodsalt");
         //other banned foods
-        dummyOutRecipe(recipeRegistry, "harvestcraft:carrotcakeitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:cheesecakeitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:cherrycheesecakeitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:chocolatesprinklecakeitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:holidaycakeitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:lamingtonitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:pavlovaitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:pineappleupsidedowncakeitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:pumpkincheesecakeitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:redvelvetcakeitem");
+        if (!TFC_PH_compat.config.enableCakes){
+            dummyOutRecipe(recipeRegistry, "harvestcraft:carrotcakeitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:cheesecakeitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:cherrycheesecakeitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:chocolatesprinklecakeitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:holidaycakeitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:lamingtonitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:pavlovaitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:pineappleupsidedowncakeitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:pumpkincheesecakeitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:redvelvetcakeitem");
+        }
         dummyOutRecipe(recipeRegistry, "harvestcraft:rainbowcurryitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:spidereyesoupitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:zombiejerkyitem");

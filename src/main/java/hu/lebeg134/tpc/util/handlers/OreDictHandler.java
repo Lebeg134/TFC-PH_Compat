@@ -3,6 +3,7 @@ package hu.lebeg134.tpc.util.handlers;
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
+import hu.lebeg134.tpc.TFC_PH_compat;
 import hu.lebeg134.tpc.util.agriculture.TPCrop;
 import net.dries007.tfc.api.registries.TFCRegistries;
 import net.dries007.tfc.api.types.Metal;
@@ -48,8 +49,6 @@ public class OreDictHandler {
         OreDictionary.registerOre("categoryVegetable", CropRegistry.getFood("celery"));
         OreDictionary.registerOre("categoryVegetable", CropRegistry.getFood("scallion"));
 
-
-
         //harvestcraft meats
         OreDictionary.registerOre("categoryMeat", ItemRegistry.turkeyrawItem);
         OreDictionary.registerOre("categoryCookedMeat", ItemRegistry.turkeycookedItem);
@@ -67,8 +66,6 @@ public class OreDictHandler {
             if (!Crop.name().equals("MUSHROOM"))
                 OreDictionary.registerOre("listAllseed", ItemSeedsTFC.get(Crop));
         }
-
-
 
         //tfc food items
         OreDictionary.registerOre("listAllfruit", new ItemStack(ItemFoodTFC.get(Food.BANANA)));
@@ -369,75 +366,20 @@ public class OreDictHandler {
                 OreDictionary.registerOre("toolCuttingboard", new ItemStack(Tool,1,OreDictionary.WILDCARD_VALUE));
         }
 
+        //Other mod compatibility
+
+        //Caffeine addon
+        if (TFC_PH_compat.CaffeineAdded || TFC_PH_compat.config.manualCaffeineCompat)
+        {
+            OreDictionary.registerOre("cropCoffee", new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("ca:coffee_ground"))));
+            OreDictionary.registerOre("cropTea", new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("ca:tea_leaves_dried"))));
+        }
 
 
 
         //removing items from oreDictionary
         //This declutters JEI
-        //crops
-        removeAll(CropRegistry.getFood(CropRegistry.BLACKBERRY));
-        removeAll(CropRegistry.getFood(CropRegistry.BLUEBERRY));
-        removeAll(CropRegistry.getFood(CropRegistry.CANDLEBERRY));
-        removeAll(CropRegistry.getFood(CropRegistry.RASPBERRY));
-        removeAll(CropRegistry.getFood(CropRegistry.STRAWBERRY));
-        removeAll(CropRegistry.getFood(CropRegistry.CACTUSFRUIT));
-        removeAll(CropRegistry.getFood(CropRegistry.ASPARAGUS));
-        removeAll(CropRegistry.getFood(CropRegistry.BARLEY));
-        removeAll(CropRegistry.getFood(CropRegistry.OATS));
-        removeAll(CropRegistry.getFood(CropRegistry.RYE));
-        removeAll(CropRegistry.getFood(CropRegistry.CORN));
-        removeAll(CropRegistry.getFood(CropRegistry.BAMBOOSHOOT));
-        removeAll(CropRegistry.getFood(CropRegistry.CANTALOUPE));
-        removeAll(CropRegistry.getFood(CropRegistry.WINTERSQUASH));
-        removeAll(CropRegistry.getFood(CropRegistry.BEET));
-        removeAll(CropRegistry.getFood(CropRegistry.ONION));
-        removeAll(CropRegistry.getFood(CropRegistry.PARSNIP));
-        removeAll(CropRegistry.getFood(CropRegistry.RUTABAGA));
-        removeAll(CropRegistry.getFood(CropRegistry.TURNIP));
-        removeAll(CropRegistry.getFood(CropRegistry.RHUBARB));
-        removeAll(CropRegistry.getFood(CropRegistry.GARLIC));
-        removeAll(CropRegistry.getFood(CropRegistry.CAULIFLOWER));
-        removeAll(CropRegistry.getFood(CropRegistry.LEEK));
-        removeAll(CropRegistry.getFood(CropRegistry.ARTICHOKE));
-        removeAll(CropRegistry.getFood(CropRegistry.BRUSSELSPROUT));
-        removeAll(CropRegistry.getFood(CropRegistry.CABBAGE));
-        removeAll(CropRegistry.getFood(CropRegistry.BEAN));
-        removeAll(CropRegistry.getFood(CropRegistry.SOYBEAN));
-        removeAll(CropRegistry.getFood(CropRegistry.BELLPEPPER));
-        removeAll(CropRegistry.getFood(CropRegistry.OKRA));
-        removeAll(CropRegistry.getFood(CropRegistry.TOMATO));
-        removeAll(CropRegistry.getFood(CropRegistry.COTTON));
-        removeAll(CropRegistry.getFood(CropRegistry.PINEAPPLE));
-        removeAll(CropRegistry.getFood(CropRegistry.KIWI));
-        removeAll(CropRegistry.getFood(CropRegistry.CRANBERRY));
-        removeAll(CropRegistry.getFood(CropRegistry.RICE));
-        removeAll(CropRegistry.getFood(CropRegistry.SEAWEED));
-        removeAll(CropRegistry.getFood(CropRegistry.CURRYLEAF));
-        removeAll(CropRegistry.getFood(CropRegistry.WATERCHESTNUT));
-        removeAll(CropRegistry.getFood(CropRegistry.GIGAPICKLE));
-        removeAll(CropRegistry.getFood(CropRegistry.KALE));
-        removeAll(CropRegistry.getFood(CropRegistry.AGAVE));
-        removeAll(CropRegistry.getFood(CropRegistry.AMARANTH));
-        removeAll(CropRegistry.getFood(CropRegistry.ARROWROOT));
-        removeAll(CropRegistry.getFood(CropRegistry.CASSAVA));
-        removeAll(CropRegistry.getFood(CropRegistry.CHICKPEA));
-        removeAll(CropRegistry.getFood(CropRegistry.ELDERBERRY));
-        removeAll(CropRegistry.getFood(CropRegistry.FLAX));
-        removeAll(CropRegistry.getFood(CropRegistry.GREENGRAPE));
-        removeAll(CropRegistry.getFood(CropRegistry.HUCKLEBERRY));
-        removeAll(CropRegistry.getFood(CropRegistry.JICAMA));
-        removeAll(CropRegistry.getFood(CropRegistry.JUTE));
-        removeAll(CropRegistry.getFood(CropRegistry.KENAF));
-        removeAll(CropRegistry.getFood(CropRegistry.KOHLRABI));
-        removeAll(CropRegistry.getFood(CropRegistry.LENTIL));
-        removeAll(CropRegistry.getFood(CropRegistry.MILLET));
-        removeAll(CropRegistry.getFood(CropRegistry.MULBERRY));
-        removeAll(CropRegistry.getFood(CropRegistry.QUINOA));
-        removeAll(CropRegistry.getFood(CropRegistry.SISAL));
-        removeAll(CropRegistry.getFood(CropRegistry.TARO));
-        removeAll(CropRegistry.getFood(CropRegistry.TOMATILLO));
-        removeAll(CropRegistry.getFood(CropRegistry.JUNIPERBERRY));
-        //seeds
+        //seeds - necessary removal
         removeAll(CropRegistry.getSeed(CropRegistry.BLACKBERRY));
         removeAll(CropRegistry.getSeed(CropRegistry.BLUEBERRY));
         removeAll(CropRegistry.getSeed(CropRegistry.CANDLEBERRY));
@@ -521,51 +463,118 @@ public class OreDictHandler {
         removeAll(CropRegistry.getSeed(CropRegistry.TARO));
         removeAll(CropRegistry.getSeed(CropRegistry.TOMATILLO));
         removeAll(CropRegistry.getSeed(CropRegistry.JUNIPERBERRY));
-        //fruits
-        removeAll(FruitRegistry.getFood(FruitRegistry.DATE));
-        removeAll(FruitRegistry.getFood(FruitRegistry.PAPAYA));
-        removeAll(FruitRegistry.getFood(FruitRegistry.CHERRY));
-        removeAll(FruitRegistry.getFood(FruitRegistry.FIG));
-        removeAll(FruitRegistry.getFood(FruitRegistry.SOURSOP));
-        removeAll(FruitRegistry.getFood(FruitRegistry.DRAGONFRUIT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.RAMBUTAN));
-        removeAll(FruitRegistry.getFood(FruitRegistry.JACKFRUIT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.PASSIONFRUIT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.APPLE));
-        removeAll(FruitRegistry.getFood(FruitRegistry.LEMON));
-        removeAll(FruitRegistry.getFood(FruitRegistry.PEAR));
-        removeAll(FruitRegistry.getFood(FruitRegistry.OLIVE));
-        removeAll(FruitRegistry.getFood(FruitRegistry.SPIDERWEB));
-        removeAll(FruitRegistry.getFood(FruitRegistry.GRAPEFRUIT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.POMEGRANATE));
-        removeAll(FruitRegistry.getFood(FruitRegistry.CASHEW));
-        removeAll(FruitRegistry.getFood(FruitRegistry.VANILLABEAN));
-        removeAll(FruitRegistry.getFood(FruitRegistry.STARFRUIT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.BANANA));
-        removeAll(FruitRegistry.getFood(FruitRegistry.PLUM));
-        removeAll(FruitRegistry.getFood(FruitRegistry.AVOCADO));
-        removeAll(FruitRegistry.getFood(FruitRegistry.PECAN));
-        removeAll(FruitRegistry.getFood(FruitRegistry.PISTACHIO));
-        removeAll(FruitRegistry.getFood(FruitRegistry.HAZELNUT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.LIME));
-        removeAll(FruitRegistry.getFood(FruitRegistry.ALMOND));
-        removeAll(FruitRegistry.getFood(FruitRegistry.GOOSEBERRY));
-        removeAll(FruitRegistry.getFood(FruitRegistry.PEACH));
-        removeAll(FruitRegistry.getFood(FruitRegistry.CHESTNUT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.PAWPAW));
-        removeAll(FruitRegistry.getFood(FruitRegistry.COCONUT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.MANGO));
-        removeAll(FruitRegistry.getFood(FruitRegistry.APRICOT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.ORANGE));
-        removeAll(FruitRegistry.getFood(FruitRegistry.WALNUT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.LYCHEE));
-        removeAll(FruitRegistry.getFood(FruitRegistry.PERSIMMON));
-        removeAll(FruitRegistry.getFood(FruitRegistry.GUAVA));
-        removeAll(FruitRegistry.getFood(FruitRegistry.BREADFRUIT));
-        removeAll(FruitRegistry.getFood(FruitRegistry.NUTMEG));
-        removeAll(FruitRegistry.getFood(FruitRegistry.DURIAN));
-        removeAll(FruitRegistry.getFood(FruitRegistry.TAMARIND));
-        removeAll(FruitRegistry.getFood(FruitRegistry.CINNAMON));
+        //crops
+        if (!TFC_PH_compat.config.disableOredictRemoval){
+            removeAll(CropRegistry.getFood(CropRegistry.BLACKBERRY));
+            removeAll(CropRegistry.getFood(CropRegistry.BLUEBERRY));
+            removeAll(CropRegistry.getFood(CropRegistry.CANDLEBERRY));
+            removeAll(CropRegistry.getFood(CropRegistry.RASPBERRY));
+            removeAll(CropRegistry.getFood(CropRegistry.STRAWBERRY));
+            removeAll(CropRegistry.getFood(CropRegistry.CACTUSFRUIT));
+            removeAll(CropRegistry.getFood(CropRegistry.ASPARAGUS));
+            removeAll(CropRegistry.getFood(CropRegistry.BARLEY));
+            removeAll(CropRegistry.getFood(CropRegistry.OATS));
+            removeAll(CropRegistry.getFood(CropRegistry.RYE));
+            removeAll(CropRegistry.getFood(CropRegistry.CORN));
+            removeAll(CropRegistry.getFood(CropRegistry.BAMBOOSHOOT));
+            removeAll(CropRegistry.getFood(CropRegistry.CANTALOUPE));
+            removeAll(CropRegistry.getFood(CropRegistry.WINTERSQUASH));
+            removeAll(CropRegistry.getFood(CropRegistry.BEET));
+            removeAll(CropRegistry.getFood(CropRegistry.ONION));
+            removeAll(CropRegistry.getFood(CropRegistry.PARSNIP));
+            removeAll(CropRegistry.getFood(CropRegistry.RUTABAGA));
+            removeAll(CropRegistry.getFood(CropRegistry.TURNIP));
+            removeAll(CropRegistry.getFood(CropRegistry.RHUBARB));
+            removeAll(CropRegistry.getFood(CropRegistry.GARLIC));
+            removeAll(CropRegistry.getFood(CropRegistry.CAULIFLOWER));
+            removeAll(CropRegistry.getFood(CropRegistry.LEEK));
+            removeAll(CropRegistry.getFood(CropRegistry.ARTICHOKE));
+            removeAll(CropRegistry.getFood(CropRegistry.BRUSSELSPROUT));
+            removeAll(CropRegistry.getFood(CropRegistry.CABBAGE));
+            removeAll(CropRegistry.getFood(CropRegistry.BEAN));
+            removeAll(CropRegistry.getFood(CropRegistry.SOYBEAN));
+            removeAll(CropRegistry.getFood(CropRegistry.BELLPEPPER));
+            removeAll(CropRegistry.getFood(CropRegistry.OKRA));
+            removeAll(CropRegistry.getFood(CropRegistry.TOMATO));
+            removeAll(CropRegistry.getFood(CropRegistry.COTTON));
+            removeAll(CropRegistry.getFood(CropRegistry.PINEAPPLE));
+            removeAll(CropRegistry.getFood(CropRegistry.KIWI));
+            removeAll(CropRegistry.getFood(CropRegistry.CRANBERRY));
+            removeAll(CropRegistry.getFood(CropRegistry.RICE));
+            removeAll(CropRegistry.getFood(CropRegistry.SEAWEED));
+            removeAll(CropRegistry.getFood(CropRegistry.CURRYLEAF));
+            removeAll(CropRegistry.getFood(CropRegistry.WATERCHESTNUT));
+            removeAll(CropRegistry.getFood(CropRegistry.GIGAPICKLE));
+            removeAll(CropRegistry.getFood(CropRegistry.KALE));
+            removeAll(CropRegistry.getFood(CropRegistry.AGAVE));
+            removeAll(CropRegistry.getFood(CropRegistry.AMARANTH));
+            removeAll(CropRegistry.getFood(CropRegistry.ARROWROOT));
+            removeAll(CropRegistry.getFood(CropRegistry.CASSAVA));
+            removeAll(CropRegistry.getFood(CropRegistry.CHICKPEA));
+            removeAll(CropRegistry.getFood(CropRegistry.ELDERBERRY));
+            removeAll(CropRegistry.getFood(CropRegistry.FLAX));
+            removeAll(CropRegistry.getFood(CropRegistry.GREENGRAPE));
+            removeAll(CropRegistry.getFood(CropRegistry.HUCKLEBERRY));
+            removeAll(CropRegistry.getFood(CropRegistry.JICAMA));
+            removeAll(CropRegistry.getFood(CropRegistry.JUTE));
+            removeAll(CropRegistry.getFood(CropRegistry.KENAF));
+            removeAll(CropRegistry.getFood(CropRegistry.KOHLRABI));
+            removeAll(CropRegistry.getFood(CropRegistry.LENTIL));
+            removeAll(CropRegistry.getFood(CropRegistry.MILLET));
+            removeAll(CropRegistry.getFood(CropRegistry.MULBERRY));
+            removeAll(CropRegistry.getFood(CropRegistry.QUINOA));
+            removeAll(CropRegistry.getFood(CropRegistry.SISAL));
+            removeAll(CropRegistry.getFood(CropRegistry.TARO));
+            removeAll(CropRegistry.getFood(CropRegistry.TOMATILLO));
+            removeAll(CropRegistry.getFood(CropRegistry.JUNIPERBERRY));
+
+            //fruits
+            removeAll(FruitRegistry.getFood(FruitRegistry.DATE));
+            removeAll(FruitRegistry.getFood(FruitRegistry.PAPAYA));
+            removeAll(FruitRegistry.getFood(FruitRegistry.CHERRY));
+            removeAll(FruitRegistry.getFood(FruitRegistry.FIG));
+            removeAll(FruitRegistry.getFood(FruitRegistry.SOURSOP));
+            removeAll(FruitRegistry.getFood(FruitRegistry.DRAGONFRUIT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.RAMBUTAN));
+            removeAll(FruitRegistry.getFood(FruitRegistry.JACKFRUIT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.PASSIONFRUIT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.APPLE));
+            removeAll(FruitRegistry.getFood(FruitRegistry.LEMON));
+            removeAll(FruitRegistry.getFood(FruitRegistry.PEAR));
+            removeAll(FruitRegistry.getFood(FruitRegistry.OLIVE));
+            removeAll(FruitRegistry.getFood(FruitRegistry.SPIDERWEB));
+            removeAll(FruitRegistry.getFood(FruitRegistry.GRAPEFRUIT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.POMEGRANATE));
+            removeAll(FruitRegistry.getFood(FruitRegistry.CASHEW));
+            removeAll(FruitRegistry.getFood(FruitRegistry.VANILLABEAN));
+            removeAll(FruitRegistry.getFood(FruitRegistry.STARFRUIT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.BANANA));
+            removeAll(FruitRegistry.getFood(FruitRegistry.PLUM));
+            removeAll(FruitRegistry.getFood(FruitRegistry.AVOCADO));
+            removeAll(FruitRegistry.getFood(FruitRegistry.PECAN));
+            removeAll(FruitRegistry.getFood(FruitRegistry.PISTACHIO));
+            removeAll(FruitRegistry.getFood(FruitRegistry.HAZELNUT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.LIME));
+            removeAll(FruitRegistry.getFood(FruitRegistry.ALMOND));
+            removeAll(FruitRegistry.getFood(FruitRegistry.GOOSEBERRY));
+            removeAll(FruitRegistry.getFood(FruitRegistry.PEACH));
+            removeAll(FruitRegistry.getFood(FruitRegistry.CHESTNUT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.PAWPAW));
+            removeAll(FruitRegistry.getFood(FruitRegistry.COCONUT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.MANGO));
+            removeAll(FruitRegistry.getFood(FruitRegistry.APRICOT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.ORANGE));
+            removeAll(FruitRegistry.getFood(FruitRegistry.WALNUT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.LYCHEE));
+            removeAll(FruitRegistry.getFood(FruitRegistry.PERSIMMON));
+            removeAll(FruitRegistry.getFood(FruitRegistry.GUAVA));
+            removeAll(FruitRegistry.getFood(FruitRegistry.BREADFRUIT));
+            removeAll(FruitRegistry.getFood(FruitRegistry.NUTMEG));
+            removeAll(FruitRegistry.getFood(FruitRegistry.DURIAN));
+            removeAll(FruitRegistry.getFood(FruitRegistry.TAMARIND));
+            removeAll(FruitRegistry.getFood(FruitRegistry.CINNAMON));
+        }
+
         //Banned PH items
         removeAll(ItemRegistry.saltItem);
         removeAll(ItemRegistry.freshwaterItem);
@@ -618,37 +627,47 @@ public class OreDictHandler {
         removeAll(Items.BEETROOT);
         removeAll(Items.BEETROOT_SEEDS);
         removeAll(Items.CHORUS_FRUIT);
-        //unused juices
-        removeAll(ItemRegistry.melonjuiceItem);
-        removeAll(ItemRegistry.papayajuiceItem);
-        removeAll(ItemRegistry.starfruitjuiceItem);
-        removeAll(ItemRegistry.limejuiceItem);
-        removeAll(ItemRegistry.mangojuiceItem);
-        removeAll(ItemRegistry.pomegranatejuiceItem);
-        removeAll(ItemRegistry.kiwijuiceItem);
-        removeAll(ItemRegistry.cactusfruitjuiceItem);
-        removeAll(ItemRegistry.pearjuiceItem);
-        removeAll(ItemRegistry.apricotjuiceItem);
-        removeAll(ItemRegistry.figjuiceItem);
-        removeAll(ItemRegistry.grapefruitjuiceItem);
-        removeAll(ItemRegistry.persimmonjuiceItem);
-        //unused smoothies
-        removeAll(ItemRegistry.melonsmoothieItem);
-        removeAll(ItemRegistry.papayasmoothieItem);
-        removeAll(ItemRegistry.starfruitsmoothieItem);
-        removeAll(ItemRegistry.limesmoothieItem);
-        removeAll(ItemRegistry.mangosmoothieItem);
-        removeAll(ItemRegistry.pomegranatesmoothieItem);
-        removeAll(ItemRegistry.kiwismoothieItem);
-        removeAll(ItemRegistry.pearsmoothieItem);
-        removeAll(ItemRegistry.apricotsmoothieItem);
-        removeAll(ItemRegistry.figsmoothieItem);
-        removeAll(ItemRegistry.grapefruitsmoothieItem);
-        removeAll(ItemRegistry.persimmonsmoothieItem);
-        removeAll(ItemRegistry.coconutsmoothieItem);
+        if (!TFC_PH_compat.config.disableOredictRemoval){
+            //unused juices
+            removeAll(ItemRegistry.melonjuiceItem);
+            removeAll(ItemRegistry.papayajuiceItem);
+            removeAll(ItemRegistry.starfruitjuiceItem);
+            removeAll(ItemRegistry.limejuiceItem);
+            removeAll(ItemRegistry.mangojuiceItem);
+            removeAll(ItemRegistry.pomegranatejuiceItem);
+            removeAll(ItemRegistry.kiwijuiceItem);
+            removeAll(ItemRegistry.cactusfruitjuiceItem);
+            removeAll(ItemRegistry.pearjuiceItem);
+            removeAll(ItemRegistry.apricotjuiceItem);
+            removeAll(ItemRegistry.figjuiceItem);
+            removeAll(ItemRegistry.grapefruitjuiceItem);
+            removeAll(ItemRegistry.persimmonjuiceItem);
+            //unused smoothies
+            removeAll(ItemRegistry.melonsmoothieItem);
+            removeAll(ItemRegistry.papayasmoothieItem);
+            removeAll(ItemRegistry.starfruitsmoothieItem);
+            removeAll(ItemRegistry.limesmoothieItem);
+            removeAll(ItemRegistry.mangosmoothieItem);
+            removeAll(ItemRegistry.pomegranatesmoothieItem);
+            removeAll(ItemRegistry.kiwismoothieItem);
+            removeAll(ItemRegistry.pearsmoothieItem);
+            removeAll(ItemRegistry.apricotsmoothieItem);
+            removeAll(ItemRegistry.figsmoothieItem);
+            removeAll(ItemRegistry.grapefruitsmoothieItem);
+            removeAll(ItemRegistry.persimmonsmoothieItem);
+            removeAll(ItemRegistry.coconutsmoothieItem);
+        }
         // pot
         removeAll(ItemRegistry.potItem);
         removeAll(ItemRegistry.cuttingboardItem);
+
+        //Other mod compatibility
+
+        //Caffeine addon
+        if (TFC_PH_compat.CaffeineAdded || TFC_PH_compat.config.manualCaffeineCompat){
+            removeAll(CropRegistry.getFood(CropRegistry.COFFEE));
+            removeAll(CropRegistry.getFood(CropRegistry.TEALEAF));
+        }
 
     }
     public static void remove(String name, Item Item)

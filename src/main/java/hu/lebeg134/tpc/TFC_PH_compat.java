@@ -16,6 +16,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
+import java.io.File;
+
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class TFC_PH_compat
 {
@@ -35,7 +37,7 @@ public class TFC_PH_compat
             if (Mod.getName().equals("Caffeine Addon"))
                 CaffeineAdded = true;
         }
-        config = new ConfigHandler(new Configuration(event.getSuggestedConfigurationFile()));
+        config = new ConfigHandler(new Configuration(new File(event.getModConfigurationDirectory(), "TFC-PH_compat"+".cfg")));
     }
 
     @EventHandler

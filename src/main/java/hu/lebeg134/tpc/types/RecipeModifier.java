@@ -1,7 +1,6 @@
 package hu.lebeg134.tpc.types;
 
 import com.pam.harvestcraft.blocks.CropRegistry;
-import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.DummyRecipe;
 import com.pam.harvestcraft.item.ItemRegistry;
 import hu.lebeg134.tpc.TFC_PH_compat;
@@ -22,14 +21,12 @@ import net.dries007.tfc.objects.inventory.ingredient.IngredientItemFood;
 import net.dries007.tfc.objects.items.ItemsTFC;
 import net.dries007.tfc.objects.items.food.ItemFoodTFC;
 import net.dries007.tfc.objects.items.metal.ItemMetal;
-import net.dries007.tfc.objects.items.metal.ItemMetalTool;
 import net.dries007.tfc.types.DefaultMetals;
 import net.dries007.tfc.util.agriculture.Food;
 import net.dries007.tfc.util.calendar.ICalendar;
 import net.dries007.tfc.util.forge.ForgeRule;
 import net.dries007.tfc.util.skills.SmithingSkill;
 import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.ResourceLocation;
@@ -134,6 +131,7 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:creeperwingsitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:minecraft_bread");
         dummyOutRecipe(recipeRegistry, "harvestcraft:minecraft_bakedpotato");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:fish_0");
 
         //other banned blocks
         dummyOutRecipe(recipeRegistry, "harvestcraft:market");
@@ -578,6 +576,14 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:yorkshirepuddingitem_dustSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:yorkshirepuddingitem_foodSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:yorkshirepuddingitem_itemSalt");
+
+        //other mod Compatibility recipe removals
+
+        //TFC Caffeine addon
+        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat){
+            dummyOutRecipe(recipeRegistry, "harvestcraft:coffeeitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:teaitem");
+        }
 
     }
     @SubscribeEvent

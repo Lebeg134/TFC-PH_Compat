@@ -369,7 +369,7 @@ public class OreDictHandler {
         //Other mod compatibility
 
         //Caffeine addon
-        if (TFC_PH_compat.CaffeineAdded || TFC_PH_compat.config.manualCaffeineCompat)
+        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat)
         {
             OreDictionary.registerOre("cropCoffee", new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("ca:coffee_ground"))));
             OreDictionary.registerOre("cropTea", new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("ca:tea_leaves_dried"))));
@@ -664,7 +664,7 @@ public class OreDictHandler {
         //Other mod compatibility
 
         //Caffeine addon
-        if (TFC_PH_compat.CaffeineAdded || TFC_PH_compat.config.manualCaffeineCompat){
+        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat){
             removeAll(CropRegistry.getFood(CropRegistry.COFFEE));
             removeAll(CropRegistry.getFood(CropRegistry.TEALEAF));
         }

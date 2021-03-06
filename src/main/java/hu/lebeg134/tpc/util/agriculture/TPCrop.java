@@ -68,7 +68,7 @@ public enum TPCrop implements ICrop {
                         TFC_PH_compat.CaffeineAdded)||
                         TFC_PH_compat.config.manualCaffeineCompat )&&
                         (crop.toString().equals("COFFEEBEAN")||crop.toString().equals("TEALEAF")))
-                    continue;
+                    continue; //skip Coffebeans and Tealeafs if TFC Caffeine addon is installed
                 WorldGenWildCrops.register(crop);
             }
         }

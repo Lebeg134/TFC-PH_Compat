@@ -25,6 +25,7 @@ public class TFC_PH_compat
     public static TFC_PH_compat instance = new TFC_PH_compat();
 
     public static boolean CaffeineAdded = false;
+    public static boolean FirmaLifeAdded = false;
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static CommonProxy proxy;
 
@@ -36,6 +37,8 @@ public class TFC_PH_compat
         {
             if (Mod.getName().equals("Caffeine Addon"))
                 CaffeineAdded = true;
+            if (Mod.getName().equals("FirmaLife"))
+                FirmaLifeAdded = true;
         }
         config = new ConfigHandler(new Configuration(new File(event.getModConfigurationDirectory(), "TFC-PH_compat"+".cfg")));
     }

@@ -16,3 +16,9 @@ Mod adds:
 -turkey and ducks are now dropping PH meat variants
 -some PH tools replaced by TFC varients such as using knives instead of cuttingboards
 -removed some PH crafting such as flour and dough as they are implemented by TFC
+
+Infos for other modders:
+This mod modifies the Container Items of the TFC Pot to itself in order to make a lot of recipes possible.
+This mod modifies the configs of Pam's harvestcraft you can disable this in the configs.
+If you want to make a mod compatible with PH you should add your food items to the OreDicts used by PH.
+If your mod is in the compatible list you dont have to add your items to the oredict because my mod automaticly detects them and adds them to their oreDicts.

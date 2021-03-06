@@ -36,6 +36,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryModifiable;
+import pieman.caffeineaddon.recipes.DryingMatRecipe;
 
 import javax.annotation.Nullable;
 
@@ -583,6 +584,10 @@ public class RecipeModifier {
         if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat){
             dummyOutRecipe(recipeRegistry, "harvestcraft:coffeeitem");
             dummyOutRecipe(recipeRegistry, "harvestcraft:teaitem");
+            dummyOutRecipe(recipeRegistry, "harvestcraft:driedsoupitem");
+        }
+        if  ((TFC_PH_compat.FirmaLifeAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualFirmaLifeCompat){
+
         }
 
     }
@@ -657,13 +662,25 @@ public class RecipeModifier {
         addAnvil(r,"saucepan_steel", Metal.ItemType.INGOT,DefaultMetals.STEEL,new ItemStack(ItemRegistry.saucepanItem), Metal.Tier.TIER_IV, SmithingSkill.Type.GENERAL,ForgeRule.PUNCH_LAST,ForgeRule.BEND_SECOND_LAST,ForgeRule.BEND_THIRD_LAST);
     }
     @SubscribeEvent
-    public static void onRegisterQuernRecipeEvent(RegistryEvent.Register<QuernRecipe> event){
+    public static void onRegisterQuernRecipeEvent(RegistryEvent.Register<QuernRecipe> event)
+    {
         IForgeRegistry<QuernRecipe> r = event.getRegistry();
         r.registerAll(
             new QuernRecipe(IIngredient.of("cropPeppercorn"),new ItemStack(ItemRegistry.blackpepperItem, 4)).setRegistryName("blackpepperItem")
         );
 
 
+    }
+    @SubscribeEvent
+    public static void onRegisterDryingMatRecipeEvent(RegistryEvent.Register<DryingMatRecipe> event)
+    {
+        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat)
+        {
+            IForgeRegistry<DryingMatRecipe> r = event.getRegistry();
+            r.registerAll(
+                new DryingMatRecipe(IIngredient.of(ItemRegistry.stockItem), new ItemStack(ItemRegistry.driedsoupItem),24000).setRegistryName("dried_soup_drying1")
+            );
+        }
     }
     //Code from Pam's harvestcraft
     /**

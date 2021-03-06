@@ -1,5 +1,6 @@
 package hu.lebeg134.tpc.types;
 
+import com.eerussianguy.firmalife.recipe.DryingRecipe;
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.item.DummyRecipe;
 import com.pam.harvestcraft.item.ItemRegistry;
@@ -580,13 +581,19 @@ public class RecipeModifier {
 
         //other mod Compatibility recipe removals
 
+
+
         //TFC Caffeine addon
         if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat){
             dummyOutRecipe(recipeRegistry, "harvestcraft:coffeeitem");
             dummyOutRecipe(recipeRegistry, "harvestcraft:teaitem");
             dummyOutRecipe(recipeRegistry, "harvestcraft:driedsoupitem");
         }
+        //FirmaLife addon
+        dummyOutRecipe(recipeRegistry, "harvestcraft:coconutmilkitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:toastedcoconutitem");
         if  ((TFC_PH_compat.FirmaLifeAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualFirmaLifeCompat){
+            dummyOutRecipe(recipeRegistry, "harvestcraft:driedsoupitem");
 
         }
 
@@ -681,6 +688,17 @@ public class RecipeModifier {
                 new DryingMatRecipe(IIngredient.of(ItemRegistry.stockItem), new ItemStack(ItemRegistry.driedsoupItem),24000).setRegistryName("dried_soup_drying1")
             );
         }
+    }
+    @SubscribeEvent
+    public static void onRegisterDryingRecipeEvent(RegistryEvent.Register<DryingRecipe> event)
+    {
+        if ((TFC_PH_compat.FirmaLifeAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualFirmaLifeCompat){
+            IForgeRegistry<DryingRecipe> r = event.getRegistry();
+            r.registerAll(
+                new DryingRecipe(IIngredient.of(ItemRegistry.stockItem), new ItemStack(ItemRegistry.driedsoupItem),24000).setRegistryName("dried_soup_drying2")
+            );
+        }
+
     }
     //Code from Pam's harvestcraft
     /**

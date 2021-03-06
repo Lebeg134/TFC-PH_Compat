@@ -2,6 +2,7 @@ package hu.lebeg134.tpc.util.agriculture;
 
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
+import hu.lebeg134.tpc.TFC_PH_compat;
 import net.dries007.tfc.api.types.ICrop;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropDead;
 import net.dries007.tfc.objects.blocks.agriculture.BlockCropSimple;
@@ -22,6 +23,7 @@ import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import org.lwjgl.Sys;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -59,10 +61,18 @@ public enum TPCrop implements ICrop {
     //CODE from TFC
     static
     {
-        for (ICrop crop : values())
-        {
-            WorldGenWildCrops.register(crop);
+        if (!TFC_PH_compat.config.disablePHcrops){
+            for (ICrop crop : values())
+            {
+                if (((TFC_PH_compat.config.detectOtherModCompat  &&
+                        TFC_PH_compat.CaffeineAdded)||
+                        TFC_PH_compat.config.manualCaffeineCompat )&&
+                        (crop.toString().equals("COFFEEBEAN")||crop.toString().equals("TEALEAF")))
+                    continue;
+                WorldGenWildCrops.register(crop);
+            }
         }
+
     }
 
     /**

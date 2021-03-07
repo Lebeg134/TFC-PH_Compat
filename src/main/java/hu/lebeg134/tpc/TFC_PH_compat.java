@@ -1,11 +1,12 @@
 package hu.lebeg134.tpc;
 
+import hu.lebeg134.tpc.compat.CaffeineAddonCompat;
+import hu.lebeg134.tpc.compat.FirmaLifeCompat;
 import hu.lebeg134.tpc.config.ConfigHandler;
 import hu.lebeg134.tpc.proxy.CommonProxy;
 import hu.lebeg134.tpc.util.handlers.OreDictHandler;
 import hu.lebeg134.tpc.util.handlers.TPLootTableHandler;
-import net.dries007.tfc.objects.items.food.ItemFoodTFC;
-import net.dries007.tfc.util.agriculture.Food;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
@@ -41,6 +42,10 @@ public class TFC_PH_compat
                 FirmaLifeAdded = true;
         }
         config = new ConfigHandler(new Configuration(new File(event.getModConfigurationDirectory(), "TFC-PH_compat"+".cfg")));
+        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat)
+            MinecraftForge.EVENT_BUS.register(CaffeineAddonCompat.class);
+        if ((TFC_PH_compat.FirmaLifeAdded&& TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualFirmaLifeCompat)
+            MinecraftForge.EVENT_BUS.register(FirmaLifeCompat.class);
     }
 
     @EventHandler
@@ -48,9 +53,12 @@ public class TFC_PH_compat
     {
         if (config.overwritePHConfig)
             config.overwritePHConfig();
-
         TPLootTableHandler.Init();
         OreDictHandler.Init();
+        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat)
+            CaffeineAddonCompat.InitCaffeine();
+        if ((TFC_PH_compat.FirmaLifeAdded&& TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualFirmaLifeCompat)
+            FirmaLifeCompat.InitFirmaLife();
     }
     @EventHandler
     public void postInit(FMLPostInitializationEvent event)

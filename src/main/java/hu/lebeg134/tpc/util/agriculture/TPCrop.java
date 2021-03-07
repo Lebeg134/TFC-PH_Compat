@@ -56,8 +56,6 @@ public enum TPCrop implements ICrop {
     ZUCCHINI(() -> new ItemStack(CropRegistry.getFood(CropRegistry.ZUCCHINI)), () -> ItemStack.EMPTY, 3, 10, 30, 36, 50, 100, 400, 450, 6, 0.6f, CropType.SIMPLE);
 
 
-
-
     //CODE from TFC
     static
     {
@@ -72,9 +70,7 @@ public enum TPCrop implements ICrop {
                 WorldGenWildCrops.register(crop);
             }
         }
-
     }
-
     /**
      * the count to add to the amount of food dropped when applying the skill bonus
      *

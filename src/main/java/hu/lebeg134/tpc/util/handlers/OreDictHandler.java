@@ -1,6 +1,5 @@
 package hu.lebeg134.tpc.util.handlers;
 
-import com.eerussianguy.firmalife.registry.ItemsFL;
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
@@ -8,7 +7,6 @@ import hu.lebeg134.tpc.TFC_PH_compat;
 import hu.lebeg134.tpc.util.agriculture.TPCrop;
 import net.dries007.tfc.api.registries.TFCRegistries;
 import net.dries007.tfc.api.types.Metal;
-import net.dries007.tfc.api.types.Rock;
 import net.dries007.tfc.objects.items.ItemSeedsTFC;
 import net.dries007.tfc.objects.items.ItemsTFC;
 import net.dries007.tfc.objects.items.food.ItemFoodTFC;
@@ -367,33 +365,6 @@ public class OreDictHandler {
                 OreDictionary.registerOre("toolCuttingboard", new ItemStack(Tool,1,OreDictionary.WILDCARD_VALUE));
         }
 
-        //Other mod compatibility
-
-        //Caffeine addon
-        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat)
-        {
-            OreDictionary.registerOre("cropCoffee", new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("ca:coffee_ground"))));
-            OreDictionary.registerOre("cropTea", new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("ca:tea_leaves_dried"))));
-        }
-        //FirmaLife addon
-        if ((TFC_PH_compat.FirmaLifeAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualFirmaLifeCompat){
-            OreDictionary.registerOre("cropPumpkin", new ItemStack(ItemsFL.PUMPKIN_CHUNKS));
-            OreDictionary.registerOre("cropPumpkin", new ItemStack(ItemsFL.PUMPKIN_SCOOPED));
-            OreDictionary.registerOre("listAllveggie", new ItemStack(ItemsFL.PUMPKIN_CHUNKS));
-            OreDictionary.registerOre("listAllveggie", new ItemStack(ItemsFL.PUMPKIN_SCOOPED));
-            OreDictionary.registerOre("foodChocolatebar", new ItemStack(ItemsFL.DARK_CHOCOLATE));
-            OreDictionary.registerOre("foodChocolatebar", new ItemStack(ItemsFL.MILK_CHOCOLATE));
-            OreDictionary.registerOre("foodCocoapowder", new ItemStack(ItemsFL.COCOA_POWDER));
-            OreDictionary.registerOre("cropCinnamon", new ItemStack(ItemsFL.CINNAMON));
-            OreDictionary.registerOre("foodGroundcinnamon", new ItemStack(ItemsFL.GROUND_CINNAMON));
-            OreDictionary.registerOre("cropCoconut", new ItemStack(ItemsFL.COCONUT));
-            OreDictionary.registerOre("foodFlour", new ItemStack(ItemsFL.CHESTNUT_FLOUR));
-            OreDictionary.registerOre("foodDough", new ItemStack(ItemsFL.CHESTNUT_DOUGH));
-            OreDictionary.registerOre("foodBread", new ItemStack(ItemsFL.CHESTNUT_BREAD));
-            OreDictionary.registerOre("bread", new ItemStack(ItemsFL.CHESTNUT_BREAD));
-
-        }
-
 
         //removing items from oreDictionary
         //This declutters JEI
@@ -672,24 +643,9 @@ public class OreDictHandler {
             removeAll(ItemRegistry.grapefruitsmoothieItem);
             removeAll(ItemRegistry.persimmonsmoothieItem);
         }
-        // pot
+        // tools
         removeAll(ItemRegistry.potItem);
         removeAll(ItemRegistry.cuttingboardItem);
-
-        //Other mod compatibility
-
-        //Caffeine addon
-        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat){
-            removeAll(CropRegistry.getFood(CropRegistry.COFFEE));
-            removeAll(CropRegistry.getFood(CropRegistry.TEALEAF));
-        }
-        //FirmaLife addon
-        if ((TFC_PH_compat.FirmaLifeAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualFirmaLifeCompat){
-            removeAll(ItemRegistry.chocolatebarItem);
-            removeAll(ItemRegistry.cocoapowderItem);
-            removeAll(ItemRegistry.groundcinnamonItem);
-
-        }
 
     }
     public static void remove(String name, Item Item)

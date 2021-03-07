@@ -1,6 +1,5 @@
 package hu.lebeg134.tpc.types;
 
-import com.eerussianguy.firmalife.recipe.DryingRecipe;
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.item.DummyRecipe;
 import com.pam.harvestcraft.item.ItemRegistry;
@@ -37,7 +36,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryModifiable;
-import pieman.caffeineaddon.recipes.DryingMatRecipe;
 
 import javax.annotation.Nullable;
 
@@ -579,24 +577,6 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:yorkshirepuddingitem_foodSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:yorkshirepuddingitem_itemSalt");
 
-        //other mod Compatibility recipe removals
-
-
-
-        //TFC Caffeine addon
-        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat){
-            dummyOutRecipe(recipeRegistry, "harvestcraft:coffeeitem");
-            dummyOutRecipe(recipeRegistry, "harvestcraft:teaitem");
-            dummyOutRecipe(recipeRegistry, "harvestcraft:driedsoupitem");
-        }
-        //FirmaLife addon
-        dummyOutRecipe(recipeRegistry, "harvestcraft:coconutmilkitem");
-        dummyOutRecipe(recipeRegistry, "harvestcraft:toastedcoconutitem");
-        if  ((TFC_PH_compat.FirmaLifeAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualFirmaLifeCompat){
-            dummyOutRecipe(recipeRegistry, "harvestcraft:driedsoupitem");
-
-        }
-
     }
     @SubscribeEvent
     public static void onRegisterBarrelRecipeEvent(RegistryEvent.Register<BarrelRecipe> event)
@@ -676,28 +656,6 @@ public class RecipeModifier {
             new QuernRecipe(IIngredient.of("cropPeppercorn"),new ItemStack(ItemRegistry.blackpepperItem, 4)).setRegistryName("blackpepperItem")
         );
 
-
-    }
-    @SubscribeEvent
-    public static void onRegisterDryingMatRecipeEvent(RegistryEvent.Register<DryingMatRecipe> event)
-    {
-        if ((TFC_PH_compat.CaffeineAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualCaffeineCompat)
-        {
-            IForgeRegistry<DryingMatRecipe> r = event.getRegistry();
-            r.registerAll(
-                new DryingMatRecipe(IIngredient.of(ItemRegistry.stockItem), new ItemStack(ItemRegistry.driedsoupItem),24000).setRegistryName("dried_soup_drying1")
-            );
-        }
-    }
-    @SubscribeEvent
-    public static void onRegisterDryingRecipeEvent(RegistryEvent.Register<DryingRecipe> event)
-    {
-        if ((TFC_PH_compat.FirmaLifeAdded && TFC_PH_compat.config.detectOtherModCompat)|| TFC_PH_compat.config.manualFirmaLifeCompat){
-            IForgeRegistry<DryingRecipe> r = event.getRegistry();
-            r.registerAll(
-                new DryingRecipe(IIngredient.of(ItemRegistry.stockItem), new ItemStack(ItemRegistry.driedsoupItem),24000).setRegistryName("dried_soup_drying2")
-            );
-        }
 
     }
     //Code from Pam's harvestcraft

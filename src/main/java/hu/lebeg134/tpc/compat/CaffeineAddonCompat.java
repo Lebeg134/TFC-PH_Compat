@@ -5,7 +5,6 @@ import com.pam.harvestcraft.item.ItemRegistry;
 import hu.lebeg134.tpc.types.RecipeModifier;
 import hu.lebeg134.tpc.util.handlers.OreDictHandler;
 import net.dries007.tfc.objects.inventory.ingredient.IIngredient;
-import net.dries007.tfc.world.classic.worldgen.WorldGenWildCrops;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.ResourceLocation;

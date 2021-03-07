@@ -1,5 +1,7 @@
 package hu.lebeg134.tpc.util.handlers;
 
+import com.pam.harvestcraft.blocks.CropRegistry;
+import hu.lebeg134.tpc.util.agriculture.TPCrop;
 import hu.lebeg134.tpc.util.agriculture.TPFood;
 import net.dries007.tfc.api.capability.food.FoodData;
 import net.dries007.tfc.api.capability.food.FoodHeatHandler;
@@ -54,6 +56,22 @@ public class CapabilityHandler {
                     break;
                 case "harvestcraft:bakedsweetpotatoitem":
                     Fd = TPFood.BAKEDSWEETPOTATOITEM.getFoodData();
+                    addCapability = true;
+                    break;
+                case "harvestcraft:sesameseedsitem":
+                    Fd = TPFood.SESAMESEEDS.getFoodData();
+                    addCapability = true;
+                    break;
+                case "harvestcraft:whitemushroomitem":
+                    Fd = TPFood.WHITEMUSHROOM.getFoodData();
+                    addCapability = true;
+                    break;
+                case "harvestcraft:toastedsesameseedsitem":
+                    Fd = TPFood.TOASTEDSESAMESEEDSITEM.getFoodData();
+                    addCapability = true;
+                    break;
+                case "harvestcraft:grilledmushroomitem":
+                    Fd = TPFood.GRILLEDMUSHROOMITEM.getFoodData();
                     addCapability = true;
                     break;
                 case "harvestcraft:turkeycookeditem":

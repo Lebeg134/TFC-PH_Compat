@@ -417,6 +417,7 @@ public enum TPFood {
     GRAVYITEM(MEAL, ItemRegistry.gravyItem, 4 ,3f,5f,1f,1f,0f,2.5f,0f,2.33f),
     PEAANDHAMSOUPITEM(MEAL, ItemRegistry.peaandhamsoupItem, 4 ,6f,15f,0f,4f,0f,1.5f,0f,3.5f),
     YORKSHIREPUDDINGITEM(MEAL, ItemRegistry.yorkshirepuddingItem, 4 ,4f,0f,1f,1f,0f,2.5f,2f,1.17f),
+    TOASTEDSESAMESEEDSITEM(OTHER, ItemRegistry.toastedsesameseedsItem, 4 ,0.4f,0f,0f,0f,0f,0f,0f,0.53f),
     CHICKENCHOWMEINITEM(MEAL, ItemRegistry.chickenchowmeinItem, 4 ,9f,0.36f,1f,4f,0f,5f,0f,1.75f),
     KUNGPAOCHICKENITEM(MEAL, ItemRegistry.kungpaochickenItem, 4 ,5f,0f,0.5f,2f,0.5f,2.5f,0f,1.75f),
     BACONANDEGGSITEM(MEAL, ItemRegistry.baconandeggsItem, 4 ,3f,0f,0f,0f,0f,1.5f,0.3f,1.62f),

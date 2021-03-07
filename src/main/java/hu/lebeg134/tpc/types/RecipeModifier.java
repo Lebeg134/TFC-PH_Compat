@@ -306,6 +306,12 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:pickledonionsitem_dustSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:pickledonionsitem_foodSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:pickledonionsitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:toastedsesameseedsitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:grilledmushroomitem_cropWhitemushroom");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:grilledmushroomitem_listAllmushroom");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:grilledmushroomitem_minecraft_brown_mushroom");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:grilledmushroomitem_minecraft_red_mushroom");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:roastedpumpkinseedsitem");
 
         //Complex replaced recipes
         dummyOutRecipe(recipeRegistry, "harvestcraft:applejellysandwichitem");
@@ -619,12 +625,17 @@ public class RecipeModifier {
             new HeatRecipeSimple(IIngredient.of("cropSweetpotato"),new ItemStack(ItemRegistry.bakedsweetpotatoItem),200,480).setRegistryName("cooked_sweetpotato"),
             new HeatRecipeSimple(IIngredient.of("cropEggplant"),new ItemStack(ItemRegistry.grilledeggplantItem),200,480).setRegistryName("cooked_eggplant"),
             new HeatRecipeSimple(IIngredient.of("cropCorn"),new ItemStack(ItemRegistry.popcornItem,4),200,480).setRegistryName("popcorn"),
+            new HeatRecipeSimple(IIngredient.of("cropSesame"),new ItemStack(ItemRegistry.toastedsesameseedsItem,1),200,480).setRegistryName("toasted_sesameseeds"),
+            new HeatRecipeSimple(IIngredient.of("listAllmushroom"),new ItemStack(ItemRegistry.grilledmushroomItem,1),200,480).setRegistryName("grilled_mushroom"),
             new HeatRecipeSimple(IIngredient.of("foodTurkeyraw"),new ItemStack(ItemRegistry.turkeycookedItem,1),200,480).setRegistryName("cooked_turkey"),
             new HeatRecipeSimple(IIngredient.of("foodDuckraw"),new ItemStack(ItemRegistry.duckcookedItem,1),200,480).setRegistryName("cooked_duck"),
 
             HeatRecipe.destroy(IIngredient.of(Items.BAKED_POTATO), 480).setRegistryName("burned_potato"),
             HeatRecipe.destroy(IIngredient.of(ItemRegistry.bakedsweetpotatoItem), 480).setRegistryName("burned_sweetpotato"),
             HeatRecipe.destroy(IIngredient.of(ItemRegistry.grilledeggplantItem), 480).setRegistryName("burned_eggplant"),
+            HeatRecipe.destroy(IIngredient.of(ItemRegistry.popcornItem), 480).setRegistryName("burned_popcorn"),
+            HeatRecipe.destroy(IIngredient.of(ItemRegistry.toastedsesameseedsItem), 480).setRegistryName("burned_sesameseeds"),
+            HeatRecipe.destroy(IIngredient.of(ItemRegistry.grilledmushroomItem), 480).setRegistryName("burned_mushroom"),
             HeatRecipe.destroy(IIngredient.of(ItemRegistry.turkeycookedItem), 480).setRegistryName("burned_turkey"),
             HeatRecipe.destroy(IIngredient.of(ItemRegistry.duckcookedItem), 480).setRegistryName("burned_duck")
         );

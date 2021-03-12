@@ -8,7 +8,7 @@ for currentcrop in croplist:
     "defaults": {
         "model": "cross",
         "textures": {
-        "cross": "tpc:blocks/crop/spiceleaf_dead"
+        "cross": "tfc_ph_compat:blocks/crop/spiceleaf_dead"
         }
     },
     "variants": {
@@ -18,7 +18,7 @@ for currentcrop in croplist:
         "mature": {
         "false": {
             "textures": {
-            "cross": "tpc:blocks/crop/spiceleaf_dead_young"
+            "cross": "tfc_ph_compat:blocks/crop/spiceleaf_dead_young"
             }
         },
         "true": {}

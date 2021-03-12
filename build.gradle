@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 
 version = "1.12.2-1.0.2-dev"
-group = "hu.lebeg134.tpc"
+group = "hu.lebeg134.tfc_ph_compat"
 archivesBaseName = "TFC_PH_Compat"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.

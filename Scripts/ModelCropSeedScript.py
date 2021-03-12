@@ -6,7 +6,7 @@ for currentcrop in croplist:
     item = {
     "parent": "item/generated",
     "textures": {
-        "layer0": "tpc:items/crop/seeds/spiceleaf"
+        "layer0": "tfc_ph_compat:items/crop/seeds/spiceleaf"
     }
     }
     item["textures"]["layer0"]=item["textures"]["layer0"].replace("spiceleaf",currentcrop)

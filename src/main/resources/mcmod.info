@@ -1,16 +1,17 @@
 [
 {
-  "modid": "tpc",
-  "name": "TFC-PH Compatibility",
+  "modid": "tfc_ph_compat",
+  "name": "TFC_PH_Compat",
   "description": "This mod aims to make Pam's harvestcraft compatible with the TFC food system. This means adding new crops and balancing existing foods.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/tfc-pams-harvestcraft-compatibility-mod",
   "updateUrl": "",
   "authorList": ["Lebeg134"],
-  "credits": "Made by Lebeg134",
+  "credits": "Based on TFC and Pam's harvestcraft",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "requiredMods": ["tfc", "harvestcraft"],
+  "dependencies": ["tfc", "harvestcraft", "ca", "firmalife"]
 }
 ]

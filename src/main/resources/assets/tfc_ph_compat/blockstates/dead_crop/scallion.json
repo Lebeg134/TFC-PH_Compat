@@ -1,0 +1,1 @@
+{"forge_marker": 1, "defaults": {"model": "crop", "textures": {"crop": "tfc_ph_compat:blocks/crop/scallion_dead"}}, "variants": {"normal": [{}], "mature": {"false": {"textures": {"crop": "tfc_ph_compat:blocks/crop/scallion_dead_young"}}, "true": {}}}}

@@ -8,7 +8,7 @@ for currentcrop in croplist:
     "defaults": {
         "model": "cross",
         "textures": {
-        "cross": "tpc:blocks/crop/spiceleaf_stage_0"
+        "cross": "tfc_ph_compat:blocks/crop/spiceleaf_stage_0"
         }
     },
     "variants": {
@@ -18,32 +18,32 @@ for currentcrop in croplist:
         "stage": {
         "0": {
             "textures": {
-            "cross": "tpc:blocks/crop/spiceleaf_stage_0"
+            "cross": "tfc_ph_compat:blocks/crop/spiceleaf_stage_0"
             }
         },
         "1": {
             "textures": {
-            "cross": "tpc:blocks/crop/spiceleaf_stage_1"
+            "cross": "tfc_ph_compat:blocks/crop/spiceleaf_stage_1"
             }
         },
         "2": {
             "textures": {
-            "cross": "tpc:blocks/crop/spiceleaf_stage_2"
+            "cross": "tfc_ph_compat:blocks/crop/spiceleaf_stage_2"
             }
         },
         "3": {
             "textures": {
-            "cross": "tpc:blocks/crop/spiceleaf_stage_3"
+            "cross": "tfc_ph_compat:blocks/crop/spiceleaf_stage_3"
             }
         },
         "4": {
             "textures": {
-            "cross": "tpc:blocks/crop/spiceleaf_stage_4"
+            "cross": "tfc_ph_compat:blocks/crop/spiceleaf_stage_4"
             }
         },
         "5": {
             "textures": {
-            "cross": "tpc:blocks/crop/spiceleaf_stage_5"
+            "cross": "tfc_ph_compat:blocks/crop/spiceleaf_stage_5"
             }
         }
         }

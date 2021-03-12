@@ -1,0 +1,47 @@
+# Seed items
+item.tfc_ph_compat.crop.seeds.broccoli.name=Broccoli Seeds
+item.tfc_ph_compat.crop.seeds.celery.name=Celery Seeds
+item.tfc_ph_compat.crop.seeds.chili_pepper.name=Chili Seeds
+item.tfc_ph_compat.crop.seeds.coffeebean.name=Coffee Seeds
+item.tfc_ph_compat.crop.seeds.cucumber.name=Cucumber Seeds
+item.tfc_ph_compat.crop.seeds.eggplant.name=Eggplant Seeds
+item.tfc_ph_compat.crop.seeds.ginger.name=Ginger Seeds
+item.tfc_ph_compat.crop.seeds.grape.name=Grape Seeds
+item.tfc_ph_compat.crop.seeds.lettuce.name=Lettuce Seeds
+item.tfc_ph_compat.crop.seeds.mushroom.name=Mushroom Spores
+item.tfc_ph_compat.crop.seeds.mustardseeds.name=Mustard Seeds
+item.tfc_ph_compat.crop.seeds.peanut.name= Peanut Seeds
+item.tfc_ph_compat.crop.seeds.peas.name= Pea Seeds
+item.tfc_ph_compat.crop.seeds.peppercorn.name= Peppercorn Seeds
+item.tfc_ph_compat.crop.seeds.radish.name= Radish Seeds
+item.tfc_ph_compat.crop.seeds.scallion.name= Scallion Seeds
+item.tfc_ph_compat.crop.seeds.sesameseeds.name= Sesame Seeds
+item.tfc_ph_compat.crop.seeds.spiceleaf.name=Spice Seeds
+item.tfc_ph_compat.crop.seeds.spinach.name= Spinach Seeds
+item.tfc_ph_compat.crop.seeds.sweetpotato.name= Sweetpotato Seeds
+item.tfc_ph_compat.crop.seeds.tealeaf.name= Tea Seeds
+item.tfc_ph_compat.crop.seeds.zucchini.name= Zucchini Seeds
+
+# Crop blocks
+tile.tfc_ph_compat.crop.broccoli.name = Broccoli
+tile.tfc_ph_compat.crop.celery.name = Celery
+tile.tfc_ph_compat.crop.chili_pepper.name = Chili Pepper
+tile.tfc_ph_compat.crop.coffeebean.name = Coffee Plant
+tile.tfc_ph_compat.crop.cucumber.name = Cucumber
+tile.tfc_ph_compat.crop.eggplant.name = Eggplant
+tile.tfc_ph_compat.crop.ginger.name = Ginger
+tile.tfc_ph_compat.crop.grape.name = Grape
+tile.tfc_ph_compat.crop.lettuce.name = Lettuce
+tile.tfc_ph_compat.crop.mushroom.name = White Mushrooms
+tile.tfc_ph_compat.crop.mustardseeds.name = Mustard Plant
+tile.tfc_ph_compat.crop.peanut.name = Peanuts
+tile.tfc_ph_compat.crop.peas.name = Peas
+tile.tfc_ph_compat.crop.peppercorn.name = Peppercorn
+tile.tfc_ph_compat.crop.radish.name = Radish
+tile.tfc_ph_compat.crop.scallion.name = Scallion
+tile.tfc_ph_compat.crop.sesameseeds.name = Sesame Plant
+tile.tfc_ph_compat.crop.spiceleaf.name = Spice Plant
+tile.tfc_ph_compat.crop.spinach.name = Spinach
+tile.tfc_ph_compat.crop.sweetpotato.name = Sweerpotato
+tile.tfc_ph_compat.crop.tealeaf.name = Tea Plant
+tile.tfc_ph_compat.crop.zucchini.name = Zucchini

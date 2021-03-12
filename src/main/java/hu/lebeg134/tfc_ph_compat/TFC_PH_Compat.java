@@ -19,7 +19,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 import java.io.File;
 
-@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION, dependencies = "required-after:tfc;required-after:harvestcraft;after:ca;after:firmalife")
 public class TFC_PH_Compat
 {
     @Mod.Instance(value = Reference.MODID)

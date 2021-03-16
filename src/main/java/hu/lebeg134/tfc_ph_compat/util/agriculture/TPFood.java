@@ -100,6 +100,7 @@ public enum TPFood {
     STRAWBERRYYOGURTITEM(FRUIT, ItemRegistry.strawberryyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
     MELONYOGURTITEM(FRUIT, ItemRegistry.melonyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
     COCONUTYOGURTITEM(FRUIT, ItemRegistry.coconutyogurtItem, 4, 3f, 5f, 0f, 0f, 0f, 0.1f, 1.5f, 3f),
+    PINEAPPLEYOGURTITEM(FRUIT, ItemRegistry.pineappleyogurtItem, 4, 3f, 5f, 0f, 0f, 0f, 0.1f, 1.5f, 3f),
     GRAPEYOGURTITEM(FRUIT, ItemRegistry.grapeyogurtItem, 4, 3f, 5f, 0f, 0f, 1f, 0f, 1.5f, 3f),
     //jellys
     BLACKBERRYJELLYITEM(FRUIT, ItemRegistry.blackberryjellyItem, 4, 0.3f, 0f, 0f, 0f, 0.5f, 0f, 0f, 0.24f),

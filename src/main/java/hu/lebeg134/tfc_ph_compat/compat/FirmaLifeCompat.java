@@ -1,7 +1,6 @@
 package hu.lebeg134.tfc_ph_compat.compat;
 
 import com.eerussianguy.firmalife.recipe.DryingRecipe;
-import com.eerussianguy.firmalife.registry.ItemsFL;
 import com.pam.harvestcraft.item.ItemRegistry;
 import hu.lebeg134.tfc_ph_compat.types.RecipeModifier;
 import hu.lebeg134.tfc_ph_compat.util.handlers.OreDictHandler;
@@ -10,13 +9,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryModifiable;
 
 public class FirmaLifeCompat {
     public static void InitFirmaLife(){
         //OreDict addition
+        /*
         OreDictionary.registerOre("cropPumpkin", new ItemStack(ItemsFL.PUMPKIN_CHUNKS));
         OreDictionary.registerOre("cropPumpkin", new ItemStack(ItemsFL.PUMPKIN_SCOOPED));
         OreDictionary.registerOre("listAllveggie", new ItemStack(ItemsFL.PUMPKIN_CHUNKS));
@@ -31,6 +30,7 @@ public class FirmaLifeCompat {
         OreDictionary.registerOre("foodDough", new ItemStack(ItemsFL.CHESTNUT_DOUGH));
         OreDictionary.registerOre("foodBread", new ItemStack(ItemsFL.CHESTNUT_BREAD));
         OreDictionary.registerOre("bread", new ItemStack(ItemsFL.CHESTNUT_BREAD));
+         */
         //OreDict remove
         OreDictHandler.removeAll(ItemRegistry.chocolatebarItem);
         OreDictHandler.removeAll(ItemRegistry.cocoapowderItem);

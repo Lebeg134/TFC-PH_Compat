@@ -1,11 +1,8 @@
 package hu.lebeg134.tfc_ph_compat.util.handlers;
 
 import hu.lebeg134.tfc_ph_compat.util.HeatCapabilityHelper;
-import hu.lebeg134.tfc_ph_compat.util.agriculture.TPFood;
-import net.dries007.tfc.api.capability.food.FoodData;
 import net.dries007.tfc.api.capability.food.FoodHeatHandler;
 import net.dries007.tfc.api.capability.heat.CapabilityItemHeat;
-import net.dries007.tfc.util.agriculture.Food;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.AttachCapabilitiesEvent;

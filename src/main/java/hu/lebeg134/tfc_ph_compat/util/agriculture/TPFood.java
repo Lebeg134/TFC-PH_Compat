@@ -295,6 +295,7 @@ public enum TPFood {
     ZUCCHINIBAKEITEM(MEAL, ItemRegistry.zucchinibakeItem, 4 ,5f,0f,1.5f,2.5f,0f,0f,4f,1.91f),
     FRUITCRUMBLEITEM(MEAL, ItemRegistry.fruitcrumbleItem, 4 ,2f,0f,1f,0f,0.85f,0f,1f,1.36f),
     BANANASPLITITEM(MEAL, ItemRegistry.bananasplitItem, 4 ,2f,0f,0f,0f,2.5f,0f,2f,1.75f),
+    CHICKENCURRYITEM(MEAL, ItemRegistry.chickencurryItem, 4 ,5f,0f,0.3f,2.5f,0f,2.5f,1.5f,1.53f),
     ORANGECHICKENITEM(MEAL, ItemRegistry.orangechickenItem, 4 ,3f,0f,0f,1f,0.5f,2.5f,0f,1.67f),
     CINNAMONROLLITEM(MEAL, ItemRegistry.cinnamonrollItem, 4 ,1f,0f,1f,0f,0f,0f,0f,1.11f),
     FRENCHTOASTITEM(MEAL, ItemRegistry.frenchtoastItem, 4 ,2f,0f,1.5f,0f,0f,0f,1f,1f),

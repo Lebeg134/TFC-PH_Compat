@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:roastpotatoesitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolBakeware"}, {"type": "forge:ore_dict", "ore": "cropPotato"}, {"type": "forge:ore_dict", "ore": "foodSalt"}, {"type": "forge:ore_dict", "ore": "foodBlackpepper"}], "type": "forge:ore_shapeless"}

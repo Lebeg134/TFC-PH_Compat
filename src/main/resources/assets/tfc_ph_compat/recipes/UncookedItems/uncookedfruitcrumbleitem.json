@@ -1,0 +1,1 @@
+{"result": {"item": "harvestcraft:fruitcrumbleitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolBakeware"}, {"type": "forge:ore_dict", "ore": "listAllfruit"}, {"type": "forge:ore_dict", "ore": "foodGroundcinnamon"}, {"type": "forge:ore_dict", "ore": "foodFlour"}, {"type": "forge:ore_dict", "ore": "foodButter"}], "type": "forge:ore_shapeless"}

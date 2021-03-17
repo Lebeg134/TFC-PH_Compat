@@ -583,6 +583,97 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:yorkshirepuddingitem_foodSalt");
         dummyOutRecipe(recipeRegistry, "harvestcraft:yorkshirepuddingitem_itemSalt");
 
+        //Uncooked item heat replacement removal (has duplicates with complex recipe removal)
+        dummyOutRecipe(recipeRegistry, "harvestcraft:anchovypepperonipizzaitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:applepieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:bbqchickenpizzaitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:biscuititem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:blackberrycobbleritem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:blueberrymuffinitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:blueberrypieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:briochebunitem_x3");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:buttercookieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:buttertartitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:caramelcupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:carrotcupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:chaoscookieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cherrypieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:chickenpotpieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:chilicupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:chocolatecupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cinnamonbreaditem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cinnamonrollitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:coffeecupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:cottagepieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:crackeritem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:crackersitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:croissantitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:damperitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:damperitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:damperitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:eggtartitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:fruitcrumbleitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:garlicchickenitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:gingerbreaditem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:gingersnapsitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:gooseberrypieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:honeybunitem_dropHoney");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:honeybunitem_foodHoneydrop");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:honeylemonlambitem_dropHoney");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:honeylemonlambitem_foodHoneydrop");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:honeysoyribsitem_dropHoney");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:honeysoyribsitem_foodHoneydrop");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:lambwithmintsauceitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:lemonchickenitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:lemoncupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:meatpieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:mincepieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:mintcupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:mochicakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:orangeduckitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:peachcobbleritem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:peanutbuttercookiesitem - Copy (2)");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:peanutbuttercookiesitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:peanutbuttercupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pekingduckitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pizzaitem_foodPepperoni");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pizzaitem_listAllporkraw");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pumpkinbreaditem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pumpkinmuffinitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:pumpkinoatsconesitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:raisincookiesitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:raspberrypieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:redvelvetcupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:ricecakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:rivermudcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:roastchickenitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:roastchickenitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:roastchickenitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:roastpotatoesitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:roastpotatoesitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:roastpotatoesitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:salisburysteakitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:shepardspieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:softpretzelitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:softpretzelitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:softpretzelitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:spinachpieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:sprinklescupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:strawberrycupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:strawberrypieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:stuffedduckitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:sugarcookieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:sunflowerwheatrollsitem_dustSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:sunflowerwheatrollsitem_foodSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:sunflowerwheatrollsitem_itemSalt");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:sweetpotatopieitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:timpanoitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tiropitaitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:toastitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:tomatoherbchickenitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:vanillacupcakeitem");
+
+
     }
     @SubscribeEvent
     public static void onRegisterBarrelRecipeEvent(RegistryEvent.Register<BarrelRecipe> event)
@@ -629,6 +720,21 @@ public class RecipeModifier {
             new HeatRecipeSimple(IIngredient.of("listAllmushroom"),new ItemStack(ItemRegistry.grilledmushroomItem,1),200,480).setRegistryName("grilled_mushroom"),
             new HeatRecipeSimple(IIngredient.of("foodTurkeyraw"),new ItemStack(ItemRegistry.turkeycookedItem,1),200,480).setRegistryName("cooked_turkey"),
             new HeatRecipeSimple(IIngredient.of("foodDuckraw"),new ItemStack(ItemRegistry.duckcookedItem,1),200,480).setRegistryName("cooked_duck"),
+            //uncooked item cooking recipes
+            new HeatRecipeSimple(IIngredient.of("foodUncookedgarlicchicken"),new ItemStack(ItemRegistry.garlicchickenItem,1),200,480).setRegistryName("uncookedgarlicchicken"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedhoneylemonlamb"),new ItemStack(ItemRegistry.honeylemonlambItem,1),200,480).setRegistryName("uncookedhoneylemonlamb"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedhoneysoyribs"),new ItemStack(ItemRegistry.honeysoyribsItem,1),200,480).setRegistryName("uncookedhoneysoyribs"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedlambwithmintsauce"),new ItemStack(ItemRegistry.lambwithmintsauceItem,1),200,480).setRegistryName("uncookedlambwithmintsauce"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedlemonchicken"),new ItemStack(ItemRegistry.lemonchickenItem,1),200,480).setRegistryName("uncookedlemonchicken"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedorangeduck"),new ItemStack(ItemRegistry.orangeduckItem,1),200,480).setRegistryName("uncookedorangeduck"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedpekingduck"),new ItemStack(ItemRegistry.pekingduckItem,1),200,480).setRegistryName("uncookedpekingduck"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedroastchicken"),new ItemStack(ItemRegistry.roastchickenItem,1),200,480).setRegistryName("uncookedroastchicken"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedroastpotatoes"),new ItemStack(ItemRegistry.roastpotatoesItem,1),200,480).setRegistryName("uncookedroastpotatoes"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedsalisburysteak"),new ItemStack(ItemRegistry.salisburysteakItem,1),200,480).setRegistryName("uncookedsalisburysteak"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedstuffedduck"),new ItemStack(ItemRegistry.stuffedduckItem,1),200,480).setRegistryName("uncookedstuffedduck"),
+            new HeatRecipeSimple(IIngredient.of("foodUncookedtomatoherbchicken"),new ItemStack(ItemRegistry.tomatoherbchickenItem,1),200,480).setRegistryName("uncookedtomatoherbchicken"),
+
+            new HeatRecipeSimple(IIngredient.of("cropRice"), new ItemStack(ItemRegistry.ricecakeItem, 1), 200, 480).setRegistryName("ricecake"),
 
             HeatRecipe.destroy(IIngredient.of(Items.BAKED_POTATO), 480).setRegistryName("burned_potato"),
             HeatRecipe.destroy(IIngredient.of(ItemRegistry.bakedsweetpotatoItem), 480).setRegistryName("burned_sweetpotato"),
@@ -637,8 +743,151 @@ public class RecipeModifier {
             HeatRecipe.destroy(IIngredient.of(ItemRegistry.toastedsesameseedsItem), 480).setRegistryName("burned_sesameseeds"),
             HeatRecipe.destroy(IIngredient.of(ItemRegistry.grilledmushroomItem), 480).setRegistryName("burned_mushroom"),
             HeatRecipe.destroy(IIngredient.of(ItemRegistry.turkeycookedItem), 480).setRegistryName("burned_turkey"),
-            HeatRecipe.destroy(IIngredient.of(ItemRegistry.duckcookedItem), 480).setRegistryName("burned_duck")
-        );
+            HeatRecipe.destroy(IIngredient.of(ItemRegistry.duckcookedItem), 480).setRegistryName("burned_duck"),
+
+            //new cooked recipe burnt items
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.anchovypepperonipizzaItem), 480).setRegistryName("burned_anchovypepperonipizza"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.applepieItem), 480).setRegistryName("burned_applepie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.bbqchickenpizzaItem), 480).setRegistryName("burned_bbqchickenpizza"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.biscuitItem), 480).setRegistryName("burned_biscuit"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.blackberrycobblerItem), 480).setRegistryName("burned_blackberrycobbler"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.blueberrymuffinItem), 480).setRegistryName("burned_blueberrymuffin"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.blueberrypieItem), 480).setRegistryName("burned_blueberrypie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.briochebunItem), 480).setRegistryName("burned_briochebun"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.buttercookieItem), 480).setRegistryName("burned_buttercookie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.buttertartItem), 480).setRegistryName("burned_buttertart"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.caramelcupcakeItem), 480).setRegistryName("burned_caramelcupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.carrotcupcakeItem), 480).setRegistryName("burned_carrotcupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.chaoscookieItem), 480).setRegistryName("burned_chaoscookie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.cherrypieItem), 480).setRegistryName("burned_cherrypie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.chickenpotpieItem), 480).setRegistryName("burned_chickenpotpie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.chilicupcakeItem), 480).setRegistryName("burned_chilicupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.chocolatecupcakeItem), 480).setRegistryName("burned_chocolatecupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.cinnamonbreadItem), 480).setRegistryName("burned_cinnamonbread"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.cinnamonrollItem), 480).setRegistryName("burned_cinnamonroll"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.coffeecupcakeItem), 480).setRegistryName("burned_coffeecupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.cottagepieItem), 480).setRegistryName("burned_cottagepie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.crackerItem), 480).setRegistryName("burned_cracker"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.crackersItem), 480).setRegistryName("burned_crackers"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.croissantItem), 480).setRegistryName("burned_croissant"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.damperItem), 480).setRegistryName("burned_damper"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.eggtartItem), 480).setRegistryName("burned_eggtart"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.fruitcrumbleItem), 480).setRegistryName("burned_fruitcrumble"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.garlicchickenItem), 480).setRegistryName("burned_garlicchicken"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.gingerbreadItem), 480).setRegistryName("burned_gingerbread"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.gingersnapsItem), 480).setRegistryName("burned_gingersnaps"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.gooseberrypieItem), 480).setRegistryName("burned_gooseberrypie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.honeybunItem), 480).setRegistryName("burned_honeybun"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.honeylemonlambItem), 480).setRegistryName("burned_honeylemonlamb"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.honeysoyribsItem), 480).setRegistryName("burned_honeysoyribs"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.lambwithmintsauceItem), 480).setRegistryName("burned_lambwithmintsauce"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.lemonchickenItem), 480).setRegistryName("burned_lemonchicken"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.lemoncupcakeItem), 480).setRegistryName("burned_lemoncupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.meatpieItem), 480).setRegistryName("burned_meatpie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.mincepieItem), 480).setRegistryName("burned_mincepie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.mintcupcakeItem), 480).setRegistryName("burned_mintcupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.mochicakeItem), 480).setRegistryName("burned_mochicake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.orangeduckItem), 480).setRegistryName("burned_orangeduck"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.peachcobblerItem), 480).setRegistryName("burned_peachcobbleritem"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.peanutbuttercookiesItem), 480).setRegistryName("burned_peanutbuttercookies"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.peanutbuttercupcakeItem), 480).setRegistryName("burned_peanutbuttercupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.pekingduckItem), 480).setRegistryName("burned_pekingduck"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.pizzaItem), 480).setRegistryName("burned_pizza"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.pumpkinbreadItem), 480).setRegistryName("burned_pumpkinbread"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.pumpkinmuffinItem), 480).setRegistryName("burned_pumpkinmuffin"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.pumpkinoatsconesItem), 480).setRegistryName("burned_pumpkinoatscones"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.pumpkinpieItem), 480).setRegistryName("burned_pumpkinpie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.raisincookiesItem), 480).setRegistryName("burned_raisincookiesitem"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.raspberrypieItem), 480).setRegistryName("burned_raspberrypie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.redvelvetcupcakeItem), 480).setRegistryName("burned_redvelvetcupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.ricecakeItem), 480).setRegistryName("burned_ricecake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.rivermudcakeItem), 480).setRegistryName("burned_rivermudcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.roastchickenItem), 480).setRegistryName("burned_roastchicken"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.roastpotatoesItem), 480).setRegistryName("burned_roastpotatoes"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.salisburysteakItem), 480).setRegistryName("burned_salisburysteak"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.shepardspieItem), 480).setRegistryName("burned_shepardspie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.softpretzelItem), 480).setRegistryName("burned_softpretzel"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.spinachpieItem), 480).setRegistryName("burned_spinachpie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.sprinklescupcakeItem), 480).setRegistryName("burned_sprinklescupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.strawberrycupcakeItem), 480).setRegistryName("burned_strawberrycupcake"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.strawberrypieItem), 480).setRegistryName("burned_strawberrypie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.stuffedduckItem), 480).setRegistryName("burned_stuffedduck"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.sugarcookieItem), 480).setRegistryName("burned_sugarcookie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.sunflowerwheatrollsItem), 480).setRegistryName("burned_sunflowerwheatrolls"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.sweetpotatopieItem), 480).setRegistryName("burned_sweetpotatopie"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.timpanoItem), 480).setRegistryName("burned_timpano"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.tiropitaItem), 480).setRegistryName("burned_tiropita"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.toastItem), 480).setRegistryName("burned_toast"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.tomatoherbchickenItem), 480).setRegistryName("burned_tomatoherbchicken"),
+                HeatRecipe.destroy(IIngredient.of(ItemRegistry.vanillacupcakeItem), 480).setRegistryName("burned_vanillacupcake")
+
+
+                );
+        if (!TFC_PH_Compat.FirmaLifeAdded){
+            r.registerAll(
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedanchovypepperonipizza"),new ItemStack(ItemRegistry.anchovypepperonipizzaItem,1),200,480).setRegistryName("uncookedanchovypepperonipizza"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedapplepie"),new ItemStack(ItemRegistry.applepieItem,1),200,480).setRegistryName("uncookedapplepie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedbbqchickenpizza"),new ItemStack(ItemRegistry.bbqchickenpizzaItem,1),200,480).setRegistryName("uncookedbbqchickenpizza"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedbiscuit"),new ItemStack(ItemRegistry.biscuitItem,1),200,480).setRegistryName("uncookedbiscuit"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedblackberrycobbler"),new ItemStack(ItemRegistry.blackberrycobblerItem,1),200,480).setRegistryName("uncookedblackberrycobbler"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedblueberrymuffin"),new ItemStack(ItemRegistry.blueberrymuffinItem,1),200,480).setRegistryName("uncookedblueberrymuffin"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedblueberrypie"),new ItemStack(ItemRegistry.blueberrypieItem,1),200,480).setRegistryName("uncookedblueberrypie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedbriochebun"),new ItemStack(ItemRegistry.briochebunItem,1),200,480).setRegistryName("uncookedbriochebun"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedbuttercookie"),new ItemStack(ItemRegistry.buttercookieItem,1),200,480).setRegistryName("uncookedbuttercookie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedbuttertart"),new ItemStack(ItemRegistry.buttertartItem,1),200,480).setRegistryName("uncookedbuttertart"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcaramelcupcake"),new ItemStack(ItemRegistry.caramelcupcakeItem,1),200,480).setRegistryName("uncookedcaramelcupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcarrotcupcake"),new ItemStack(ItemRegistry.carrotcupcakeItem,1),200,480).setRegistryName("uncookedcarrotcupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedchaoscookie"),new ItemStack(ItemRegistry.chaoscookieItem,1),200,480).setRegistryName("uncookedchaoscookie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcherrypie"),new ItemStack(ItemRegistry.cherrypieItem,1),200,480).setRegistryName("uncookedcherrypie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedchickenpotpie"),new ItemStack(ItemRegistry.chickenpotpieItem,1),200,480).setRegistryName("uncookedchickenpotpie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedchilicupcake"),new ItemStack(ItemRegistry.chilicupcakeItem,1),200,480).setRegistryName("uncookedchilicupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedchocolatecupcake"),new ItemStack(ItemRegistry.chocolatecupcakeItem,1),200,480).setRegistryName("uncookedchocolatecupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcinnamonbread"),new ItemStack(ItemRegistry.cinnamonbreadItem,1),200,480).setRegistryName("uncookedcinnamonbread"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcinnamonroll"),new ItemStack(ItemRegistry.cinnamonrollItem,1),200,480).setRegistryName("uncookedcinnamonroll"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcoffeecupcake"),new ItemStack(ItemRegistry.coffeecupcakeItem,1),200,480).setRegistryName("uncookedcoffeecupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcottagepie"),new ItemStack(ItemRegistry.cottagepieItem,1),200,480).setRegistryName("uncookedcottagepie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcracker"),new ItemStack(ItemRegistry.crackerItem,1),200,480).setRegistryName("uncookedcracker"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcrackers"),new ItemStack(ItemRegistry.crackersItem,1),200,480).setRegistryName("uncookedcrackers"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedcroissant"),new ItemStack(ItemRegistry.croissantItem,1),200,480).setRegistryName("uncookedcroissant"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookeddamper"),new ItemStack(ItemRegistry.damperItem,1),200,480).setRegistryName("uncookeddamper"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedeggtart"),new ItemStack(ItemRegistry.eggtartItem,1),200,480).setRegistryName("uncookedeggtart"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedfruitcrumble"),new ItemStack(ItemRegistry.fruitcrumbleItem,1),200,480).setRegistryName("uncookedfruitcrumble"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedgingerbread"),new ItemStack(ItemRegistry.gingerbreadItem,1),200,480).setRegistryName("uncookedgingerbread"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedgingersnaps"),new ItemStack(ItemRegistry.gingersnapsItem,1),200,480).setRegistryName("uncookedgingersnaps"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedgooseberrypie"),new ItemStack(ItemRegistry.gooseberrypieItem,1),200,480).setRegistryName("uncookedgooseberrypie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedhoneybun"),new ItemStack(ItemRegistry.honeybunItem,1),200,480).setRegistryName("uncookedhoneybun"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedlemoncupcake"),new ItemStack(ItemRegistry.lemoncupcakeItem,1),200,480).setRegistryName("uncookedlemoncupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedmeatpie"),new ItemStack(ItemRegistry.meatpieItem,1),200,480).setRegistryName("uncookedmeatpie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedmincepie"),new ItemStack(ItemRegistry.mincepieItem,1),200,480).setRegistryName("uncookedmincepie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedmintcupcake"),new ItemStack(ItemRegistry.mintcupcakeItem,1),200,480).setRegistryName("uncookedmintcupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedmochicake"),new ItemStack(ItemRegistry.mochicakeItem,1),200,480).setRegistryName("uncookedmochicake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedpeachcobbleritem"),new ItemStack(ItemRegistry.peachcobblerItem,1),200,480).setRegistryName("uncookedpeachcobbleritem"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedpeanutbuttercookies"),new ItemStack(ItemRegistry.peanutbuttercookiesItem,1),200,480).setRegistryName("uncookedpeanutbuttercookies"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedpeanutbuttercupcake"),new ItemStack(ItemRegistry.peanutbuttercupcakeItem,1),200,480).setRegistryName("uncookedpeanutbuttercupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedpizza"),new ItemStack(ItemRegistry.pizzaItem,1),200,480).setRegistryName("uncookedpizza"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedpumpkinbread"),new ItemStack(ItemRegistry.pumpkinbreadItem,1),200,480).setRegistryName("uncookedpumpkinbread"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedpumpkinmuffin"),new ItemStack(ItemRegistry.pumpkinmuffinItem,1),200,480).setRegistryName("uncookedpumpkinmuffin"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedpumpkinoatscones"),new ItemStack(ItemRegistry.pumpkinoatsconesItem,1),200,480).setRegistryName("uncookedpumpkinoatscones"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedpumpkinpie"),new ItemStack(ItemRegistry.pumpkinpieItem,1),200,480).setRegistryName("uncookedpumpkinpie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedraisincookiesitem"),new ItemStack(ItemRegistry.raisincookiesItem,1),200,480).setRegistryName("uncookedraisincookiesitem"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedraspberrypie"),new ItemStack(ItemRegistry.raspberrypieItem,1),200,480).setRegistryName("uncookedraspberrypie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedredvelvetcupcake"),new ItemStack(ItemRegistry.redvelvetcupcakeItem,1),200,480).setRegistryName("uncookedredvelvetcupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedrivermudcake"),new ItemStack(ItemRegistry.rivermudcakeItem,1),200,480).setRegistryName("uncookedrivermudcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedshepardspie"),new ItemStack(ItemRegistry.shepardspieItem,1),200,480).setRegistryName("uncookedshepardspie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedsoftpretzel"),new ItemStack(ItemRegistry.softpretzelItem,1),200,480).setRegistryName("uncookedsoftpretzel"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedspinachpie"),new ItemStack(ItemRegistry.spinachpieItem,1),200,480).setRegistryName("uncookedspinachpie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedsprinklescupcake"),new ItemStack(ItemRegistry.sprinklescupcakeItem,1),200,480).setRegistryName("uncookedsprinklescupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedstrawberrycupcake"),new ItemStack(ItemRegistry.strawberrycupcakeItem,1),200,480).setRegistryName("uncookedstrawberrycupcake"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedstrawberrypie"),new ItemStack(ItemRegistry.strawberrypieItem,1),200,480).setRegistryName("uncookedstrawberrypie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedsugarcookie"),new ItemStack(ItemRegistry.sugarcookieItem,1),200,480).setRegistryName("uncookedsugarcookie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedsunflowerwheatrolls"),new ItemStack(ItemRegistry.sunflowerwheatrollsItem,1),200,480).setRegistryName("uncookedsunflowerwheatrolls"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedsweetpotatopie"),new ItemStack(ItemRegistry.sweetpotatopieItem,1),200,480).setRegistryName("uncookedsweetpotatopie"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedtimpano"),new ItemStack(ItemRegistry.timpanoItem,1),200,480).setRegistryName("uncookedtimpano"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedtiropita"),new ItemStack(ItemRegistry.tiropitaItem,1),200,480).setRegistryName("uncookedtiropita"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedtoast"),new ItemStack(ItemRegistry.toastItem,1),200,480).setRegistryName("uncookedtoast"),
+                    new HeatRecipeSimple(IIngredient.of("foodUncookedvanillacupcake"),new ItemStack(ItemRegistry.vanillacupcakeItem,1),200,480).setRegistryName("uncookedvanillacupcake")
+                    );
+        }
     }
     @SubscribeEvent
     public static void onRegisterAnvilRecipeEvent(RegistryEvent.Register<AnvilRecipe> event)

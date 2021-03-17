@@ -1,1 +1,1 @@
-{"result": {"item": "harvestcraft:pumpkinmuffinitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolBakeware"}, {"type": "forge:ore_dict", "ore": "cropPumpkin"}, {"type": "forge:ore_dict", "ore": "foodBatter"}], "type": "forge:ore_shapeless"}
+{"result": {"item": "tfc_ph_compat:food/uncookedpumpkinmuffinitem"}, "ingredients": [{"type": "forge:ore_dict", "ore": "toolBakeware"}, {"type": "forge:ore_dict", "ore": "cropPumpkin"}, {"type": "forge:ore_dict", "ore": "foodBatter"}], "type": "forge:ore_shapeless"}

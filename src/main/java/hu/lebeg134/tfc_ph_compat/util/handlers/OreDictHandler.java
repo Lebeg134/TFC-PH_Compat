@@ -5,6 +5,7 @@ import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
 import hu.lebeg134.tfc_ph_compat.TFC_PH_Compat;
 import hu.lebeg134.tfc_ph_compat.util.agriculture.TPCrop;
+import hu.lebeg134.tfc_ph_compat.util.agriculture.TPUncooked;
 import net.dries007.tfc.api.registries.TFCRegistries;
 import net.dries007.tfc.api.types.Metal;
 import net.dries007.tfc.objects.items.ItemSeedsTFC;
@@ -354,6 +355,84 @@ public class OreDictHandler {
 
         //OreDictionary.registerOre("foodSalt", new ItemStack(ItemsTFC.SALT));
         //OreDictionary.registerOre("itemSalt", new ItemStack(ItemsTFC.SALT));
+
+        //uncooked items
+        OreDictionary.registerOre("foodUncookedanchovypepperonipizza", new ItemStack( TPUncooked.UNCOOKEDANCHOVYPEPPERONIPIZZAITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedapplepie", new ItemStack( TPUncooked.UNCOOKEDAPPLEPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedbbqchickenpizza", new ItemStack( TPUncooked.UNCOOKEDBBQCHICKENPIZZAITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedbiscuit", new ItemStack( TPUncooked.UNCOOKEDBISCUITITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedblackberrycobbler", new ItemStack( TPUncooked.UNCOOKEDBLACKBERRYCOBBLERITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedblueberrymuffin", new ItemStack( TPUncooked.UNCOOKEDBLUEBERRYMUFFINITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedblueberrypie", new ItemStack( TPUncooked.UNCOOKEDBLUEBERRYPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedbriochebun", new ItemStack( TPUncooked.UNCOOKEDBRIOCHEBUNITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedbuttercookie", new ItemStack( TPUncooked.UNCOOKEDBUTTERCOOKIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedbuttertart", new ItemStack( TPUncooked.UNCOOKEDBUTTERTARTITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcaramelcupcake", new ItemStack( TPUncooked.UNCOOKEDCARAMELCUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcarrotcupcake", new ItemStack( TPUncooked.UNCOOKEDCARROTCUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedchaoscookie", new ItemStack( TPUncooked.UNCOOKEDCHAOSCOOKIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcherrypie", new ItemStack( TPUncooked.UNCOOKEDCHERRYPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedchickenpotpie", new ItemStack( TPUncooked.UNCOOKEDCHICKENPOTPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedchilicupcake", new ItemStack( TPUncooked.UNCOOKEDCHILICUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedchocolatecupcake", new ItemStack( TPUncooked.UNCOOKEDCHOCOLATECUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcinnamonbread", new ItemStack( TPUncooked.UNCOOKEDCINNAMONBREADITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcinnamonroll", new ItemStack( TPUncooked.UNCOOKEDCINNAMONROLLITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcoffeecupcake", new ItemStack( TPUncooked.UNCOOKEDCOFFEECUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcottagepie", new ItemStack( TPUncooked.UNCOOKEDCOTTAGEPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcracker", new ItemStack( TPUncooked.UNCOOKEDCRACKERITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcrackers", new ItemStack( TPUncooked.UNCOOKEDCRACKERSITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedcroissant", new ItemStack( TPUncooked.UNCOOKEDCROISSANTITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookeddamper", new ItemStack( TPUncooked.UNCOOKEDDAMPERITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedeggtart", new ItemStack( TPUncooked.UNCOOKEDEGGTARTITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedfruitcrumble", new ItemStack( TPUncooked.UNCOOKEDFRUITCRUMBLEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedgarlicchicken", new ItemStack( TPUncooked.UNCOOKEDGARLICCHICKENITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedgingerbread", new ItemStack( TPUncooked.UNCOOKEDGINGERBREADITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedgingersnaps", new ItemStack( TPUncooked.UNCOOKEDGINGERSNAPSITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedgooseberrypie", new ItemStack( TPUncooked.UNCOOKEDGOOSEBERRYPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedhoneybun", new ItemStack( TPUncooked.UNCOOKEDHONEYBUNITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedhoneylemonlamb", new ItemStack( TPUncooked.UNCOOKEDHONEYLEMONLAMBITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedhoneysoyribs", new ItemStack( TPUncooked.UNCOOKEDHONEYSOYRIBSITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedlambwithmintsauce", new ItemStack( TPUncooked.UNCOOKEDLAMBWITHMINTSAUCEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedlemonchicken", new ItemStack( TPUncooked.UNCOOKEDLEMONCHICKENITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedlemoncupcake", new ItemStack( TPUncooked.UNCOOKEDLEMONCUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedmeatpie", new ItemStack( TPUncooked.UNCOOKEDMEATPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedmincepie", new ItemStack( TPUncooked.UNCOOKEDMINCEPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedmintcupcake", new ItemStack( TPUncooked.UNCOOKEDMINTCUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedmochicake", new ItemStack( TPUncooked.UNCOOKEDMOCHICAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedorangeduck", new ItemStack( TPUncooked.UNCOOKEDORANGEDUCKITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedpeachcobbleritem", new ItemStack( TPUncooked.UNCOOKEDPEACHCOBBLERITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedpeanutbuttercookies", new ItemStack( TPUncooked.UNCOOKEDPEANUTBUTTERCOOKIESITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedpeanutbuttercupcake", new ItemStack( TPUncooked.UNCOOKEDPEANUTBUTTERCUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedpekingduck", new ItemStack( TPUncooked.UNCOOKEDPEKINGDUCKITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedpizza", new ItemStack( TPUncooked.UNCOOKEDPIZZAITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedpumpkinbread", new ItemStack( TPUncooked.UNCOOKEDPUMPKINBREADITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedpumpkinmuffin", new ItemStack( TPUncooked.UNCOOKEDPUMPKINMUFFINITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedpumpkinoatscones", new ItemStack( TPUncooked.UNCOOKEDPUMPKINOATSCONESITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedpumpkinpie", new ItemStack( TPUncooked.UNCOOKEDPUMPKINPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedraisincookiesitem", new ItemStack( TPUncooked.UNCOOKEDRAISINCOOKIESITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedraspberrypie", new ItemStack( TPUncooked.UNCOOKEDRASPBERRYPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedredvelvetcupcake", new ItemStack( TPUncooked.UNCOOKEDREDVELVETCUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedrivermudcake", new ItemStack( TPUncooked.UNCOOKEDRIVERMUDCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedroastchicken", new ItemStack( TPUncooked.UNCOOKEDROASTCHICKENITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedroastpotatoes", new ItemStack( TPUncooked.UNCOOKEDROASTPOTATOESITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedsalisburysteak", new ItemStack( TPUncooked.UNCOOKEDSALISBURYSTEAKITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedshepardspie", new ItemStack( TPUncooked.UNCOOKEDSHEPARDSPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedsoftpretzel", new ItemStack( TPUncooked.UNCOOKEDSOFTPRETZELITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedspinachpie", new ItemStack( TPUncooked.UNCOOKEDSPINACHPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedsprinklescupcake", new ItemStack( TPUncooked.UNCOOKEDSPRINKLESCUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedstrawberrycupcake", new ItemStack( TPUncooked.UNCOOKEDSTRAWBERRYCUPCAKEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedstrawberrypie", new ItemStack( TPUncooked.UNCOOKEDSTRAWBERRYPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedstuffedduck", new ItemStack( TPUncooked.UNCOOKEDSTUFFEDDUCKITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedsugarcookie", new ItemStack( TPUncooked.UNCOOKEDSUGARCOOKIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedsunflowerwheatrolls", new ItemStack( TPUncooked.UNCOOKEDSUNFLOWERWHEATROLLSITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedsweetpotatopie", new ItemStack( TPUncooked.UNCOOKEDSWEETPOTATOPIEITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedtimpano", new ItemStack( TPUncooked.UNCOOKEDTIMPANOITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedtiropita", new ItemStack( TPUncooked.UNCOOKEDTIROPITAITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedtoast", new ItemStack( TPUncooked.UNCOOKEDTOASTITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedtomatoherbchicken", new ItemStack( TPUncooked.UNCOOKEDTOMATOHERBCHICKENITEM.getItem() ));
+        OreDictionary.registerOre("foodUncookedvanillacupcake", new ItemStack( TPUncooked.UNCOOKEDVANILLACUPCAKEITEM.getItem() ));
+
+
+
 
         //tfc tools
         OreDictionary.registerOre("toolPot", new ItemStack(ItemsTFC.FIRED_POT));

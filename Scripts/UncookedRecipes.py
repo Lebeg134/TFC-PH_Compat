@@ -11,7 +11,7 @@ for filename in os.listdir(input_dir):
             data = json.load(json_file)
             selected = False
             if data["result"]["item"].split(":")[1] in whitelist:
-                data["result"]["item"].replace(":", ":uncooked")
+                data["result"]["item"]=data["result"]["item"].replace("harvestcraft:", "tfc_ph_compat:food/uncooked")
                 selected = True
             if selected:
                 with open("output/uncooked"+filename, "w") as outfile:

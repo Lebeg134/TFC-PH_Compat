@@ -134,7 +134,7 @@ public class FirmaLifeCompat {
                 new OvenRecipe(IIngredient.of("foodUncookedtimpano"),  new ItemStack(ItemRegistry.timpanoItem), 4*hour).setRegistryName("oven_timpano"),
                 new OvenRecipe(IIngredient.of("foodUncookedtiropita"),  new ItemStack(ItemRegistry.tiropitaItem), 4*hour).setRegistryName("oven_tiropita"),
                 new OvenRecipe(IIngredient.of("foodUncookedtoast"),  new ItemStack(ItemRegistry.toastItem), 4*hour).setRegistryName("oven_toast"),
-                new OvenRecipe(IIngredient.of("foodUncookedvanillacupcake"),  new ItemStack(ItemRegistry.vanillacupcakeItem), 4*hour).setRegistryName("oven_vanillacupcake"),
+                new OvenRecipe(IIngredient.of("foodUncookedvanillacupcake"),  new ItemStack(ItemRegistry.vanillacupcakeItem), 4*hour).setRegistryName("oven_vanillacupcake")
 
                 );
 

@@ -58,6 +58,7 @@ public class FirmaLifeCompat {
         RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:pinacoladaitem");
         RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:chocolatebaritem_x4");
         RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:raisinsitem");
+        RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:roastedchestnutitem");
     }
     @SubscribeEvent
     public static void onRegisterDryingRecipeEvent(RegistryEvent.Register<DryingRecipe> event)

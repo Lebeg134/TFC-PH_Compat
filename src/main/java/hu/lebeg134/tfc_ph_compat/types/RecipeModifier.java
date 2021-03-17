@@ -672,6 +672,7 @@ public class RecipeModifier {
         dummyOutRecipe(recipeRegistry, "harvestcraft:toastitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:tomatoherbchickenitem");
         dummyOutRecipe(recipeRegistry, "harvestcraft:vanillacupcakeitem");
+        dummyOutRecipe(recipeRegistry, "harvestcraft:minecraft_pumpkinpie");
 
 
     }

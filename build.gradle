@@ -54,10 +54,10 @@ processResources {
 }
 
 
-//sourceSets { //This is needed in later IntelliJ versions to compile. Disable this when Building jar file
-//    main {
-//        output.resourcesDir = output.classesDir
-//    }
-//}
+sourceSets { //This is needed in later IntelliJ versions to compile. Disable this when Building jar file
+    main {
+        output.resourcesDir = output.classesDir
+    }
+}
 
 

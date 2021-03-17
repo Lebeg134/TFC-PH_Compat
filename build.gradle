@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "1.12.2-1.0.3-dev"
+version = "1.12.2-1.1.1-dev"
 group = "hu.lebeg134.tfc_ph_compat"
 archivesBaseName = "TFC_PH_Compat"
 
@@ -29,9 +29,9 @@ minecraft {
 
 dependencies {
     compile files("./libs/Pam's+HarvestCraft+1.12.2zg.jar")
-    compile files("./libs/TerraFirmaCraft-MC1.12.2-1.7.17.175-dev-deobf.jar")
+    compile files("./libs/TerraFirmaCraft-MC1.12.2-1.7.17.175-deobf.jar")
     provided files("./libs/Caffeine+[TFC+Addon]-1.2.1.jar")
-    provided files("./libs/firmalife-0.2.2.jar")
+    provided files("./libs/firmalife-0.2.3.jar")
 
 }
 
@@ -54,10 +54,10 @@ processResources {
 }
 
 
-sourceSets { //This is needed in later IntelliJ versions to compile. Disable this when Building jar file
-    main {
-        output.resourcesDir = output.classesDir
-    }
-}
+//sourceSets { //This is needed in later IntelliJ versions to compile. Disable this when Building jar file
+//    main {
+//        output.resourcesDir = output.classesDir
+//    }
+//}
 
 

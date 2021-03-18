@@ -24,7 +24,10 @@ public enum HeatCapabilityHelper {
     TURKEYCOOKEDITEM("harvestcraft:turkeycookeditem", TPFood.TURKEYCOOKEDITEM.getFoodData()),
     DUCKCOOKEDITEM("harvestcraft:duckcookeditem", TPFood.DUCKCOOKEDITEM.getFoodData()),
 
-    //Burnable PH foods some are disabled because food data doesn't exist yet
+    RICECROP("tfc:food/rice", Food.RICE.getData()),
+    RICEGRAIN("tfc:food/rice_grain", Food.RICE_GRAIN.getData()),
+
+    //Burnable PH foods - some are disabled because food data doesn't exist yet
 
     //ANCHOVYPEPPERONIPIZZA("harvestcraft:anchovypepperonipizzaitem", TPFood.ANCHOVYPEPPERONIPIZZAITEM.getFoodData()),
     APPLEPIE("harvestcraft:applepieitem", TPFood.APPLEPIEITEM.getFoodData()),

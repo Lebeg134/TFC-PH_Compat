@@ -824,7 +824,7 @@ public class RecipeModifier {
 
 
                 );
-        if (!TFC_PH_Compat.FirmaLifeAdded){
+        if (!((TFC_PH_Compat.FirmaLifeAdded&& TFC_PH_Compat.config.detectOtherModCompat)|| TFC_PH_Compat.config.manualFirmaLifeCompat)){
             r.registerAll(
                     new HeatRecipeSimple(IIngredient.of("foodUncookedanchovypepperonipizza"),new ItemStack(ItemRegistry.anchovypepperonipizzaItem,1),200,480).setRegistryName("uncookedanchovypepperonipizza"),
                     new HeatRecipeSimple(IIngredient.of("foodUncookedapplepie"),new ItemStack(ItemRegistry.applepieItem,1),200,480).setRegistryName("uncookedapplepie"),

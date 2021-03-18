@@ -3,7 +3,6 @@ package hu.lebeg134.tfc_ph_compat.util;
 import hu.lebeg134.tfc_ph_compat.util.agriculture.TPFood;
 import net.dries007.tfc.api.capability.food.FoodData;
 import net.dries007.tfc.util.agriculture.Food;
-import net.minecraft.item.Item;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -109,7 +108,7 @@ public enum HeatCapabilityHelper {
 
     private final String name;
     private final FoodData fd;
-    private static Map<String, FoodData> dataMap = new HashMap<String, FoodData>();
+    private static final Map<String, FoodData> dataMap = new HashMap<>();
     static{
         for (HeatCapabilityHelper hch:HeatCapabilityHelper.values()){
             dataMap.put(hch.name, hch.fd);

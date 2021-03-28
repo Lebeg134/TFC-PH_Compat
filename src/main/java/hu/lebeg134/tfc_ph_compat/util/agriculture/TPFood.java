@@ -4,7 +4,10 @@ package hu.lebeg134.tfc_ph_compat.util.agriculture;
 import com.pam.harvestcraft.blocks.CropRegistry;
 import com.pam.harvestcraft.blocks.FruitRegistry;
 import com.pam.harvestcraft.item.ItemRegistry;
+import net.dries007.tfc.api.capability.food.CapabilityFood;
 import net.dries007.tfc.api.capability.food.FoodData;
+import net.dries007.tfc.api.capability.food.FoodHandler;
+import net.dries007.tfc.objects.inventory.ingredient.IIngredient;
 import net.dries007.tfc.util.agriculture.Food;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -649,6 +652,8 @@ public enum TPFood {
     PUMPKINPIEITEM(MEAL, ItemRegistry.pumpkinpieItem, 4 ,1f,0f,0f,1.5f,1.5f,0f,0f,1.75f);
 
 
+
+
     private final Food.Category category;
     private final Item item;
     private final FoodData foodData;
@@ -681,5 +686,6 @@ public enum TPFood {
     }
     public FoodData getFoodData(){ return foodData; }
     public Item getItem(){ return item; }
+
 
 }

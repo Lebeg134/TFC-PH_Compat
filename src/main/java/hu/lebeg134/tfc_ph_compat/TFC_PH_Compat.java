@@ -40,6 +40,14 @@ public class TFC_PH_Compat
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        for (TPFood food: TPFood.values())
+        {
+            CapabilityFood.CUSTOM_FOODS.put(IIngredient.of(food.getItem()),() -> new FoodHandler(null, food.getFoodData()));
+        }
+        //registering custom handler for Custom uncooked foods
+        for (TPUncooked food: TPUncooked.values()){
+            CapabilityFood.CUSTOM_FOODS.put(IIngredient.of(food.getItem()),() -> new FoodHeatHandler(null,food.getData(), food.getHeatCapacity(), food.getCookingTemp()));
+        }
         for (ModContainer Mod : Loader.instance().getActiveModList() )
         {
             if (Mod.getModId().equals("ca"))
@@ -57,15 +65,15 @@ public class TFC_PH_Compat
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        //registering PH food nutrition data
-        for (TPFood food: TPFood.values())
-        {
-            CapabilityFood.CUSTOM_FOODS.put(IIngredient.of(food.getItem()),() -> new FoodHandler(null, food.getFoodData()));
-        }
-        //registering custom handler for Custom uncooked foods
-        for (TPUncooked food: TPUncooked.values()){
-            CapabilityFood.CUSTOM_FOODS.put(IIngredient.of(food.getItem()),() -> new FoodHeatHandler(null,food.getData(), food.getHeatCapacity(), food.getCookingTemp()));
-        }
+//        //registering PH food nutrition data
+//        for (TPFood food: TPFood.values())
+//        {
+//            CapabilityFood.CUSTOM_FOODS.put(IIngredient.of(food.getItem()),() -> new FoodHandler(null, food.getFoodData()));
+//        }
+//        //registering custom handler for Custom uncooked foods
+//        for (TPUncooked food: TPUncooked.values()){
+//            CapabilityFood.CUSTOM_FOODS.put(IIngredient.of(food.getItem()),() -> new FoodHeatHandler(null,food.getData(), food.getHeatCapacity(), food.getCookingTemp()));
+//        }
         //config overwrite
         if (config.overwritePHConfig)
             config.overwritePHConfig();

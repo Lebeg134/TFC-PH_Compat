@@ -1,0 +1,24 @@
+{
+  "result": {
+    "item": "harvestcraft:melonsmoothieitem"
+  },
+
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "toolJuicer"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropMelon"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropMelon"
+    },
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

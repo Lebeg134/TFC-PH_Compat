@@ -40,6 +40,7 @@ public class FirmaLifeCompat {
         OreDictionary.registerOre("foodRoastedchestnut", new ItemStack(ItemsFL.getFood(FoodFL.ROASTED_CHESTNUTS)));
         OreDictionary.registerOre("cropPecan", new ItemStack(ItemsFL.getFood(FoodFL.PECANS)));
         OreDictionary.registerOre("cropPineapple", new ItemStack(ItemsFL.getFood(FoodFL.PINEAPPLE_CHUNKS)));
+        OreDictionary.registerOre("cropMelon", new ItemStack(ItemsFL.getFood(FoodFL.MELON)));
 
 
         //OreDict remove
@@ -59,6 +60,10 @@ public class FirmaLifeCompat {
         RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:chocolatebaritem_x4");
         RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:raisinsitem");
         RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:roastedchestnutitem");
+        RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:melonjuiceitem");
+        RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:melonsmoothieitem");
+        RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:melonyogurtitem");
+        RecipeModifier.dummyOutRecipe(recipeRegistry, "harvestcraft:watermelonjellyitem");
     }
     @SubscribeEvent
     public static void onRegisterDryingRecipeEvent(RegistryEvent.Register<DryingRecipe> event)

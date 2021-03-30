@@ -1,0 +1,21 @@
+{
+  "result": {
+    "item": "harvestcraft:melonjuiceitem"
+  },
+
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "toolJuicer"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropMelon"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "cropMelon"
+    }
+  ],
+  "type": "forge:ore_shapeless"
+}

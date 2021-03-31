@@ -3,6 +3,7 @@ package hu.lebeg134.tfc_ph_compat.util;
 import hu.lebeg134.tfc_ph_compat.util.agriculture.TPFood;
 import net.dries007.tfc.api.capability.food.FoodData;
 import net.dries007.tfc.util.agriculture.Food;
+import net.minecraftforge.fml.common.FMLLog;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -105,23 +106,33 @@ public enum HeatCapabilityHelper {
     //VANILLACUPCAKE("harvestcraft:vanillacupcakeitem", TPFood.VANILLACUPCAKEITEM.getFoodData()),
 
 
-
+    private static boolean initialized = false;
     private final String name;
     private final FoodData fd;
     private static final Map<String, FoodData> dataMap = new HashMap<>();
-    static{
+
+    public static void LoadData(){
         for (HeatCapabilityHelper hch:HeatCapabilityHelper.values()){
             dataMap.put(hch.name, hch.fd);
         }
+        initialized = true;
     }
     HeatCapabilityHelper(String name, FoodData fd){
         this.name = name;
         this.fd = fd;
     }
     public static boolean Contains(String name){
+        if (!initialized){
+            FMLLog.bigWarning("Heat Capabilities not yet initialized!");
+            return false;
+        }
         return dataMap.containsKey(name);
     }
     public static FoodData getFoodData(String name){
+        if (!initialized){
+            FMLLog.bigWarning("Heat Capabilities not yet initialized!");
+            return new FoodData();
+        }
         return dataMap.get(name);
     }
 }

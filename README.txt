@@ -7,6 +7,7 @@ The mod requires TFC(1.12) and PH to be installed.
 
 Mod adds:
 -22 new tfc style crops can be found in the wild (uses textures from PH and some custom ones too)
+-70+ new uncooked items that need to be cooked in heating recipes
 -nutritional values and decay times for over 500 PH foods
 -new barrell recipes for PH items
 -new heating recipes

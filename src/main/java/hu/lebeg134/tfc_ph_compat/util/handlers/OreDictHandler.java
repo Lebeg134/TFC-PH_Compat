@@ -27,7 +27,6 @@ public class OreDictHandler {
         // PH plants
         OreDictionary.registerOre("categoryOther", CropRegistry.getFood("spiceleaf"));
         OreDictionary.registerOre("categoryOther", FruitRegistry.getFood("peppercorn"));
-        OreDictionary.registerOre("categoryOther", CropRegistry.getFood("peppercorn"));
         OreDictionary.registerOre("categoryOther", CropRegistry.getFood("mustardseeds"));
         OreDictionary.registerOre("categoryVegetable", CropRegistry.getFood("sweetpotato"));
         OreDictionary.registerOre("categoryVegetable", CropRegistry.getFood("lettuce"));
